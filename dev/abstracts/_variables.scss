@@ -7,6 +7,7 @@ $color-background-default: map-get($colors, secondary, '400');
 // $color-text-interactive-hover: $color-accent-500;
 
 $border-radius-1: .2rem;
+$border-width-1: .3rem; 
 
 $box-shadow-1: 0px 30px 45px 0px rgba(22, 22, 22, 0.10);
 
@@ -17,6 +18,8 @@ $body-font-weight: map-get($font-weights, regular);
 $body-line-height: 1.5;
 $body-text-color: $color-text-default;
 $body-background-color: map-get($colors, secondary, '400');
+
+$text-accent-font-size: map-get($font-sizes, '600');
 
 // $link-color: $color-text-interactive-default;
 // $link-color-hover: $color-text-interactive-hover;
@@ -89,23 +92,36 @@ $grid-column-width: 8.5rem;
 // $footer-link-font-family: $font-family-accent;
 // $footer-link-text-decoration: none;
 
-// // buttons
-// $button-font-family: $body-font-family;
-// $button-font-size: $font-size-400;
-// $button-font-weight: $font-weight-bold;
-// $button-text-transform: uppercase;
+// buttons
+$button-font-family: $body-font-family;
+$button-font-size: map-get($font-sizes, '300');
+$button-font-weight: map-get($font-weights, bold);
+$button-text-transform: uppercase;
+$button-clip-path: polygon(13% 0, 88% 0, 100% 50%, 88% 100%, 13% 100%, 0% 50%);
+$button-width: 20rem;
+$button-height: 6rem;
 // $button-padding: 0.75em 2em;
 // $button-border: 0;
 // $button-border-radius: $border-radius-1;
 
-// $button-accent-color: $color-neutral-100;
-// $button-accent-background: $color-accent-400;
-// $button-accent-color-hover: $color-neutral-100;
-// $button-accent-background-hover: $color-accent-500;
-// $button-primary-color: $color-neutral-100;
-// $button-primary-background: $color-primary-700;
-// $button-primary-color-hover: $color-neutral-100;
-// $button-primary-background-hover: $color-primary-800;
+$button-primary-color: map-get($colors, secondary, '400');
+$button-primary-color-hover: map-get($colors, secondary, '300');
+$button-primary-color-active: map-get($colors, secondary, '200');
+$button-primary-background: map-get($colors, primary, '400');
+$button-primary-background-hover: map-get($colors, primary, '300');
+$button-primary-background-active: map-get($colors, primary, '200');
+
+$button-secondary-color: map-get($colors, primary, '400');
+$button-secondary-color-hover: map-get($colors, primary, '300');
+$button-secondary-color-active: map-get($colors, primary, '200');
+$button-secondary-background: map-get($colors, transparent, '100');
+$button-secondary-border: $border-width-1 solid map-get($colors, primary, '400');
+
+$button-tertiary-color: map-get($colors, primary, '400');
+$button-tertiary-color-hover: map-get($colors, primary, '300');
+$button-tertiary-color-active: map-get($colors, primary, '200');
+$button-tertiary-background: map-get($colors, transparent, '100');
+
 
 // // cards
 // $card-flow-spacing: $size-2;
