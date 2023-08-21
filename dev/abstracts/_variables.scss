@@ -1,8 +1,8 @@
 @use "colors" as *;
 @use "typography" as *;
 
-$color-text-default: map-get($colors, neutral, 100);
-$color-background-default: map-get($colors, secondary, 400);
+$color-text-default: map-get($colors, neutral, '100');
+$color-background-default: map-get($colors, secondary, '400');
 // $color-text-interactive-default: $color-accent-400;
 // $color-text-interactive-hover: $color-accent-500;
 
@@ -12,11 +12,11 @@ $box-shadow-1: 0px 30px 45px 0px rgba(22, 22, 22, 0.10);
 
 // body
 $body-font-family: $sans-serif;
-$body-font-size: map-get($font-sizes, 200);
+$body-font-size: map-get($font-sizes, '200');
 $body-font-weight: map-get($font-weights, regular);
 $body-line-height: 1.5;
 $body-text-color: $color-text-default;
-$body-background-color: map-get($colors, secondary, 400);
+$body-background-color: map-get($colors, secondary, '400');
 
 // $link-color: $color-text-interactive-default;
 // $link-color-hover: $color-text-interactive-hover;
@@ -24,30 +24,30 @@ $body-background-color: map-get($colors, secondary, 400);
 // headings
 $heading-font-family-1: $serif;
 $heading-font-family-2: $sans-serif;
-$heading-color-1: map-get($colors, primary, 400);
-$heading-color-2: map-get($colors, secondary, 100);
+$heading-color-1: map-get($colors, primary, '400');
+$heading-color-2: map-get($colors, secondary, '100');
 $heading-font-weight-1: map-get($font-weights, regular);
 $heading-font-weight-2: map-get($font-weights, bold);
 $heading-line-height: 1.1;
 $heading-text-transform: uppercase;
 
 $heading-1-font-family: $heading-font-family-1;
-$heading-1-font-size: map-get($font-sizes, 900);
+$heading-1-font-size: map-get($font-sizes, '900');
 $heading-1-color: $heading-color-1;
 $heading-1-font-weight: $heading-font-weight-1;
 
 $heading-2-font-family: $heading-font-family-1;
-$heading-2-font-size: map-get($font-sizes, 800);
+$heading-2-font-size: map-get($font-sizes, '800');
 $heading-2-color: $heading-color-1;
 $heading-2-font-weight: $heading-font-weight-1;
 
 $heading-3-font-family: $heading-font-family-2;
-$heading-3-font-size: map-get($font-sizes, 500);
+$heading-3-font-size: map-get($font-sizes, '500');
 $heading-3-color: $heading-color-2;
 $heading-3-font-weight: $heading-font-weight-2;
 
 $heading-4-font-family: $heading-font-family-2;
-$heading-4-font-size: map-get($font-sizes, 400);
+$heading-4-font-size: map-get($font-sizes, '400');
 $heading-4-color: $heading-color-2;
 $heading-4-font-weight: $heading-font-weight-2;
 
