@@ -35,25 +35,10 @@ $heading-font-weight-2: map-get($font-weights, bold);
 $heading-line-height: 1.1;
 $heading-text-transform: uppercase;
 
-$heading-1-font-family: $heading-font-family-1;
 $heading-1-font-size: map-get($font-sizes, '900');
-$heading-1-color: $heading-color-1;
-$heading-1-font-weight: $heading-font-weight-1;
-
-$heading-2-font-family: $heading-font-family-1;
 $heading-2-font-size: map-get($font-sizes, '800');
-$heading-2-color: $heading-color-1;
-$heading-2-font-weight: $heading-font-weight-1;
-
-$heading-3-font-family: $heading-font-family-2;
 $heading-3-font-size: map-get($font-sizes, '500');
-$heading-3-color: $heading-color-2;
-$heading-3-font-weight: $heading-font-weight-2;
-
-$heading-4-font-family: $heading-font-family-2;
 $heading-4-font-size: map-get($font-sizes, '400');
-$heading-4-color: $heading-color-2;
-$heading-4-font-weight: $heading-font-weight-2;
 
 // layout
 $grid-gap: 2rem;

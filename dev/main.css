@@ -144,4 +144,37 @@ select {
 }
 .nav_vertical .nav__item:is(:hover, :focus) {
   border-bottom-color: #CC9900;
+}
+
+.heading {
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.heading_primary {
+  font-family: "Cinzel", Georgia, "Times New Roman", serif;
+  color: #CC9900;
+  font-weight: 400;
+}
+
+.heading_secondary {
+  font-family: "Montserrat", Helvetica, Verdana, sans-serif;
+  color: #90DBD6;
+  font-weight: 700;
+}
+
+.heading-1 {
+  font-size: 15rem;
+}
+
+.heading-2 {
+  font-size: 3.6rem;
+}
+
+.heading-3 {
+  font-size: 2.4rem;
+}
+
+.heading-4 {
+  font-size: 2rem;
 }/*# sourceMappingURL=main.css.map */

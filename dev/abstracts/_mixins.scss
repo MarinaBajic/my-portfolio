@@ -33,19 +33,3 @@
         }
     }
 }
-
-@mixin heading(
-            $font-size,
-            $font-family: $heading-font-family-1, 
-            $color: $heading-color-1,
-            $font-weight: $heading-font-weight-1
-    ) {
-    font-size: $font-size;
-    
-    font-family: $font-family;
-    color: $color;
-    font-weight: $font-weight;
-
-    line-height: $heading-line-height;
-    text-transform: $heading-text-transform;
-}
