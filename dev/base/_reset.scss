@@ -7,7 +7,6 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
 }
 
 html:focus-within {
@@ -15,17 +14,23 @@ html:focus-within {
 }
 
 img,
-picture,
-svg {
+picture {
     max-width: 100%;
     display: block;
+}
+
+svg {
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
     min-height: 100vh;
     overflow-x: hidden;
     text-rendering: optimizeSpeed;
-    font-size: 62.5%;
 }
 
 /* A elements that don't have a class get default styles */

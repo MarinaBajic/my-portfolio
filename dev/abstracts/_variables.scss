@@ -7,6 +7,7 @@ $color-background-default: map-get($colors, secondary, '400');
 // $color-text-interactive-hover: $color-accent-500;
 
 $border-radius-1: .2rem;
+$border-radius-2: 1rem;
 $border-width-1: .3rem; 
 
 $box-shadow-1: 0px 30px 45px 0px rgba(22, 22, 22, 0.10);
@@ -97,12 +98,13 @@ $button-font-family: $body-font-family;
 $button-font-size: map-get($font-sizes, '300');
 $button-font-weight: map-get($font-weights, bold);
 $button-text-transform: uppercase;
-$button-clip-path: polygon(13% 0, 88% 0, 100% 50%, 88% 100%, 13% 100%, 0% 50%);
-$button-width: 20rem;
-$button-height: 6rem;
-// $button-padding: 0.75em 2em;
-// $button-border: 0;
-// $button-border-radius: $border-radius-1;
+// $button-clip-path: polygon(8% 0, 92% 0, 100% 50%, 92% 100%, 8% 100%, 0% 50%);
+// $button-width: 20rem;
+$button-padding: 2rem 3rem;
+$button-border: $border-width-1 solid map-get($colors, primary, '400');
+$button-border-color-hover: map-get($colors, primary, '300');
+$button-border-color-active: map-get($colors, primary, '200');
+$button-border-radius: $border-radius-2;
 
 $button-primary-color: map-get($colors, secondary, '400');
 $button-primary-color-hover: map-get($colors, secondary, '300');
@@ -114,13 +116,12 @@ $button-primary-background-active: map-get($colors, primary, '200');
 $button-secondary-color: map-get($colors, primary, '400');
 $button-secondary-color-hover: map-get($colors, primary, '300');
 $button-secondary-color-active: map-get($colors, primary, '200');
-$button-secondary-background: map-get($colors, transparent, '100');
-$button-secondary-border: $border-width-1 solid map-get($colors, primary, '400');
+$button-secondary-background: transparent;
 
 $button-tertiary-color: map-get($colors, primary, '400');
 $button-tertiary-color-hover: map-get($colors, primary, '300');
 $button-tertiary-color-active: map-get($colors, primary, '200');
-$button-tertiary-background: map-get($colors, transparent, '100');
+$button-tertiary-background: transparent;
 
 
 // // cards

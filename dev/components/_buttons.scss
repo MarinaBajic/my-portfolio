@@ -1,4 +1,4 @@
-@use "../abstracts" as *;
+@use "../abstracts/variables" as *;
 
 .button {
     display: inline-flex;
@@ -8,30 +8,59 @@
     line-height: 1;
     font-family: $button-font-family;
     font-size: $button-font-size;
-    text-transform: $button-text-transform;
     font-weight: $button-font-weight;
+    text-transform: $button-text-transform;
+    border: 0;
+    // width: $button-width;
     padding: $button-padding;
-    border: $button-border;
-    border-radius: $button-border-radius;
     transition: 275ms ease;
 
-    &[data-type="accent"] {
-        background-color: $button-accent-background;
-        color: $button-accent-color;
+    &[data-type="primary"] {
+        color: $button-primary-color;
+        background-color: $button-primary-background;
+        border: $button-border;
+        border-radius: $button-border-radius;
 
         &:is(:hover, :focus) {
-            background-color: $button-accent-background-hover;
-            color: $button-accent-color-hover;
+            color: $button-primary-color-hover;
+            background-color: $button-primary-background-hover;
+            border-color: $button-border-color-hover;
+        }
+
+        &:active {
+            color: $button-primary-color-active;
+            background-color: $button-primary-background-active;
+            border-color: $button-border-color-active;
         }
     }
 
-    &[data-type="primary"] {
-        background-color: $button-primary-background;
-        color: $button-primary-color;
+    &[data-type="secondary"] {
+        color: $button-secondary-color;
+        background-color: $button-secondary-background;
+        border: $button-border;
+        border-radius: $button-border-radius;
 
         &:is(:hover, :focus) {
-            background-color: $button-primary-background-hover;
-            color: $button-primary-color-hover;
+            color: $button-secondary-color-hover;
+            border-color: $button-border-color-hover;
+        }
+
+        &:active {
+            color: $button-secondary-color-active;
+            border-color: $button-border-color-active;
+        }
+    }
+
+    &[data-type="tertiary"] {
+        color: $button-tertiary-color;
+        background-color: $button-tertiary-background;
+
+        &:is(:hover, :focus) {
+            color: $button-tertiary-color-hover;
+        }
+
+        &:active {
+            color: $button-tertiary-color-active;
         }
     }
 }
