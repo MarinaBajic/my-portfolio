@@ -9,6 +9,11 @@ body {
     background-color: $body-background-color;
 }
 
+.text-accent {
+    font-size: $text-accent-font-size;
+    font-weight: $body-font-weight;
+}
+
 // a {
 //     color: $link-color;
 // }
