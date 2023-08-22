@@ -1,13 +1,12 @@
-@use "breakpoints" as *;
+@use 'breakpoints' as *;
+@use 'variables' as *;
 
 @mixin breakpoint($breakpoint, $direction: max) {
-
     //check if the supplied breakpoint exists in our breakpoits map
     @if map-has-key($breakpoints, $breakpoint) {
         $breakpoint-values: map-get($breakpoints, $breakpoint);
         $breakpoint-min: map-get($breakpoint-values, min);
         $breakpoint-max: map-get($breakpoint-values, max);
-
         //check if we are writing styles for larger or smaller screens
         @if $direction == min {
             @media (min-width: $breakpoint-min) {
@@ -33,4 +32,20 @@
             }
         }
     }
+}
+
+@mixin heading(
+            $font-size,
+            $font-family: $heading-font-family-1, 
+            $color: $heading-color-1,
+            $font-weight: $heading-font-weight-1
+    ) {
+    font-size: $font-size;
+    
+    font-family: $font-family;
+    color: $color;
+    font-weight: $font-weight;
+
+    line-height: $heading-line-height;
+    text-transform: $heading-text-transform;
 }
