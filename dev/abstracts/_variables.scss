@@ -52,14 +52,13 @@ $grid-column-width: 8.5rem;
 // $container-max-width-narrow: 40rem;
 // $container-max-width-wide: 75rem;
 
-// // site header
-// $site-header-background-color: $color-primary-300;
-// $site-header-color: $color-neutral-900;
-// $site-header-padding: $size-8 0;
-// $site-header-margin: 0;
-// $site-header-jusitifcation-small-screens: center;
-// $site-header-jusitifcation-large-screens: space-between;
-// $site-header-alignment: center;
+// site header
+$header-background-color: transparent;
+$header-padding: 5rem 12rem;
+$header-margin: 0;
+$header-jusitifcation-small-screens: center;
+$header-jusitifcation-large-screens: space-between;
+$header-alignment: flex-start;
 
 //navigation
 $navigation-font-family: $body-font-family;
