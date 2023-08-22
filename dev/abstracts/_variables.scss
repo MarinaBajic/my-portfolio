@@ -76,14 +76,17 @@ $grid-column-width: 8.5rem;
 // $site-header-jusitifcation-large-screens: space-between;
 // $site-header-alignment: center;
 
-// //navigation
-// $navigation-color: $site-header-color;
-// $navigation-color-hover: $color-primary-300;
-// $navigation-font-size: $font-size-400;
-// $navigation-gap: $size-9;
-// $navigation-link-text-decoration: none;
-// $navigation-font-family: $body-font-family;
-// $navigation-font-weight: $body-font-weight;
+//navigation
+$navigation-font-family: $body-font-family;
+$navigation-font-size: map-get($font-sizes, '400');
+$navigation-font-weight: $body-font-weight;
+$navigation-text-transform: uppercase;
+$navigation-color: $body-text-color;
+$navigation-border: $border-width-1 solid transparent;
+$navigation-border-color-hover: map-get($colors, primary, '400');
+$navigation-padding: 0 .8rem;
+$navigation-gap: 2.5rem;
+$navigation-link-text-decoration: none;
 
 // // site footer
 // $footer-background-color: $color-primary-300;
