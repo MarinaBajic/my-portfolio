@@ -78,14 +78,14 @@ $grid-column-width: 8.5rem;
 
 //navigation
 $navigation-font-family: $body-font-family;
-$navigation-font-size: map-get($font-sizes, '400');
+$navigation-font-size: map-get($font-sizes, '300');
 $navigation-font-weight: $body-font-weight;
 $navigation-text-transform: uppercase;
 $navigation-color: $body-text-color;
 $navigation-border: $border-width-1 solid transparent;
 $navigation-border-color-hover: map-get($colors, primary, '400');
 $navigation-padding: 0 .8rem;
-$navigation-gap: 2.5rem;
+$navigation-gap: 1.8rem;
 $navigation-link-text-decoration: none;
 
 // // site footer
