@@ -184,9 +184,21 @@ select {
   font-size: 2rem;
 }
 
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .header {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 5rem 12rem;
+  margin: 0;
+  background-color: transparent;
 }/*# sourceMappingURL=main.css.map */

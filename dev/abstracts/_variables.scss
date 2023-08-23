@@ -6,6 +6,10 @@ $color-background-default: map-get($colors, secondary, '400');
 // $color-text-interactive-default: $color-accent-400;
 // $color-text-interactive-hover: $color-accent-500;
 
+$outer-content-padding-vertical: 5rem;
+$outer-content-padding-horizontal: 12rem;
+$outer-content-padding: $outer-content-padding-vertical $outer-content-padding-horizontal;
+
 $border-radius-1: .2rem;
 $border-radius-2: 1rem;
 $border-width-1: .3rem; 
@@ -54,7 +58,7 @@ $grid-column-width: 8.5rem;
 
 // site header
 $header-background-color: transparent;
-$header-padding: 5rem 12rem;
+$header-padding: $outer-content-padding;
 $header-margin: 0;
 $header-jusitifcation-small-screens: center;
 $header-jusitifcation-large-screens: space-between;

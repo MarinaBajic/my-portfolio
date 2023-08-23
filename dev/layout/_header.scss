@@ -5,5 +5,10 @@
     flex-direction: row;
     align-items: $header-alignment;
     justify-content: $header-jusitifcation-large-screens;
-    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: $header-padding;
+    margin: $header-margin;
+    background-color: $header-background-color;
 }
