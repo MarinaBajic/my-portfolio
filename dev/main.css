@@ -76,7 +76,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
-.button {
+.btn {
   display: inline-flex;
   justify-content: center;
   cursor: pointer;
@@ -90,44 +90,44 @@ select {
   padding: 2rem 3rem;
   transition: 275ms ease;
 }
-.button[data-type=primary] {
+.btn[data-type=primary] {
   color: #004041;
   background-color: #CC9900;
   border: 0.3rem solid #CC9900;
   border-radius: 1rem;
 }
-.button[data-type=primary]:is(:hover, :focus) {
+.btn[data-type=primary]:is(:hover, :focus) {
   color: #046068;
   background-color: #E5B906;
   border-color: #E5B906;
 }
-.button[data-type=primary]:active {
+.btn[data-type=primary]:active {
   color: #037F80;
   background-color: #FFCB74;
   border-color: #FFCB74;
 }
-.button[data-type=secondary] {
+.btn[data-type=secondary] {
   color: #CC9900;
   background-color: transparent;
   border: 0.3rem solid #CC9900;
   border-radius: 1rem;
 }
-.button[data-type=secondary]:is(:hover, :focus) {
+.btn[data-type=secondary]:is(:hover, :focus) {
   color: #E5B906;
   border-color: #E5B906;
 }
-.button[data-type=secondary]:active {
+.btn[data-type=secondary]:active {
   color: #FFCB74;
   border-color: #FFCB74;
 }
-.button[data-type=tertiary] {
+.btn[data-type=tertiary] {
   color: #CC9900;
   background-color: transparent;
 }
-.button[data-type=tertiary]:is(:hover, :focus) {
+.btn[data-type=tertiary]:is(:hover, :focus) {
   color: #E5B906;
 }
-.button[data-type=tertiary]:active {
+.btn[data-type=tertiary]:active {
   color: #FFCB74;
 }
 
