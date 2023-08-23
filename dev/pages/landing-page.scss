@@ -25,8 +25,7 @@ body {
 }
 
 .socials_right-bottom {
-    padding-bottom: $outer-content-padding-block;
-    padding-right: $outer-content-padding-inline;
+    padding: $outer-content-padding-block $outer-content-padding-inline;
     position: fixed;
     right: 0;
     bottom: 0;

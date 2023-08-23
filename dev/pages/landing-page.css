@@ -24,8 +24,7 @@ body {
 }
 
 .socials_right-bottom {
-  padding-bottom: clamp(1rem, 4vw, 5rem);
-  padding-right: clamp(5rem, 5vw, 12rem);
+  padding: clamp(1rem, 4vw, 5rem) clamp(1rem, 5vw, 12rem);
   position: fixed;
   right: 0;
   bottom: 0;
