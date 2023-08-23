@@ -6,7 +6,7 @@ body {
   background-attachment: fixed;
 }
 
-.section_hero {
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,12 +15,6 @@ body {
 
 .main-headings {
   text-align: center;
-}
-
-.cta-btns {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
 }
 
 .socials_right-bottom {

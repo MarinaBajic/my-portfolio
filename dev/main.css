@@ -131,6 +131,12 @@ select {
   color: #FFCB74;
 }
 
+.btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
 .nav_vertical {
   list-style: none;
   font-family: "Montserrat", Helvetica, Verdana, sans-serif;
