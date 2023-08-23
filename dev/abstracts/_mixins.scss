@@ -21,7 +21,7 @@
     }
     // use the custom value if the breakpoint is not part of the pre-defined list
     @else {
-        @if $direction ==min {
+        @if $direction == min {
             @media (min-width: $breakpoint) {
                 @content;
             }
@@ -32,4 +32,12 @@
             }
         }
     }
+}
+
+@mixin flex-box($gap, $direction: row, $justification: space-between, $alignment: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justification;
+    align-items: $alignment;
+    gap: $gap;
 }
