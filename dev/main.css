@@ -203,7 +203,10 @@ select {
   margin: 0;
 }
 
-.section {
+.section-container {
   max-width: 93rem;
-  margin: clamp(8rem, 10vw, 20rem) auto;
+  margin: clamp(8rem, 10vw, 24rem) auto;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 20vw, 36rem);
 }/*# sourceMappingURL=main.css.map */

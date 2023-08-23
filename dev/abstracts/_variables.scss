@@ -45,7 +45,8 @@ $grid-gap: 2rem;
 $grid-column-width: 8.5rem;
 
 $section-max-width: 93rem;
-$section-margin-block: clamp(8rem, 10vw, 20rem);
+$section-margin-block: clamp(8rem, 10vw, 24rem);
+$section-gap: clamp(2rem, 20vw, 36rem); 
 
 // fixed header and socials
 $outer-content-padding-block: clamp(1rem, 4vw, 5rem);

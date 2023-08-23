@@ -1,6 +1,12 @@
 @use '../abstracts/variables' as *;
 
-.section {
+.section-container {
     max-width: $section-max-width;
     margin: $section-margin-block auto;
+    display: flex;
+    flex-direction: column;
+    gap: $section-gap;
+}
+
+.section {
 }
