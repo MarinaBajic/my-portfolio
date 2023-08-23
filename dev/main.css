@@ -197,8 +197,13 @@ select {
   justify-content: space-between;
   position: fixed;
   top: 0;
-  width: 100%;
-  padding: 5rem 12rem;
-  margin: 0;
   background-color: transparent;
+  width: 100vw;
+  padding: clamp(1rem, 4vw, 5rem) clamp(5rem, 5vw, 12rem);
+  margin: 0;
+}
+
+.section {
+  max-width: 93rem;
+  margin: clamp(8rem, 10vw, 20rem) auto;
 }/*# sourceMappingURL=main.css.map */

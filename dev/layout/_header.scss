@@ -6,9 +6,9 @@
     align-items: $header-alignment;
     justify-content: $header-jusitifcation-large-screens;
     position: fixed;
-    top: 0;
-    width: 100%;
-    padding: $header-padding;
-    margin: $header-margin;
+    top: $header-top;
     background-color: $header-background-color;
+    width: $header-width;
+    padding: $header-padding-block $header-padding-inline;
+    margin: $header-margin;
 }

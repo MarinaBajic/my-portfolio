@@ -6,10 +6,6 @@ $color-background-default: map-get($colors, secondary, '400');
 // $color-text-interactive-default: $color-accent-400;
 // $color-text-interactive-hover: $color-accent-500;
 
-$outer-content-padding-vertical: 5rem;
-$outer-content-padding-horizontal: 12rem;
-$outer-content-padding: $outer-content-padding-vertical $outer-content-padding-horizontal;
-
 $border-radius-1: .2rem;
 $border-radius-2: 1rem;
 $border-width-1: .3rem; 
@@ -48,17 +44,20 @@ $heading-4-font-size: map-get($font-sizes, '400');
 $grid-gap: 2rem;
 $grid-column-width: 8.5rem;
 
-// $hero-padding-block: clamp(15rem, 15vh, 20rem);
-// $section-padding-block: clamp(5rem, 10vh, 6rem);
+$section-max-width: 93rem;
+$section-margin-block: clamp(8rem, 10vw, 20rem);
 
-// $container-min-margin-inline: $size-4;
-// $container-max-width: 64rem;
-// $container-max-width-narrow: 40rem;
-// $container-max-width-wide: 75rem;
+// fixed header and socials
+$outer-content-padding-block: clamp(1rem, 4vw, 5rem);
+$outer-content-padding-inline: clamp(5rem, 5vw, 12rem);
+$outer-content-padding: $outer-content-padding-block $outer-content-padding-inline;
 
 // site header
 $header-background-color: transparent;
-$header-padding: $outer-content-padding;
+$header-top: 0;
+$header-width: 100vw;
+$header-padding-block: $outer-content-padding-block;
+$header-padding-inline: $outer-content-padding-inline;
 $header-margin: 0;
 $header-jusitifcation-small-screens: center;
 $header-jusitifcation-large-screens: space-between;
