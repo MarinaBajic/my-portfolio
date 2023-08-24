@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use '../abstracts/mixins' as *;
 
 .btn {
     display: inline-flex;
@@ -66,7 +67,5 @@
 }
 
 .btn-wrapper {
-    display: flex;
-    flex-direction: row;
-    gap: $btn-gap;
+    @include flex-box($btn-gap);
 }

@@ -116,6 +116,9 @@ $button-tertiary-color-hover: map-get($colors, primary, '300');
 $button-tertiary-color-active: map-get($colors, primary, '200');
 $button-tertiary-background: transparent;
 
+// modules
+$text-module-gap-1: 2rem;
+$text-module-gap-2: 5rem;
 
 // // cards
 // $card-flow-spacing: $size-2;

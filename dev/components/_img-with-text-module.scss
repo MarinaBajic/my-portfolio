@@ -1,0 +1,18 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.image-with-text-module {
+    @include flex-box(0);
+
+    & > * {
+        flex: 1 1 0;
+    }
+
+    .text-module {
+        @include flex-box($text-module-gap-1, column);
+    }
+}
+
+.image-with-text-module_vertical {
+    @include flex-box($text-module-gap-2, column);
+}

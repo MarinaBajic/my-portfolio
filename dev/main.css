@@ -134,6 +134,8 @@ select {
 .btn-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -194,6 +196,32 @@ select {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.image-with-text-module {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+.image-with-text-module > * {
+  flex: 1 1 0;
+}
+.image-with-text-module .text-module {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.image-with-text-module_vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
 }
 
 .header {
