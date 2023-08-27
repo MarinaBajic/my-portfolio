@@ -4,14 +4,34 @@
 .contact-card {
     color: $card-color-default;
 
+    width: $card-width;
+    height: $card-height;
+
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 9rem;
     row-gap: 7rem;
 
+
     .contact-card__text {
         grid-column: 1 / span 2;
         justify-self: end;
+        align-self: flex-end;
+    }
+
+    &:hover {
+        display: flex;
+        gap: 0;
+
+        img {
+            width: 11rem;
+            height: 11rem;
+            margin: auto;
+        }
+
+        p {
+            display: none;
+        }
     }
 }
 

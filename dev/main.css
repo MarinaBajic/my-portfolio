@@ -251,6 +251,8 @@ select {
 
 .contact-card {
   color: #CC9900;
+  width: 48rem;
+  height: 20rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
   -moz-column-gap: 9rem;
@@ -260,6 +262,19 @@ select {
 .contact-card .contact-card__text {
   grid-column: 1/span 2;
   justify-self: end;
+  align-self: flex-end;
+}
+.contact-card:hover {
+  display: flex;
+  gap: 0;
+}
+.contact-card:hover img {
+  width: 11rem;
+  height: 11rem;
+  margin: auto;
+}
+.contact-card:hover p {
+  display: none;
 }
 
 .contact-card__signature {
