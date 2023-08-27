@@ -1,0 +1,8 @@
+@use '../abstracts/variables' as *;
+
+.grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: $grid-gap;
+    width: 100%;
+}
