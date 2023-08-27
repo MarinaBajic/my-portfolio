@@ -14,9 +14,10 @@ body {
     font-weight: $body-font-weight;
 }
 
-// a {
-//     color: $link-color;
-// }
+a {
+    // color: $link-color;
+    text-decoration: $link-text-decoration;
+}
 
 // a:is(:hover, :focus) {
 //     color: $link-color-hover;
