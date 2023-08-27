@@ -9,6 +9,7 @@ $color-background-default: map-get($colors, secondary, '400');
 $border-radius-1: .2rem;
 $border-radius-2: 1rem;
 $border-width-1: .3rem; 
+$border-width-2: .2rem;
 
 $box-shadow-1: 0px 30px 45px 0px rgba(22, 22, 22, 0.10);
 
@@ -36,9 +37,16 @@ $heading-line-height: 1.1;
 $heading-text-transform: uppercase;
 
 $heading-1-font-size: map-get($font-sizes, '900');
-$heading-2-font-size: map-get($font-sizes, '800');
+$heading-2-font-size: map-get($font-sizes, '700');
 $heading-3-font-size: map-get($font-sizes, '500');
 $heading-4-font-size: map-get($font-sizes, '400');
+
+// signature
+$signature-font-family: $cursive;
+$signature-font-size: map-get($font-sizes, '800');
+$signature-color-default: $body-text-color;
+$signature-color-2: $heading-color-1;
+$signature-text-transform: capitalize;
 
 // layout
 $btn-gap: 2rem;
@@ -120,17 +128,16 @@ $button-tertiary-background: transparent;
 $text-module-gap-1: 2rem;
 $text-module-gap-2: 5rem;
 
-// // cards
-// $card-flow-spacing: $size-2;
-// $card-padding: $size-8;
-// $card-shadow: $box-shadow-1;
-// $card-border-radius: $border-radius-2;
-// $card-background-default: $color-primary-100;
-// $card-color-default: $body-text-color;
-// $card-font-family: $body-font-family;
-// $card-line-height: 1.25;
-// $card-heading-color-default-default: $card-color-default;
-// $card-heading-font-size: $font-size-600;
+// cards
+$card-background-default: map-get($colors, secondary, '300');
+$card-font-family: $body-font-family;
+$card-color-default: $heading-color-1;
+$card-text-font-size: map-get($font-sizes, '200');
+$card-border-radius: $border-radius-1;
+$card-inner-border: $border-width-2 solid $card-color-default;
+$card-shadow: $box-shadow-1;
+$card-padding-outer: 2rem;
+$card-padding-inner: 4rem;
 
 // // forms
 // $form-label-color: $body-text-color;

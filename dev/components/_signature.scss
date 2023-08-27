@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as *;
+
+.signature {
+    font-family: $signature-font-family;
+    font-size: $signature-font-size;
+    color: $signature-color-default;
+    text-transform: $signature-text-transform;
+}
+
+.signature_accent {
+    color: $signature-color-2;
+}

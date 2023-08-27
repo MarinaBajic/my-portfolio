@@ -1,0 +1,20 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.contact-card {
+    color: $card-color-default;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 9rem;
+    row-gap: 7rem;
+
+    .contact-card__text {
+        grid-column: 1 / span 2;
+        justify-self: end;
+    }
+}
+
+.contact-card__signature {
+    @include flex-box(0, column, center, flex-end);
+}
