@@ -3,6 +3,7 @@
 .grid-3-col {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    gap: $grid-gap;
+    gap: $text-gap-2;
     width: 100%;
+    align-items: flex-start;
 }

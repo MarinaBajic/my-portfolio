@@ -1,0 +1,32 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.image-with-text-module {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: $grid-gap-2;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-with-text-module_vertical {
+    @include flex-box($grid-gap-1, column);
+}
+
+.image-wrapper {}
+
+.text-module-wrapper {
+    @include flex-box($grid-gap-1, column);
+}
+
+.text-module {
+    @include flex-box($text-gap-2, column);
+}
+
+.text-module__desc {
+    @include flex-box($text-gap-1, column, center, flex-start);
+}
+
+.text-module__accent-text {
+    @include flex-box($text-gap-1)
+}

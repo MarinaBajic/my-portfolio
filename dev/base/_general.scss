@@ -9,9 +9,14 @@ body {
     background-color: $body-background-color;
 }
 
+.text-hero {
+    font-size: $text-hero-font-size;
+    font-weight: $body-font-weight;
+}
+
 .text-accent {
     font-size: $text-accent-font-size;
-    font-weight: $body-font-weight;
+    color: $text-accent-color;
 }
 
 a {

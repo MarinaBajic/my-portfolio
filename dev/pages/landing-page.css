@@ -18,6 +18,47 @@ body {
   text-align: center;
 }
 
+.contact-card {
+  color: #CC9900;
+  display: flex;
+  width: 40rem;
+  height: 17rem;
+}
+.contact-card img {
+  width: 11rem;
+  height: 11rem;
+  margin: auto;
+}
+.contact-card p {
+  display: none;
+}
+.contact-card:hover {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  -moz-column-gap: 9rem;
+       column-gap: 9rem;
+  row-gap: 7rem;
+}
+.contact-card:hover .contact-card__text {
+  grid-column: 1/span 2;
+  justify-self: end;
+  align-self: flex-end;
+}
+.contact-card:hover img {
+  width: 7.3rem;
+  height: 7.6rem;
+}
+.contact-card:hover p {
+  display: block;
+}
+.contact-card .contact-card__signature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0;
+}
+
 .socials_right-bottom {
   padding: clamp(1rem, 4vw, 5rem) clamp(1rem, 5vw, 12rem);
   position: fixed;

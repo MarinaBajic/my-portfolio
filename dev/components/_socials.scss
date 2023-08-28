@@ -1,6 +1,5 @@
+@use '../abstracts/mixins' as *;
 
 .socials {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    @include flex-box(2rem, column);
 }

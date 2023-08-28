@@ -2,12 +2,15 @@
 @use "typography" as *;
 
 $color-text-default: map-get($colors, neutral, '100');
+$color-text-primary: map-get($colors, primary, '400');
+$color-text-secondary: map-get($colors, secondary, '100');
 $color-background-default: map-get($colors, secondary, '400');
 // $color-text-interactive-default: $color-accent-400;
 // $color-text-interactive-hover: $color-accent-500;
 
 $border-radius-1: .2rem;
 $border-radius-2: 1rem;
+
 $border-width-1: .3rem; 
 $border-width-2: .2rem;
 
@@ -19,11 +22,11 @@ $body-font-size: map-get($font-sizes, '200');
 $body-font-weight: map-get($font-weights, regular);
 $body-line-height: 1.5;
 $body-text-color: $color-text-default;
-$body-background-color: map-get($colors, secondary, '400');
+$body-background-color: $color-background-default;
 
-$text-accent-font-size: map-get($font-sizes, '600');
-$text-module-accent-font-size: map-get($font-sizes, '400');
-$text-module-accent-color: map-get($colors, primary, '400');
+$text-hero-font-size: map-get($font-sizes, '600');
+$text-accent-font-size: map-get($font-sizes, '400');
+$text-accent-color: $color-text-primary;
 
 // $link-color: $color-text-interactive-default;
 // $link-color-hover: $color-text-interactive-hover;
@@ -32,8 +35,8 @@ $link-text-decoration: none;
 // headings
 $heading-font-family-1: $serif;
 $heading-font-family-2: $sans-serif;
-$heading-color-1: map-get($colors, primary, '400');
-$heading-color-2: map-get($colors, secondary, '100');
+$heading-color-1: $color-text-primary;
+$heading-color-2: $color-text-secondary;
 $heading-font-weight-1: map-get($font-weights, regular);
 $heading-font-weight-2: map-get($font-weights, bold);
 $heading-line-height: 1.1;
@@ -47,15 +50,18 @@ $heading-4-font-size: map-get($font-sizes, '400');
 // signature
 $signature-font-family: $cursive;
 $signature-font-size: map-get($font-sizes, '800');
-$signature-color-default: $body-text-color;
+$signature-color-1: $body-text-color;
 $signature-color-2: $heading-color-1;
 $signature-text-transform: capitalize;
 
 // layout
 $btn-gap: 2rem;
 
-$grid-gap: 2rem;
-$grid-column-width: 8.5rem;
+$grid-gap-1: 5rem;
+$grid-gap-2: 10rem;
+
+$text-gap-1: 1.2rem;
+$text-gap-2: 2.4rem;
 
 $section-max-width: 93rem;
 $section-margin-block: clamp(8rem, 10vw, 24rem);
@@ -73,8 +79,7 @@ $header-width: 100vw;
 $header-padding-block: $outer-content-padding-block;
 $header-padding-inline: $outer-content-padding-inline;
 $header-margin: 0;
-$header-jusitifcation-small-screens: center;
-$header-jusitifcation-large-screens: space-between;
+$header-jusitifcation: space-between;
 $header-alignment: flex-start;
 
 //navigation
@@ -102,47 +107,37 @@ $button-font-family: $body-font-family;
 $button-font-size: map-get($font-sizes, '300');
 $button-font-weight: map-get($font-weights, bold);
 $button-text-transform: uppercase;
-// $button-clip-path: polygon(8% 0, 92% 0, 100% 50%, 92% 100%, 8% 100%, 0% 50%);
-// $button-width: 20rem;
 $button-padding: 2rem 3rem;
-$button-border: $border-width-1 solid map-get($colors, primary, '400');
+$button-border: $border-width-1 solid $heading-color-1;
 $button-border-color-hover: map-get($colors, primary, '300');
 $button-border-color-active: map-get($colors, primary, '200');
 $button-border-radius: $border-radius-2;
 
-$button-primary-color: map-get($colors, secondary, '400');
+$button-primary-color: $body-background-color;
 $button-primary-color-hover: map-get($colors, secondary, '300');
 $button-primary-color-active: map-get($colors, secondary, '200');
-$button-primary-background: map-get($colors, primary, '400');
+$button-primary-background: $heading-color-1;
 $button-primary-background-hover: map-get($colors, primary, '300');
 $button-primary-background-active: map-get($colors, primary, '200');
 
-$button-secondary-color: map-get($colors, primary, '400');
+$button-secondary-color: $heading-color-1;
 $button-secondary-color-hover: map-get($colors, primary, '300');
 $button-secondary-color-active: map-get($colors, primary, '200');
 $button-secondary-background: transparent;
 
-$button-tertiary-color: map-get($colors, primary, '400');
+$button-tertiary-color: $heading-color-1;
 $button-tertiary-color-hover: map-get($colors, primary, '300');
 $button-tertiary-color-active: map-get($colors, primary, '200');
 $button-tertiary-background: transparent;
 
-// modules
-$text-module-gap-1: 2rem;
-$text-module-gap-2: 5rem;
-
 // cards
-$card-background-default: map-get($colors, secondary, '300');
+$card-background: map-get($colors, secondary, '300');
 $card-font-family: $body-font-family;
-$card-color-default: $heading-color-1;
-$card-text-font-size: map-get($font-sizes, '200');
 $card-border-radius: $border-radius-1;
-$card-inner-border: $border-width-2 solid $card-color-default;
+$card-inner-border: $border-width-2 solid $heading-color-1;
 $card-shadow: $box-shadow-1;
 $card-padding-outer: 2rem;
 $card-padding-inner: 4rem;
-$card-width: 48rem;
-$card-height: 20rem;
 
 // // forms
 // $form-label-color: $body-text-color;

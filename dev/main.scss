@@ -1,6 +1,5 @@
 @use 'abstracts/breakpoints';
 @use 'abstracts/colors';
-@use 'abstracts/functions';
 @use 'abstracts/mixins';
 @use 'abstracts/typography';
 @use 'abstracts/variables';
@@ -12,10 +11,9 @@
 @use 'components/navigation';
 @use 'components/headings';
 @use 'components/socials';
-@use 'components/img-with-text-module';
+@use 'components/image-with-text-module';
 @use 'components/signature';
 @use 'components/card';
-@use 'components/contact-card';
 
 @use 'layout/header';
 @use 'layout/sections';
