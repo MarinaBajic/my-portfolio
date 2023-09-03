@@ -14,17 +14,25 @@ const sass = require('gulp-sass')(require('sass'));
 
 gulp.task('taskCSS', async () => {
     return gulp.src([
-        './dev/variables/_breakpoints.scss',
-        './dev/variables/_colors.scss',
-        './dev/variables/_spacing.scss',
-        './dev/variables/_typography.scss',
-        './dev/variables/_buttons.scss',
-        './dev/base/base.scss',
-        './dev/header/header.scss',
-        './dev/footer/footer.scss',
-        './dev/main/text-modules.scss',
-        './dev/main/portfolio.scss',
-        './dev/main/faq.scss'
+        // './dev/abstracts/_breakpoints.scss',
+        // './dev/abstracts/_colors.scss',
+        // './dev/abstracts/_mixins.scss',
+        // './dev/abstracts/_typography.scss',
+        // './dev/abstracts/_variables.scss',
+        // './dev/base/_general.scss',
+        // './dev/base/_reset.scss',
+        // './dev/components/_buttons.scss',
+        // './dev/components/_card.scss',
+        // './dev/components/_headings.scss',
+        // './dev/components/_image-with-text-module.scss',
+        // './dev/components/_navigation.scss',
+        // './dev/components/_signature.scss',
+        // './dev/components/_socials.scss',
+        // './dev/layout/_grid.scss',
+        // './dev/layout/_header.scss',
+        // './dev/layout/_sections.scss',
+        // './dev/pages/landing-page.scss'
+        './dev/main.scss'
     ])
         .pipe(concat('dist.main.scss'))
         .pipe(sass().on('error', sass.logError))
