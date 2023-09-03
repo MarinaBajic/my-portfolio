@@ -1,0 +1,22 @@
+{
+  "name": "marina-portfolio",
+  "version": "1.0.0",
+  "description": "Marina Bajic portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarinaBajic/MarinaBajic.github.io.git"
+  },
+  "author": "Marina Bajic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarinaBajic/MarinaBajic.github.io/issues"
+  },
+  "homepage": "https://github.com/MarinaBajic/MarinaBajic.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
