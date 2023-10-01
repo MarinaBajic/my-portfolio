@@ -7,6 +7,7 @@
     font-weight: $navigation-font-weight;
     text-transform: $navigation-text-transform;
     display: flex;
+	flex-direction: column;
     gap: $navigation-gap;
 
     .nav__item {
@@ -19,8 +20,4 @@
             border-bottom-color: $navigation-border-color-hover;
         }
     }
-}
-
-.nav_vertical {
-    flex-direction: column;
 }

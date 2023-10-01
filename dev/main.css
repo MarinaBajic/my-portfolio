@@ -166,7 +166,7 @@ select {
   border-bottom-color: #CC9900;
 }
 
-.nav_vertical {
+.nav--vertical {
   flex-direction: column;
 }
 
