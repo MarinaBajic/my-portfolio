@@ -1,0 +1,30 @@
+@font-face {
+	font-family: "iconfont";
+	src: url("../assets/fonts/iconfont.eot?f009a1685aaeca7a0c51596a156eb10f?#iefix") format("embedded-opentype"),
+url("../assets/fonts/iconfont.woff2?f009a1685aaeca7a0c51596a156eb10f") format("woff2"),
+url("../assets/fonts/iconfont.woff?f009a1685aaeca7a0c51596a156eb10f") format("woff");
+}
+
+.icon {
+	line-height: 1;
+}
+
+.icon:before {
+	font-family: iconfont !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.icon-dot:before {
+	content: "\f101";
+}
+.icon-email:before {
+	content: "\f102";
+}
+.icon-github:before {
+	content: "\f103";
+}
+.icon-linkedin:before {
+	content: "\f104";
+}

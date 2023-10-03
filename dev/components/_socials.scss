@@ -1,5 +1,0 @@
-@use '../abstracts/mixins' as *;
-
-.socials {
-    @include flex-box(2rem, column);
-}

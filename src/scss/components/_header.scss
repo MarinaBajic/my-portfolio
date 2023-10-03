@@ -1,0 +1,41 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+
+.header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: -1;
+}
+
+.heading__content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__logo {
+	height: 5rem;
+	width: 5rem;
+}
+
+.nav__list {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 1.8rem;
+
+	.nav__item {
+		font-size: 1.8rem;
+
+		a {
+			text-decoration: none;
+			color: $white;
+			line-height: normal;
+		}
+
+		@include hover-focus {
+			box-shadow: 0 -2px 0 $gold inset;
+		}
+	}
+}

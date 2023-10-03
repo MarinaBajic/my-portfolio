@@ -1,10 +1,13 @@
 {
-  "name": "marina-portfolio",
+  "name": "marinabajic.github.io",
   "version": "1.0.0",
-  "description": "Marina Bajic portfolio",
-  "main": "index.js",
+  "description": "My portfolio",
+  "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode development",
+    "prod": "webpack --mode production",
+    "watch": "webpack --watch --mode development"
   },
   "repository": {
     "type": "git",
@@ -17,11 +20,21 @@
   },
   "homepage": "https://github.com/MarinaBajic/MarinaBajic.github.io#readme",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-sass": "^5.1.0",
-    "sass": "^1.66.1"
+    "autoprefixer": "^10.4.16",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss": "^8.4.31",
+    "postcss-loader": "^7.3.3",
+    "sass": "^1.68.0",
+    "sass-loader": "^13.3.2",
+    "stylelint": "^15.10.3",
+    "stylelint-webpack-plugin": "^4.1.1",
+    "webfonts-generator": "^0.4.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "stylelint-scss": "^5.2.1"
   }
 }

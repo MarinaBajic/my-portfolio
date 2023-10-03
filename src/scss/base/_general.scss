@@ -1,0 +1,48 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+
+body {
+	color: $white;
+	background-color: $teal-dark;
+}
+
+.link {
+	color: $gold;
+
+	@include hover-focus {
+		color: $teal-lighter;
+	}
+}
+
+.wrapper {
+	&.wrapper--outer {
+		padding: 50px 120px;
+	}
+
+	&.wrapper--inner {
+		max-width: 1000px;
+		width: 100%;
+		margin-inline: auto;
+	}
+
+	@include breakpoint('md', max) {
+		&.wrapper--outer {
+			padding: 20px 25px;
+		}
+
+		&.wrapper--inner {
+			padding-inline: 25px;
+		}
+	}
+
+	@include breakpoint('sm', max) {
+		&.wrapper--outer {
+			padding: 10px 20px;
+		}
+
+		&.wrapper--inner {
+			padding-inline: 20px;
+		}
+	}
+}
+

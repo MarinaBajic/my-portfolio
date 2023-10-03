@@ -1,0 +1,44 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+
+.btn {
+	cursor: pointer;
+	text-decoration: none;
+	height: 6rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1rem;
+	padding: 2rem 3rem;
+
+	&.btn--primary {
+		color: $teal-dark;
+		background-color: $gold;
+
+		@include hover-focus {
+			background-color: $gold-light;
+		}
+	}
+
+	&.btn--secondary {
+		color: $gold;
+		background-color: $teal-dark;
+		border: 3px solid $gold;
+
+		@include hover-focus {
+			color: $teal-dark;
+			background-color: $gold;
+		}
+	}
+
+	&.btn--tertiary {
+		height: fit-content;
+		color: $gold;
+		background-color: transparent;
+		padding: 1rem;
+
+		@include hover-focus {
+			color: $gold-light;
+		}
+	}
+}

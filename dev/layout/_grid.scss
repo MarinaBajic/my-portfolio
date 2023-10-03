@@ -1,9 +1,0 @@
-@use '../abstracts/variables' as *;
-
-.grid-3-col {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: $text-gap-2;
-    width: 100%;
-    align-items: flex-start;
-}

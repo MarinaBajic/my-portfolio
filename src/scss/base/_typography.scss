@@ -1,0 +1,66 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+
+$sans-serif: 'Montserrat', Helvetica, Verdana, sans-serif;
+$serif: 'Cinzel', Georgia, 'Times New Roman', serif;
+$cursive: 'Corinthia', cursive;
+
+$font-sizes: (
+	'900': 15rem,
+	'800': 4.8rem,
+	'700': 3.6rem,
+	'600': 2.8rem,
+	'500': 2.4rem,
+	'400': 2rem,
+	'300': 1.8rem,
+	'200': 1.6rem,
+	'100': 1.4rem,
+);
+
+body {
+	font-family: $sans-serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+.heading {
+	line-height: 1.1;
+
+	&.heading--primary {
+		font-family: $serif;
+		font-weight: 400;
+		color: $gold;
+	}
+
+	&.heading--secondary {
+		color: $teal-lighter;
+	}
+}
+
+h1,
+.h1 {
+	font-size: 15rem;
+	text-align: center;
+}
+
+h2,
+.h2 {
+	font-size: 3.6rem;
+}
+
+h3,
+.h3 {
+	font-size: 2.4rem;
+}
+
+h4,
+.h4 {
+	font-size: 2rem;
+}
+
+.btn {
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: 1;
+}

@@ -1,0 +1,30 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+
+.footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: -1;
+}
+
+.footer__socials {
+	width: fit-content;
+	margin-left: auto;
+}
+
+.socials {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+
+.socials__icon {
+	text-decoration: none;
+
+	.icon {
+		font-size: 3rem;
+		color: $teal-light;
+	}
+}
