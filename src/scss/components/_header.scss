@@ -1,16 +1,42 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/mixins' as *;
+@use '../base/general' as *;
 
 .header {
-	width: 100%;
 	position: fixed;
-	top: 0;
-	z-index: -1;
-}
+	top: $wrapper-block-lg;
 
-.heading__content {
-	display: flex;
-	justify-content: space-between;
+	&.header--left {
+		left: $wrapper-inline-lg;
+	}
+
+	&.header--right {
+		right: $wrapper-inline-lg;
+	}
+
+	@include breakpoint('md', max) {
+		top: $wrapper-block-md;
+
+		&.header--left {
+			left: $wrapper-inline-md;
+		}
+
+		&.header--right {
+			right: $wrapper-inline-md;
+		}
+	}
+
+	@include breakpoint('sm', max) {
+		top: $wrapper-block-sm;
+
+		&.header--left {
+			left: $wrapper-inline-sm;
+		}
+
+		&.header--right {
+			right: $wrapper-inline-sm;
+		}
+	}
 }
 
 .header__logo {

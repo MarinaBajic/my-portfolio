@@ -12,26 +12,25 @@
 
 <body>
 
-	<header class="header">
-		<div class="wrapper wrapper--outer">
-			<div class="heading__content">
-				<a href="#" class="header__logo" title="Marina Bajic">
-					<img src="assets/svg/logo-light.svg" loading="lazy" alt="Marina Bajic Logo Light">
-				</a>
-				<nav class="header__nav nav">
-					<ul class="nav__list">
-						<li class="nav__item"><a href="#projects">PROJECTS</a></li>
-						<li class="nav__item"><a href="#about">ABOUT</a></li>
-						<li class="nav__item"><a href="#contact">CONTACT</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
+	<header class="header header--left">
+		<a href="#" class="header__logo" title="Marina Bajic">
+			<img src="assets/svg/logo-light.svg" loading="lazy" alt="Marina Bajic Logo Light">
+		</a>
+	</header>
+	
+	<header class="header header--right">
+		<nav class="header__nav nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="#work">PROJECTS</a></li>
+				<li class="nav__item"><a href="#about">ABOUT</a></li>
+				<li class="nav__item"><a href="#contact">CONTACT</a></li>
+			</ul>
+		</nav>
 	</header>
 
 	<main class="main">
 		<section id="hero" class="hero">
-			<div class="wrapper wrapper--inner">
+			<div class="wrapper">
 				<div class="hero__content">
 					<div class="hero__banner banner">
 						<span class="banner__subheading">Hello, I am Marina, a</span>
@@ -40,15 +39,15 @@
 							sites.</span>
 					</div>
 					<div class="hero__btns">
-						<a class="btn btn--primary" href="#projects">See my work</a>
-						<a class="btn btn--secondary" href="#about-me">About me</a>
+						<a class="btn btn--primary" href="#work">See my work</a>
+						<a class="btn btn--secondary" href="#about">About me</a>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section id="projects" class="work">
-			<div class="wrapper wrapper--inner">
+		<section id="work" class="work">
+			<div class="wrapper">
 				<h3 class="heading heading--secondary h3 work__heading">PROJECTS</h3>
 				<div class="work__content">
 					<div class="work__project project">
@@ -81,8 +80,8 @@
 			</div>
 		</section>
 
-		<section id="about-me" class="about">
-			<div class="wrapper wrapper--inner">
+		<section id="about" class="about">
+			<div class="wrapper">
 				<h3 class="heading heading--secondary h3 about__header">ABOUT ME</h3>
 				<div class="about__content">
 					<div class="about__img">
@@ -128,7 +127,7 @@
 		</section>
 
 		<section id="contact" class="contact">
-			<div class="wrapper wrapper--inner">
+			<div class="wrapper">
 				<h3 class="heading heading--secondary h3 contact__heading">CONTACT</h3>
 				<div class="contact__content">
 					<h2 class="heading heading--primary h2">How can I help?</h2>
@@ -149,18 +148,16 @@
 	</main>
 
 	<footer class="footer">
-		<div class="wrapper wrapper--outer">
-			<div class="footer__socials socials">
-				<a class="socials__icon" href="https://www.linkedin.com/in/marina-bajic/" target="_blank">
-					<i class="icon icon-linkedin"></i>
-				</a>
-				<a class="socials__icon" href="https://github.com/MarinaBajic" target="_blank">
-					<i class="icon icon-github"></i>
-				</a>
-				<a class="socials__icon" href="mailto:marinabajic10@gmail.com">
-					<i class="icon icon-email"></i>
-				</a>
-			</div>
+		<div class="footer__socials socials">
+			<a class="socials__icon" href="https://www.linkedin.com/in/marina-bajic/" target="_blank">
+				<i class="icon icon-linkedin"></i>
+			</a>
+			<a class="socials__icon" href="https://github.com/MarinaBajic" target="_blank">
+				<i class="icon icon-github"></i>
+			</a>
+			<a class="socials__icon" href="mailto:marinabajic10@gmail.com">
+				<i class="icon icon-email"></i>
+			</a>
 		</div>
 	</footer>
 

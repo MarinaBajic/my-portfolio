@@ -1,16 +1,21 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/mixins' as *;
+@use '../base/general' as *;
 
 .footer {
-	width: 100%;
 	position: fixed;
-	bottom: 0;
-	z-index: -1;
-}
+	right: $wrapper-inline-lg;
+	bottom: $wrapper-block-lg;
 
-.footer__socials {
-	width: fit-content;
-	margin-left: auto;
+	@include breakpoint('md', max) {
+		right: $wrapper-inline-md;
+		bottom: $wrapper-block-md;
+	}
+
+	@include breakpoint('sm', max) {
+		right: $wrapper-inline-sm;
+		bottom: $wrapper-block-sm;
+	}
 }
 
 .socials {

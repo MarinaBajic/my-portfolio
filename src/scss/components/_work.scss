@@ -2,7 +2,7 @@
 @use '../abstracts/mixins' as *;
 
 .work {
-	padding-block: 15rem;
+	padding-block: calc((100dvh - 45.5rem) / 2);
 }
 
 .work__heading {
@@ -49,7 +49,7 @@
 	align-items: center;
 	gap: 1rem;
 
-	.tools__name {
+	.tools__item {
 		font-size: 1.8rem;
 		font-weight: 700;
 		color: $teal-lighter;

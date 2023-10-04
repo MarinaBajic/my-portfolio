@@ -1,6 +1,14 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/mixins' as *;
 
+$wrapper-block-lg: 50px;
+$wrapper-block-md: 20px;
+$wrapper-block-sm: 10px;
+
+$wrapper-inline-lg: 120px;
+$wrapper-inline-md: 25px;
+$wrapper-inline-sm: 20px;
+
 body {
 	color: $white;
 	background-color: $teal-dark;
@@ -15,34 +23,15 @@ body {
 }
 
 .wrapper {
-	&.wrapper--outer {
-		padding: 50px 120px;
-	}
-
-	&.wrapper--inner {
-		max-width: 1000px;
-		width: 100%;
-		margin-inline: auto;
-	}
+	max-width: 1000px;
+	width: 100%;
+	margin-inline: auto;
 
 	@include breakpoint('md', max) {
-		&.wrapper--outer {
-			padding: 20px 25px;
-		}
-
-		&.wrapper--inner {
-			padding-inline: 25px;
-		}
+		padding-inline: 25px;
 	}
 
 	@include breakpoint('sm', max) {
-		&.wrapper--outer {
-			padding: 10px 20px;
-		}
-
-		&.wrapper--inner {
-			padding-inline: 20px;
-		}
+		padding-inline: 20px;
 	}
 }
-

@@ -3,7 +3,7 @@
 @use '../base/typography' as *;
 
 .contact {
-	padding-block: 15rem;
+	padding-block: calc((100dvh - 46rem) / 2);
 }
 
 .contact__heading {

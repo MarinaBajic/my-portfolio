@@ -2,7 +2,7 @@
 @use '../abstracts/mixins' as *;
 
 .about {
-	padding-block: 15rem;
+	padding-block: calc((100dvh - 51rem) / 2);
 }
 
 .about__heading {

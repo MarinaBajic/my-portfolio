@@ -2,7 +2,7 @@
 @use '../abstracts/mixins' as *;
 
 .hero {
-	padding-block: 15rem;
+	padding-block: calc((100dvh - 55.5rem) / 2);
 }
 
 .hero__content {
