@@ -1,5 +1,6 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/mixins' as *;
+@use '../base/typography' as *;
 
 .contact {
 	padding-block: 15rem;
@@ -20,14 +21,36 @@
 }
 
 .card {
-	background-color: $teal-light;
+	background-color: $teal;
 	padding: 2rem;
 
 	.card__content {
 		display: grid;
+		grid-template-columns: 7.5rem auto;
 		height: 24rem;
 		width: 44rem;
 		border: 2px solid $gold;
 		padding: 3.5rem 4rem;
+		text-decoration: none;
+		color: $gold;
+	}
+
+	.card__email {
+		grid-column-start: 2;
+		align-self: flex-end;
+		justify-self: flex-end;
+	}
+}
+
+.signature {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	white-space: nowrap;
+
+	.signature__name {
+		font-family: $cursive;
+		font-size: 4.8rem;
+		line-height: normal;
 	}
 }
