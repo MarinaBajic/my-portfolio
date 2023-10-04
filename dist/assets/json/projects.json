@@ -1,0 +1,38 @@
+[
+	{
+		"id": "project-1",
+		"src": "assets/images/download.png",
+		"heading": "Ergela Marina",
+		"desc": [
+			"Ergela Marina is a CRUD web application with a database that helps to manage a horse ranch.",
+			"It provides an user friendly interface for managing horse and rider information. Other than that it allows riders to make an appointment for riding."
+		],
+		"used-tech": [
+			"Angular",
+			"SCSS",
+			"Spring Boot",
+			"MySQL"
+		],
+		"live-demo": true,
+		"source-code": true,
+		"figma": false
+	},
+	{
+		"id": "project-2",
+		"src": "assets/images/download.png",
+		"heading": "Ergela Marina",
+		"desc": [
+			"Ergela Marina is a CRUD web application with a database that helps to manage a horse ranch.",
+			"It provides an user friendly interface for managing horse and rider information. Other than that it allows riders to make an appointment for riding."
+		],
+		"used-tech": [
+			"Angular",
+			"SCSS",
+			"Spring Boot",
+			"MySQL"
+		],
+		"live-demo": true,
+		"source-code": true,
+		"figma": false
+	}
+]
