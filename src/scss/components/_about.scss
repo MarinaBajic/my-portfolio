@@ -5,21 +5,26 @@
 	padding-block: 15rem;
 }
 
-.about__content {
-	display: flex;
-	flex-direction: column;
-	gap: 4rem;
+.about__heading {
+	margin-bottom: 2rem;
 }
 
-.about__module {
+.about__content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 5rem;
 
 	.about__img {
+		width: 36.8rem;
+		height: 48.1rem;
 		background-color: $teal-light;
+		box-shadow: 0 30px 45px 0 rgba(22, 22, 22, 0.1);
 		padding: 1.7rem;
+
+		img {
+			border: 3px solid $gold;
+		}
 	}
 
 	.about__summary {

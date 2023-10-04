@@ -1,0 +1,33 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+
+.contact {
+	padding-block: 15rem;
+}
+
+.contact__heading {
+	margin-bottom: 4rem;
+}
+
+.contact__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact__card {
+	margin-top: 5rem;
+}
+
+.card {
+	background-color: $teal-light;
+	padding: 2rem;
+
+	.card__content {
+		display: grid;
+		height: 24rem;
+		width: 44rem;
+		border: 2px solid $gold;
+		padding: 3.5rem 4rem;
+	}
+}
