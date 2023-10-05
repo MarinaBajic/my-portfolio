@@ -147,12 +147,12 @@ body {
 }
 @media screen and (max-width: 1023px) {
   .wrapper {
-    padding-inline: 25px;
+    margin-inline: 25px;
   }
 }
 @media screen and (max-width: 767px) {
   .wrapper {
-    padding-inline: 20px;
+    margin-inline: 20px;
   }
 }
 
@@ -177,8 +177,20 @@ body {
 
 h1,
 .h1 {
-  font-size: 15rem;
+  font-size: 13rem;
   text-align: center;
+}
+@media screen and (max-width: 1023px) {
+  h1,
+  .h1 {
+    font-size: 10rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  h1,
+  .h1 {
+    font-size: 5.5rem;
+  }
 }
 
 h2,
@@ -201,6 +213,11 @@ h4,
   font-weight: 700;
   line-height: 1;
 }
+@media screen and (max-width: 767px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
 
 .btn {
   cursor: pointer;
@@ -210,7 +227,7 @@ h4,
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
-  padding: 2rem 3rem;
+  padding-inline: 3rem;
 }
 .btn.btn--primary {
   color: #004041;
@@ -254,16 +271,22 @@ h4,
 .btn.btn--tertiary:focus {
   color: #e5b906;
 }
+@media screen and (max-width: 767px) {
+  .btn {
+    height: 5rem;
+    padding-inline: 1.5rem;
+  }
+}
 
 .header {
   position: fixed;
   top: 50px;
 }
 .header.header--left {
-  left: 120px;
+  left: max(25px, (100dvw - 1000px - 20rem) / 2);
 }
 .header.header--right {
-  right: 120px;
+  right: max(25px, (100dvw - 1000px - 20rem) / 2);
 }
 @media screen and (max-width: 1023px) {
   .header {
@@ -326,7 +349,7 @@ h4,
 
 .footer {
   position: fixed;
-  right: 120px;
+  right: max(25px, (100dvw - 1000px - 20rem) / 2);
   bottom: 50px;
 }
 @media screen and (max-width: 1023px) {
@@ -360,6 +383,16 @@ h4,
 .hero {
   padding-block: calc((100dvh - 55.5rem) / 2);
 }
+@media screen and (max-width: 1023px) {
+  .hero {
+    padding-block: 20rem 15rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    padding-block: 10rem 5rem;
+  }
+}
 
 .hero__content {
   display: flex;
@@ -368,6 +401,8 @@ h4,
 }
 
 .banner {
+  max-width: 90rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -375,7 +410,28 @@ h4,
 }
 .banner .banner__subheading {
   font-size: 2.8rem;
-  font-weight: 400;
+  text-align: center;
+}
+@media screen and (max-width: 1023px) {
+  .banner .banner__subheading {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner .banner__subheading {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .banner {
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner {
+    max-width: 35rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .hero__btns {
@@ -385,6 +441,16 @@ h4,
 
 .work {
   padding-block: calc((100dvh - 45.5rem) / 2);
+}
+@media screen and (max-width: 1023px) {
+  .work {
+    padding-block: 15rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .work {
+    padding-block: 5rem;
+  }
 }
 
 .work__heading {
@@ -453,8 +519,8 @@ h4,
   gap: 5rem;
 }
 .about__content .about__img {
-  width: 36.8rem;
-  height: 48.1rem;
+  max-width: 36.8rem;
+  width: 100%;
   background-color: #037f80;
   box-shadow: 0 30px 45px 0 rgba(22, 22, 22, 0.1);
   padding: 1.7rem;

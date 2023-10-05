@@ -9,7 +9,7 @@
 	justify-content: center;
 	align-items: center;
 	border-radius: 1rem;
-	padding: 2rem 3rem;
+	padding-inline: 3rem;
 
 	&.btn--primary {
 		color: $teal-dark;
@@ -40,5 +40,10 @@
 		@include hover-focus {
 			color: $gold-light;
 		}
+	}
+
+	@include breakpoint('sm', max) {
+		height: 5rem;
+		padding-inline: 1.5rem;
 	}
 }

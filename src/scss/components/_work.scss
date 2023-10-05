@@ -1,8 +1,17 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/mixins' as *;
+@use '../base/general' as *;
 
 .work {
 	padding-block: calc((100dvh - 45.5rem) / 2);
+
+	@include breakpoint('md', max) {
+		padding-block: $section-padding-md;
+	}
+
+	@include breakpoint('sm', max) {
+		padding-block: $section-padding-sm;
+	}
 }
 
 .work__heading {

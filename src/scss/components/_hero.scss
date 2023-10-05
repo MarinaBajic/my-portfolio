@@ -1,8 +1,17 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/mixins' as *;
+@use '../base/general' as *;
 
 .hero {
 	padding-block: calc((100dvh - 55.5rem) / 2);
+
+	@include breakpoint('md', max) {
+		padding-block: 20rem $section-padding-md;
+	}
+
+	@include breakpoint('sm', max) {
+		padding-block: 10rem $section-padding-sm;
+	}
 }
 
 .hero__content {
@@ -12,6 +21,8 @@
 }
 
 .banner {
+	max-width: 90rem;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -19,9 +30,25 @@
 
 	.banner__subheading {
 		font-size: 2.8rem;
-		font-weight: 400;
+		text-align: center;
+
+		@include breakpoint('md', max) {
+			font-size: 2rem;
+		}
+
+		@include breakpoint('sm', max) {
+			font-size: 1.6rem;
+		}
 	}
 
+	@include breakpoint('md', max) {
+		margin-bottom: 5rem;
+	}
+
+	@include breakpoint('sm', max) {
+		max-width: 35rem;
+		margin-bottom: 3rem;
+	}
 }
 
 .hero__btns {

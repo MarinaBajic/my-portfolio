@@ -5,9 +5,12 @@ $wrapper-block-lg: 50px;
 $wrapper-block-md: 20px;
 $wrapper-block-sm: 10px;
 
-$wrapper-inline-lg: 120px;
+$wrapper-inline-lg: max(25px, calc((100dvw - 1000px - 20rem) / 2));
 $wrapper-inline-md: 25px;
 $wrapper-inline-sm: 20px;
+
+$section-padding-md: 15rem;
+$section-padding-sm: 5rem;
 
 body {
 	color: $white;
@@ -28,10 +31,10 @@ body {
 	margin-inline: auto;
 
 	@include breakpoint('md', max) {
-		padding-inline: 25px;
+		margin-inline: $wrapper-inline-md;
 	}
 
 	@include breakpoint('sm', max) {
-		padding-inline: 20px;
+		margin-inline: $wrapper-inline-sm;
 	}
 }
