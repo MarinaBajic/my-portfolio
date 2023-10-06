@@ -3,26 +3,23 @@
 @use '../base/general' as *;
 
 .footer {
-	position: fixed;
-	right: $wrapper-inline-lg;
-	bottom: $wrapper-block-lg;
-
-	@include breakpoint('md', max) {
-		right: $wrapper-inline-md;
-		bottom: $wrapper-block-md;
-	}
-
-	@include breakpoint('sm', max) {
-		right: $wrapper-inline-sm;
-		bottom: $wrapper-block-sm;
-	}
+	display: flex;
+	justify-content: center;
 }
 
 .footer__socials {
 	flex-direction: column;
-
+	position: fixed;
+	right: $wrapper-inline-lg;
+	bottom: $wrapper-block-lg;
+	
 	.icon {
 		color: $teal-light;
+	}
+	
+	@include breakpoint('md', max) {
+		right: $wrapper-inline-md;
+		bottom: $wrapper-block-md;
 	}
 
 	@include breakpoint('sm', max) {
@@ -43,5 +40,22 @@
 		.icon {
 			font-size: 3rem;
 		}
+	}
+}
+
+.copyright {
+	width: min(82rem, calc(100dvw - (calc((100dvw - 1000px) / 2))));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-block: 2.7rem;
+	border-top: .5px solid $white;
+
+	.copyright__text {
+		font-size: 1.4rem;
+	}
+
+	@include breakpoint('md', max) {
+		max-width: calc(80dvw - 50px);
 	}
 }
