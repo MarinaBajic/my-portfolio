@@ -1,18 +1,7 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/mixins' as *;
 @use '../base/general' as *;
-
-.hero {
-	padding-block: calc((100dvh - 55.5rem) / 2);
-
-	@include breakpoint('md', max) {
-		padding-block: 20rem $section-padding-md;
-	}
-
-	@include breakpoint('sm', max) {
-		padding-block: 10rem $section-padding-sm;
-	}
-}
+@use '../base/typography' as *;
 
 .hero__content {
 	display: flex;
@@ -32,22 +21,35 @@
 		font-size: 2.8rem;
 		text-align: center;
 
-		@include breakpoint('md', max) {
-			font-size: 2rem;
-		}
+		strong {
+			font-family: $serif;
+			font-size: 3.6rem;
+			font-weight: 400;
+			color: $teal-lighter;
 
-		@include breakpoint('sm', max) {
-			font-size: 1.6rem;
 		}
 	}
 
 	@include breakpoint('md', max) {
 		margin-bottom: 5rem;
+
+		.banner__subheading {
+			font-size: 2rem;
+
+			strong {
+				font-size: 3rem;
+			}
+		}
 	}
 
 	@include breakpoint('sm', max) {
-		max-width: 35rem;
-		margin-bottom: 3rem;
+		.banner__heading {
+			margin-block: 3rem;
+		}
+
+		.banner__subheading {
+			font-size: 1.6rem;
+		}
 	}
 }
 

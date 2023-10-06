@@ -3,18 +3,6 @@
 @use '../base/typography' as *;
 @use '../base/general' as *;
 
-.contact {
-	padding-block: calc((100dvh - 46rem) / 2);
-
-	@include breakpoint('md', max) {
-		padding-block: $section-padding-md;
-	}
-
-	@include breakpoint('sm', max) {
-		padding-block: $section-padding-sm;
-	}
-}
-
 .contact__heading {
 	margin-bottom: 4rem;
 }

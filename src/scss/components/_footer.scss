@@ -18,18 +18,30 @@
 	}
 }
 
-.socials {
-	display: flex;
+.footer__socials {
 	flex-direction: column;
-	align-items: center;
-	gap: 2rem;
-}
-
-.socials__icon {
-	text-decoration: none;
 
 	.icon {
-		font-size: 3rem;
 		color: $teal-light;
+	}
+
+	@include breakpoint('sm', max) {
+		transform: scale(0);
+		position: absolute;
+	}
+}
+
+.socials {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+
+	.socials__icon {
+		text-decoration: none;
+
+		.icon {
+			font-size: 3rem;
+		}
 	}
 }

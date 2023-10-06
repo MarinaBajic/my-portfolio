@@ -2,18 +2,6 @@
 @use '../abstracts/mixins' as *;
 @use '../base/general' as *;
 
-.about {
-	padding-block: calc((100dvh - 51rem) / 2);
-
-	@include breakpoint('md', max) {
-		padding-block: $section-padding-md;
-	}
-
-	@include breakpoint('sm', max) {
-		padding-block: $section-padding-sm;
-	}
-}
-
 .about__content {
 	display: flex;
 	justify-content: center;

@@ -9,9 +9,6 @@ $wrapper-inline-lg: max(25px, calc((100dvw - 1000px - 20rem) / 2));
 $wrapper-inline-md: 25px;
 $wrapper-inline-sm: 20px;
 
-$section-padding-md: 10rem;
-$section-padding-sm: 5rem;
-
 body {
 	color: $white;
 	background-color: $teal-dark;
@@ -37,5 +34,37 @@ body {
 	@include breakpoint('sm', max) {
 		width: 335px;
 		margin-inline: max($wrapper-inline-sm, calc((100dvw - 335px) / 2));
+	}
+}
+
+.section {
+	@include breakpoint('lg', min) {
+		&.section--hero {
+			padding-block: calc((100dvh - 51rem) / 2);
+		}
+	
+		&.section--work {
+			padding-block: calc((100dvh - 45.1rem) / 2);
+		}
+	
+		&.section--about {
+			padding-block: calc((100dvh - 57.5rem) / 2);
+		}
+	
+		&.section--contact {
+			padding-block: calc((100dvh - 46rem) / 2);
+		}
+	}
+
+	@include breakpoint('md', max) {
+		padding-block: 10rem;
+
+		&.section--hero {
+			padding-top: 20rem;
+		}
+
+		&.section--contact {
+			padding-bottom: 20rem;
+		}
 	}
 }

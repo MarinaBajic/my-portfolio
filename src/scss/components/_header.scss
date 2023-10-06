@@ -14,34 +14,82 @@
 		right: $wrapper-inline-lg;
 	}
 
+	&.header--md {
+		width: 100%;
+		background-color: $teal;
+		display: flex;
+		justify-content: space-between;
+		padding-block: $wrapper-block-md;
+		padding-inline: $wrapper-inline-md;
+		top: 0;
+		transform: scale(0);
+		position: absolute;
+	}
+
+	.icon {
+		font-size: 5rem;
+		color: $white;
+	}
+
 	@include breakpoint('md', max) {
 		top: $wrapper-block-md;
-
-		&.header--left {
-			left: $wrapper-inline-md;
-		}
-
-		&.header--right {
-			right: $wrapper-inline-md;
-		}
 	}
 
 	@include breakpoint('sm', max) {
-		top: $wrapper-block-sm;
-
 		&.header--left {
-			left: $wrapper-inline-sm;
+			transform: scale(0);
+			position: absolute;
 		}
 
 		&.header--right {
-			right: $wrapper-inline-sm;
+			transform: scale(0);
+			position: absolute;
+		}
+
+		&.header--md {
+			transform: scale(1);
+			position: fixed;
+		}
+
+		.icon {
+			font-size: 4rem;
 		}
 	}
 }
 
 .header__logo {
-	height: 5rem;
 	width: 5rem;
+
+	@include breakpoint('sm', max) {
+		width: 4rem;
+	}
+}
+
+.header__hamburger {
+	background-color: transparent;
+	border: none;
+
+	&.hide {
+		transform: scale(0);
+		position: absolute;
+	}
+}
+
+.nav--md {
+	height: 100dvh;
+	position: absolute;
+	background-color: $teal-light;
+	top: 9rem;
+	inset-inline: 0;
+
+	&.hide {
+		transform: scale(0);
+		position: absolute;
+	}
+
+	@include breakpoint('sm', max) {
+		top: 8rem;
+	}
 }
 
 .nav__list {
@@ -50,6 +98,12 @@
 	flex-direction: column;
 	align-items: flex-end;
 	gap: 1.8rem;
+
+	&.nav__list--md {
+		align-items: center;
+		gap: 4rem;
+		padding-block: 10rem;
+	}
 
 	.nav__item {
 		font-size: 1.8rem;
@@ -63,5 +117,13 @@
 		@include hover-focus {
 			box-shadow: 0 -2px 0 $gold inset;
 		}
+	}
+}
+
+.nav__socials {
+	flex-direction: row;
+
+	.icon {
+		color: $white;
 	}
 }
