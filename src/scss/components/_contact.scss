@@ -1,9 +1,18 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/mixins' as *;
 @use '../base/typography' as *;
+@use '../base/general' as *;
 
 .contact {
 	padding-block: calc((100dvh - 46rem) / 2);
+
+	@include breakpoint('md', max) {
+		padding-block: $section-padding-md;
+	}
+
+	@include breakpoint('sm', max) {
+		padding-block: $section-padding-sm;
+	}
 }
 
 .contact__heading {
@@ -21,14 +30,16 @@
 }
 
 .card {
+	width: 48rem;
+	height: 28rem;
 	background-color: $teal;
 	padding: 2rem;
 
 	.card__content {
+		height: 100%;
+		width: 100%;
 		display: grid;
-		grid-template-columns: 7.5rem auto;
-		height: 24rem;
-		width: 44rem;
+		grid-template-columns: auto;
 		border: 2px solid $gold;
 		padding: 3.5rem 4rem;
 		text-decoration: none;
@@ -39,6 +50,25 @@
 		grid-column-start: 2;
 		align-self: flex-end;
 		justify-self: flex-end;
+	}
+
+	@include breakpoint('sm', max) {
+		height: 18rem;
+		width: 28rem;
+		padding: 1.4rem;
+		
+		.card__content {
+			grid-template-columns: 0 auto;
+			padding: 2rem 0;
+		}
+
+		.card__logo {
+			width: 0;
+		}
+
+		.card__email {
+			justify-self: center;
+		}
 	}
 }
 
@@ -52,5 +82,13 @@
 		font-family: $cursive;
 		font-size: 4.8rem;
 		line-height: normal;
+	}
+
+	@include breakpoint('sm', max) {
+		align-items: center;
+
+		.signature__name {
+			font-size: 3.4rem;
+		}
 	}
 }

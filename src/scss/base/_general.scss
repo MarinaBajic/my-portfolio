@@ -9,7 +9,7 @@ $wrapper-inline-lg: max(25px, calc((100dvw - 1000px - 20rem) / 2));
 $wrapper-inline-md: 25px;
 $wrapper-inline-sm: 20px;
 
-$section-padding-md: 15rem;
+$section-padding-md: 10rem;
 $section-padding-sm: 5rem;
 
 body {
@@ -35,6 +35,7 @@ body {
 	}
 
 	@include breakpoint('sm', max) {
-		margin-inline: $wrapper-inline-sm;
+		width: 335px;
+		margin-inline: max($wrapper-inline-sm, calc((100dvw - 335px) / 2));
 	}
 }

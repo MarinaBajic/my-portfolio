@@ -1,12 +1,17 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/mixins' as *;
+@use '../base/general' as *;
 
 .about {
 	padding-block: calc((100dvh - 51rem) / 2);
-}
 
-.about__heading {
-	margin-bottom: 2rem;
+	@include breakpoint('md', max) {
+		padding-block: $section-padding-md;
+	}
+
+	@include breakpoint('sm', max) {
+		padding-block: $section-padding-sm;
+	}
 }
 
 .about__content {
@@ -41,6 +46,25 @@
 	.about__desc {
 		margin-bottom: 1rem;
 	}
+
+	@include breakpoint('md', max) {
+		flex-direction: column;
+
+		.about__heading {
+			text-align: center;
+		}
+	}
+
+	@include breakpoint('sm', max) {
+		.about__img {
+			max-width: 30rem;
+			padding: 1.4rem;
+		}
+
+		.about__desc {
+			text-align: center;
+		}
+	}
 }
 
 .knowledge {
@@ -65,5 +89,19 @@
 		font-size: 2rem;
 		color: $gold;
 		margin-bottom: 1rem;
+	}
+
+	@include breakpoint('sm', max) {
+		margin-top: 3rem;
+
+		.knowledge__heading {
+			font-size: 1.6rem;
+			margin-bottom: 1rem;
+		}
+
+		.knowledge__item {
+			font-size: 1.6rem;
+			margin-bottom: .5rem;
+		}
 	}
 }

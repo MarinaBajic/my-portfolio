@@ -14,8 +14,9 @@
 	}
 }
 
-.work__heading {
-	margin-bottom: 4rem;
+.work__content {
+	display: flex;
+	justify-content: center;
 }
 
 .project {
@@ -50,6 +51,18 @@
 		align-items: center;
 		gap: 1.5rem;
 	}
+
+	@include breakpoint('sm', max) {
+		flex-direction: column;
+
+		.project__desc {
+			text-align: center;
+		}
+
+		.project__tools {
+			margin-block: 3rem;
+		}
+	}
 }
 
 .tools {
@@ -62,10 +75,23 @@
 		font-size: 1.8rem;
 		font-weight: 700;
 		color: $teal-lighter;
+		text-wrap: nowrap;
 	}
 
 	.icon {
-		font-size: 0.7rem;
+		font-size: .7rem;
 		color: $teal-light;
+	}
+
+	@include breakpoint('sm', max) {
+		gap: .5rem;
+
+		.tools__item {
+			font-size: 1.6rem;
+		}
+
+		.icon {
+			font-size: .5rem;
+		}
 	}
 }

@@ -1,8 +1,8 @@
 @font-face {
 	font-family: "iconfont";
-	src: url("../assets/fonts/iconfont.eot?f009a1685aaeca7a0c51596a156eb10f?#iefix") format("embedded-opentype"),
-url("../assets/fonts/iconfont.woff2?f009a1685aaeca7a0c51596a156eb10f") format("woff2"),
-url("../assets/fonts/iconfont.woff?f009a1685aaeca7a0c51596a156eb10f") format("woff");
+	src: url("../assets/fonts/iconfont.eot?8d46037c215124a4a4e540fa90a087db?#iefix") format("embedded-opentype"),
+url("../assets/fonts/iconfont.woff2?8d46037c215124a4a4e540fa90a087db") format("woff2"),
+url("../assets/fonts/iconfont.woff?8d46037c215124a4a4e540fa90a087db") format("woff");
 }
 
 .icon {
@@ -25,6 +25,9 @@ url("../assets/fonts/iconfont.woff?f009a1685aaeca7a0c51596a156eb10f") format("wo
 .icon-github:before {
 	content: "\f103";
 }
-.icon-linkedin:before {
+.icon-hamburger-menu:before {
 	content: "\f104";
+}
+.icon-linkedin:before {
+	content: "\f105";
 }
