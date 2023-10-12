@@ -35,6 +35,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "stylelint-scss": "^5.2.1"
+    "stylelint-scss": "^5.2.1",
+    "swiper": "^10.3.1"
   }
 }

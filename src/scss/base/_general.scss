@@ -3,11 +3,9 @@
 
 $wrapper-block-lg: 50px;
 $wrapper-block-md: 20px;
-$wrapper-block-sm: 10px;
 
 $wrapper-inline-lg: max(25px, calc((100dvw - 1000px - 20rem) / 2));
 $wrapper-inline-md: 25px;
-$wrapper-inline-sm: 20px;
 
 body {
 	color: $white;
@@ -33,7 +31,7 @@ body {
 
 	@include breakpoint('sm', max) {
 		width: 335px;
-		margin-inline: max($wrapper-inline-sm, calc((100dvw - 335px) / 2));
+		margin-inline: max(20px, calc((100dvw - 335px) / 2));
 	}
 }
 

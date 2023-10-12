@@ -1,6 +1,12 @@
+@use '../abstracts/mixins' as *;
+
 .main {
 	background-image: url('../assets/svg/background-logo.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
+
+	@include breakpoint('md', max) {
+		background-size: 80%;
+	}
 }
