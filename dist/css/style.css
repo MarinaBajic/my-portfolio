@@ -186,9 +186,6 @@ body {
   .section.section--hero {
     padding-top: 20rem;
   }
-  .section.section--contact {
-    padding-bottom: 20rem;
-  }
 }
 
 body {
@@ -504,14 +501,20 @@ h3,
   flex-direction: column;
   align-items: center;
   padding-block: 2.7rem;
+  margin-inline: auto;
   border-top: 0.5px solid #f6f6f6;
 }
 .copyright .copyright__text {
   font-size: 1.4rem;
+  text-align: center;
 }
 @media screen and (max-width: 1160px) {
   .copyright {
     max-width: calc(80dvw - 50px);
+    padding-block: 2rem;
+  }
+  .copyright .copyright__text {
+    font-size: 12px;
   }
 }
 
@@ -737,39 +740,96 @@ h3,
 .card {
   width: 48rem;
   height: 28rem;
-  background-color: #046068;
-  padding: 2rem;
-}
-.card .card__content {
-  height: 100%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto;
-  border: 2px solid #c90;
-  padding: 3.5rem 4rem;
-  text-decoration: none;
-  color: #c90;
-}
-.card .card__email {
-  grid-column-start: 2;
-  align-self: flex-end;
-  justify-self: flex-end;
+  perspective: 60rem;
 }
 @media screen and (max-width: 800px) {
   .card {
     height: 18rem;
     width: 28rem;
-    padding: 1.4rem;
   }
-  .card .card__content {
+}
+
+.card__content {
+  background-color: #046068;
+  padding: 2rem;
+}
+@media screen and (min-width: 1161px) {
+  .card__content {
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+}
+@media screen and (min-width: 1161px) and (hover: hover) {
+  .card__content:hover {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+  }
+}
+@media screen and (min-width: 1161px) {
+  .card__content:focus {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+  }
+}
+@media screen and (max-width: 800px) {
+  .card__content {
+    padding: 1rem;
+  }
+}
+
+.card__front,
+.card__back {
+  width: 44rem;
+  height: 24rem;
+  display: grid;
+  border: 2px solid #c90;
+  color: #c90;
+  backface-visibility: hidden;
+}
+
+.card__front {
+  align-items: center;
+  justify-items: center;
+}
+.card__front .card__logo {
+  width: 11rem;
+}
+@media screen and (max-width: 1160px) {
+  .card__front {
+    transform: scale(0);
+    position: absolute;
+  }
+}
+
+.card__back {
+  grid-template-columns: auto;
+  position: absolute;
+  top: 2rem;
+  padding: 3.5rem 4rem;
+  text-decoration: none;
+  transform: rotateY(180deg);
+}
+.card__back .card__email {
+  grid-column-start: 2;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+@media screen and (max-width: 1160px) {
+  .card__back {
+    position: static;
+    transform: rotateY(0deg);
+  }
+}
+@media screen and (max-width: 800px) {
+  .card__back {
+    width: 100%;
+    height: 100%;
     grid-template-columns: 0 auto;
-    padding: 2rem 0;
+    row-gap: 2rem;
+    padding: 2rem;
   }
-  .card .card__logo {
-    width: 0;
-  }
-  .card .card__email {
-    justify-self: center;
+  .card__back .card__logo {
+    transform: scale(0);
   }
 }
 

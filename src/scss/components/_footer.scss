@@ -49,13 +49,20 @@
 	flex-direction: column;
 	align-items: center;
 	padding-block: 2.7rem;
+	margin-inline: auto;
 	border-top: .5px solid $white;
 
 	.copyright__text {
 		font-size: 1.4rem;
+		text-align: center;
 	}
 
 	@include breakpoint('md', max) {
 		max-width: calc(80dvw - 50px);
+		padding-block: 2rem;
+
+		.copyright__text {
+			font-size: 12px;
+		}
 	}
 }
