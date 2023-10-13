@@ -22,6 +22,15 @@
 	height: 28rem;
 	perspective: 60rem;
 
+	@include breakpoint('lg', min) {
+		@include hover-focus {
+			.card__content {
+				transform: rotateY(180deg);
+				transition: transform 0.5s;
+			}
+		}
+	}
+
 	@include breakpoint('sm', max) {
 		height: 18rem;
 		width: 28rem;
@@ -35,11 +44,6 @@
 	@include breakpoint('lg', min) {
 		transition: transform 1s;
 		transform-style: preserve-3d;
-
-		@include hover-focus {
-			transform: rotateY(180deg);
-			transition: transform 0.5s;
-		}
 	}
 
 	@include breakpoint('sm', max) {
