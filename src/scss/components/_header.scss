@@ -14,7 +14,7 @@
 		right: $wrapper-inline-lg;
 	}
 
-	&.header--md {
+	&.header--sm {
 		width: 100%;
 		background-color: $teal;
 		display: flex;
@@ -46,7 +46,7 @@
 			position: absolute;
 		}
 
-		&.header--md {
+		&.header--sm {
 			transform: scale(1);
 			position: fixed;
 		}

@@ -9,6 +9,17 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/swiper/modules/autoplay.scss":
+/*!***************************************************!*\
+  !*** ./node_modules/swiper/modules/autoplay.scss ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://marinabajic.github.io/./node_modules/swiper/modules/autoplay.scss?");
+
+/***/ }),
+
 /***/ "./node_modules/swiper/modules/navigation.scss":
 /*!*****************************************************!*\
   !*** ./node_modules/swiper/modules/navigation.scss ***!
@@ -81,7 +92,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hea
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ \"./node_modules/swiper/swiper.mjs\");\n/* harmony import */ var swiper_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/modules */ \"./node_modules/swiper/modules/index.mjs\");\n/* harmony import */ var swiper_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/scss */ \"./node_modules/swiper/swiper.scss\");\n/* harmony import */ var swiper_scss_navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/scss/navigation */ \"./node_modules/swiper/modules/navigation.scss\");\n/* harmony import */ var swiper_scss_pagination__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/scss/pagination */ \"./node_modules/swiper/modules/pagination.scss\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst heroSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.js-hero-slider', {\r\n\tmodules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay],\r\n\tdirection: 'horizontal',\r\n\tloop: true,\r\n\tcenteredSlides: true,\r\n\tallowTouchMove: false,\r\n\tautoplay: {\r\n\t\tdelay: 2500,\r\n\t\tdisableOnInteraction: false,\r\n\t},\r\n\tspeed: 1200,\r\n});\r\n\r\nconst heroSubswiper = new swiper__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.js-hero-subslider', {\r\n\tmodules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay],\r\n\tdirection: 'horizontal',\r\n\tloop: true,\r\n\tcenteredSlides: true,\r\n\tallowTouchMove: false,\r\n\tautoplay: {\r\n\t\tdelay: 2500,\r\n\t\tdisableOnInteraction: false,\r\n\t\treverseDirection: true,\r\n\t},\r\n\tspeed: 1200,\r\n});\r\n\n\n//# sourceURL=webpack://marinabajic.github.io/./src/js/swiper.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ \"./node_modules/swiper/swiper.mjs\");\n/* harmony import */ var swiper_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/modules */ \"./node_modules/swiper/modules/index.mjs\");\n/* harmony import */ var swiper_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/scss */ \"./node_modules/swiper/swiper.scss\");\n/* harmony import */ var swiper_scss_navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/scss/navigation */ \"./node_modules/swiper/modules/navigation.scss\");\n/* harmony import */ var swiper_scss_pagination__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/scss/pagination */ \"./node_modules/swiper/modules/pagination.scss\");\n/* harmony import */ var swiper_scss_autoplay__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! swiper/scss/autoplay */ \"./node_modules/swiper/modules/autoplay.scss\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst heroSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.js-hero-slider', {\r\n\tmodules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay],\r\n\tdirection: 'horizontal',\r\n\tloop: true,\r\n\tcenteredSlides: true,\r\n\tallowTouchMove: false,\r\n\tautoplay: {\r\n\t\tdelay: 2500,\r\n\t\tdisableOnInteraction: false,\r\n\t},\r\n\tspeed: 2000\r\n});\r\n\r\nconst heroSubswiper = new swiper__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.js-hero-subslider', {\r\n\tmodules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay],\r\n\tdirection: 'horizontal',\r\n\tloop: true,\r\n\tcenteredSlides: true,\r\n\tallowTouchMove: false,\r\n\tautoplay: {\r\n\t\tdelay: 2500,\r\n\t\tdisableOnInteraction: false,\r\n\t\treverseDirection: true,\r\n\t},\r\n\tspeed: 2000\r\n});\r\n\n\n//# sourceURL=webpack://marinabajic.github.io/./src/js/swiper.js?");
 
 /***/ }),
 

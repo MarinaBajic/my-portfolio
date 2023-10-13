@@ -21,16 +21,19 @@ body {
 }
 
 .wrapper {
-	max-width: 1000px;
 	width: 100%;
-	margin-inline: auto;
 
-	@include breakpoint('md', max) {
-		margin-inline: $wrapper-inline-md;
+	@include breakpoint('lg', min) {
+		max-width: 1000px;
+		margin-inline: auto;
+	}
+
+	@include breakpoint('md') {
+		padding-inline: $wrapper-inline-md;
 	}
 
 	@include breakpoint('sm', max) {
-		width: 335px;
+		max-width: 335px;
 		margin-inline: max(20px, calc((100dvw - 335px) / 2));
 	}
 }

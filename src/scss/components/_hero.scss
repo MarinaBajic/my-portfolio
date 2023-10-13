@@ -7,10 +7,10 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-inline: auto;
 }
 
 .banner {
-	max-width: 90rem;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -49,7 +49,7 @@
 }
 
 .banner__slider {
-	width: 93rem;
+	width: 100%;
 }
 
 .hero__btns {

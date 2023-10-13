@@ -149,18 +149,22 @@ body {
 }
 
 .wrapper {
-  max-width: 1000px;
   width: 100%;
-  margin-inline: auto;
 }
-@media screen and (max-width: 1160px) {
+@media screen and (min-width: 1161px) {
   .wrapper {
-    margin-inline: 25px;
+    max-width: 1000px;
+    margin-inline: auto;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1160px) {
+  .wrapper {
+    padding-inline: 25px;
   }
 }
 @media screen and (max-width: 800px) {
   .wrapper {
-    width: 335px;
+    max-width: 335px;
     margin-inline: max(20px, (100dvw - 335px) / 2);
   }
 }
@@ -339,7 +343,7 @@ h3,
 .header.header--right {
   right: max(25px, (100dvw - 1000px - 20rem) / 2);
 }
-.header.header--md {
+.header.header--sm {
   width: 100%;
   background-color: #046068;
   display: flex;
@@ -368,7 +372,7 @@ h3,
     transform: scale(0);
     position: absolute;
   }
-  .header.header--md {
+  .header.header--sm {
     transform: scale(1);
     position: fixed;
   }
@@ -527,10 +531,10 @@ h3,
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-inline: auto;
 }
 
 .banner {
-  max-width: 90rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -565,7 +569,7 @@ h3,
 }
 
 .banner__slider {
-  width: 93rem;
+  width: 100%;
 }
 
 .hero__btns {
@@ -1394,3 +1398,7 @@ button.swiper-pagination-bullet {
 .swiper-pagination-lock {
   display: none;
 }
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/modules/autoplay.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************/
+
