@@ -32,3 +32,17 @@ const heroSubswiper = new Swiper('.js-hero-subslider', {
 	},
 	speed: 2000
 });
+
+const workSlider = new Swiper('.js-work-slider', {
+	modules: [Navigation, Pagination],
+	direction: 'horizontal',
+	centeredSlides: true,
+	pagination: {
+		el: '.work__pagination',
+		type: 'fraction'
+	},
+	navigation: {
+		nextEl: '.work__nav--next',
+		prevEl: '.work__nav--prev',
+	},
+});

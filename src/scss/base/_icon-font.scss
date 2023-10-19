@@ -1,8 +1,8 @@
 @font-face {
 	font-family: "iconfont";
-	src: url("../assets/fonts/iconfont.eot?368fed0d3b7087b7408e32b6739017c2?#iefix") format("embedded-opentype"),
-url("../assets/fonts/iconfont.woff2?368fed0d3b7087b7408e32b6739017c2") format("woff2"),
-url("../assets/fonts/iconfont.woff?368fed0d3b7087b7408e32b6739017c2") format("woff");
+	src: url("../assets/fonts/iconfont.eot?529ea2f9d9f2b355563dc640433deeb3?#iefix") format("embedded-opentype"),
+url("../assets/fonts/iconfont.woff2?529ea2f9d9f2b355563dc640433deeb3") format("woff2"),
+url("../assets/fonts/iconfont.woff?529ea2f9d9f2b355563dc640433deeb3") format("woff");
 }
 
 .icon {
@@ -16,21 +16,24 @@ url("../assets/fonts/iconfont.woff?368fed0d3b7087b7408e32b6739017c2") format("wo
 	vertical-align: top;
 }
 
-.icon-close:before {
+.icon-arrow:before {
 	content: "\f101";
 }
-.icon-dot:before {
+.icon-close:before {
 	content: "\f102";
 }
-.icon-email:before {
+.icon-dot:before {
 	content: "\f103";
 }
-.icon-github:before {
+.icon-email:before {
 	content: "\f104";
 }
-.icon-hamburger-menu:before {
+.icon-github:before {
 	content: "\f105";
 }
-.icon-linkedin:before {
+.icon-hamburger-menu:before {
 	content: "\f106";
+}
+.icon-linkedin:before {
+	content: "\f107";
 }
