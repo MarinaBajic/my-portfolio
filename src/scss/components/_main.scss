@@ -5,6 +5,13 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	height: 100vh;
+
+	.section {
+		scroll-snap-align: start;
+	}
 
 	@include breakpoint('md', max) {
 		background-size: 80%;

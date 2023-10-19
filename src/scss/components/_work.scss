@@ -2,11 +2,6 @@
 @use '../abstracts/mixins' as *;
 @use '../base/general' as *;
 
-// .work__sliderS {
-// 	display: flex;
-// 	justify-content: center;
-// }
-
 .swiper {
 	&.work__slider {
 		overflow-y: visible;
