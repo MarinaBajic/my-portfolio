@@ -37,6 +37,7 @@ const workSlider = new Swiper('.js-work-slider', {
 	modules: [Navigation, Pagination],
 	direction: 'horizontal',
 	centeredSlides: true,
+	speed: 1500,
 	pagination: {
 		el: '.work__pagination',
 		type: 'fraction'
