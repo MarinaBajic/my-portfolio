@@ -44,6 +44,10 @@
 	@include breakpoint('sm', max) {
 		.banner__subheading {
 			font-size: 1.6rem;
+
+			strong {
+				font-size: 2rem;
+			}
 		}
 	}
 }
