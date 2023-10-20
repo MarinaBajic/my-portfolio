@@ -186,7 +186,6 @@ body {
   }
   .section.section--contact {
     padding-block: calc((100dvh - 46rem) / 2);
-    scroll-margin-bottom: 5rem;
   }
 }
 @media screen and (max-width: 1160px) {
@@ -470,15 +469,10 @@ h3,
     height: 100vh;
     scroll-snap-type: y proximity;
     overflow-y: scroll;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-    /* Hide scrollbar for Chrome, Safari and Opera */
+    scroll-behavior: smooth;
   }
   .main .section {
     scroll-snap-align: center;
-  }
-  .main::-webkit-scrollbar {
-    display: none;
   }
 }
 @media screen and (max-width: 1160px) {
