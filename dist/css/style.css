@@ -342,6 +342,7 @@ h3,
 .header {
   position: fixed;
   top: 50px;
+  z-index: 2;
 }
 .header.header--left {
   left: max(25px, (100dvw - 1000px - 20rem) / 2);

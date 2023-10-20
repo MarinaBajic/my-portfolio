@@ -5,6 +5,7 @@
 .header {
 	position: fixed;
 	top: $wrapper-block-lg;
+	z-index: 2;
 
 	&.header--left {
 		left: $wrapper-inline-lg;
