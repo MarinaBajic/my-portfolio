@@ -11,6 +11,19 @@ body {
 	color: $white;
 	background-color: $teal-dark;
 	overflow-x: hidden;
+
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: $gold;
+		border-radius: 5px;
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background: $gold-light;
+	}
 }
 
 .link {
@@ -44,15 +57,15 @@ body {
 		&.section--hero {
 			padding-block: calc((100dvh - 51rem) / 2);
 		}
-		
+
 		&.section--work {
 			padding-block: calc((100dvh - 45.1rem) / 2);
 		}
-		
+
 		&.section--about {
 			padding-block: calc((100dvh - 57.5rem) / 2);
 		}
-		
+
 		&.section--contact {
 			padding-block: calc((100dvh - 46rem) / 2);
 		}
@@ -65,4 +78,9 @@ body {
 			padding-top: 20rem;
 		}
 	}
+}
+
+.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
 }

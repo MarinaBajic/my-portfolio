@@ -70,7 +70,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**************************/
 /***/ (() => {
 
-eval("const menuOpen = document.querySelector('.js-menu-open'),\r\n\tmenuClose = document.querySelector('.js-menu-close'),\r\n\tnav = document.querySelector('.js-nav');\r\n\r\nmenuOpen.addEventListener('click', toggleMenu);\r\nmenuClose.addEventListener('click', toggleMenu);\r\n\r\nfunction toggleMenu() {\r\n\tmenuOpen.classList.toggle('hide');\r\n\tmenuClose.classList.toggle('hide');\r\n\tnav.classList.toggle('hide');\r\n}\r\n\n\n//# sourceURL=webpack://marinabajic.github.io/./src/js/header.js?");
+eval("const menuOpen = document.querySelector('.js-menu-open'),\r\n\tmenuClose = document.querySelector('.js-menu-close'),\r\n\tnav = document.querySelector('.js-nav');\r\n\r\nmenuOpen.addEventListener('click', toggleMenu);\r\nmenuClose.addEventListener('click', toggleMenu);\r\n\r\nfunction toggleMenu() {\r\n\tmenuOpen.classList.toggle('hide');\r\n\tmenuClose.classList.toggle('hide');\r\n\tnav.classList.toggle('hide');\r\n\ttoggleScroll(nav);\r\n}\r\n\r\nfunction toggleScroll(reference) {\r\n\tconst body = document.body;\r\n\tconst scrollClass = 'stop-scrolling';\r\n\tif (reference.classList.contains('hide'))\r\n\t\tbody.classList.remove(scrollClass);\r\n\telse body.classList.add(scrollClass);\r\n}\r\n\n\n//# sourceURL=webpack://marinabajic.github.io/./src/js/header.js?");
 
 /***/ }),
 

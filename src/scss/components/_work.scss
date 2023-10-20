@@ -2,48 +2,39 @@
 @use '../abstracts/mixins' as *;
 @use '../base/general' as *;
 
-.swiper {
-	&.work__slider {
-		overflow-y: visible;
-		
-		.work__pagination {
-			width: fit-content;
-			height: fit-content;
-			color: $gold;
-			font-size: 20px;
-			top: -7rem;
-			left: 16rem;
+.swiper.work__slider {
+	overflow-y: visible;
+}
 
-		}
-	}
+.swiper-pagination.work__pagination {
+	width: fit-content;
+	height: fit-content;
+	color: $gold;
+	font-size: 20px;
+	top: -7rem;
+	left: 16rem;
 
 	@include breakpoint('md', max) {
-		&.work__slider {
-			.work__pagination {
-				inset-inline: 0;
-				margin-inline: auto;
-				padding-left: 25rem;
-			}
-		}
+		inset-inline: 0;
+		margin-inline: auto;
+		padding-left: 25rem;
 	}
 
 	@include breakpoint('sm', max) {
-		&.work__slider {
-			.work__pagination {
-				font-size: 16px;
-				top: -6.6rem;
-				padding-left: 20rem;
-			}
-		}
+		font-size: 16px;
+		top: -6.6rem;
+		padding-left: 20rem;
 	}
 }
 
 .work__nav {
 	&.work__nav--prev {
+		left: 0;
 		transform: rotate(90deg);
 	}
 
 	&.work__nav--next {
+		right: 0;
 		transform: rotate(-90deg);
 	}
 
@@ -60,7 +51,7 @@
 		&.work__nav--next {
 			right: calc(25px + 50px);
 		}
-		
+
 		.icon {
 			font-size: 16px;
 		}

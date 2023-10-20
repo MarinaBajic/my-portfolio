@@ -9,4 +9,13 @@ function toggleMenu() {
 	menuOpen.classList.toggle('hide');
 	menuClose.classList.toggle('hide');
 	nav.classList.toggle('hide');
+	toggleScroll(nav);
+}
+
+function toggleScroll(reference) {
+	const body = document.body;
+	const scrollClass = 'stop-scrolling';
+	if (reference.classList.contains('hide'))
+		body.classList.remove(scrollClass);
+	else body.classList.add(scrollClass);
 }

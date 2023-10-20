@@ -3,14 +3,16 @@
 @use '../base/general' as *;
 
 .scroller {
-	height: 36rem;
+	height: 100%;
 	list-style-type: none;
 	position: fixed;
 	left: $wrapper-inline-lg;
-	bottom: 166px;
+	inset-block: 0;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
+	gap: 8.5rem;
+	padding-top: 10rem;
 
 	@include breakpoint('md', max) {
 		display: none;
