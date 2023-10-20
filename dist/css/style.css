@@ -138,6 +138,7 @@ select {
 body {
   color: #f6f6f6;
   background-color: #004041;
+  overflow-x: hidden;
 }
 
 .link {
@@ -185,6 +186,7 @@ body {
   }
   .section.section--contact {
     padding-block: calc((100dvh - 46rem) / 2);
+    scroll-margin-bottom: 5rem;
   }
 }
 @media screen and (max-width: 1160px) {
@@ -461,12 +463,16 @@ h3,
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
 }
-.main .section {
-  scroll-snap-align: start;
+@media screen and (min-width: 1161px) {
+  .main {
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  .main .section {
+    scroll-snap-align: center;
+  }
 }
 @media screen and (max-width: 1160px) {
   .main {

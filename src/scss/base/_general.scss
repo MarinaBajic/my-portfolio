@@ -10,6 +10,7 @@ $wrapper-inline-md: 25px;
 body {
 	color: $white;
 	background-color: $teal-dark;
+	overflow-x: hidden;
 }
 
 .link {
@@ -54,6 +55,7 @@ body {
 	
 		&.section--contact {
 			padding-block: calc((100dvh - 46rem) / 2);
+			scroll-margin-bottom: 5rem;
 		}
 	}
 

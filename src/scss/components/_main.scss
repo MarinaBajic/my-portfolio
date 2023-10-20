@@ -5,12 +5,15 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	scroll-snap-type: y mandatory;
-	overflow-y: scroll;
-	height: 100vh;
 
-	.section {
-		scroll-snap-align: start;
+	@include breakpoint('lg', min) {
+		scroll-snap-type: y proximity;
+		overflow-y: scroll;
+		height: 100vh;
+
+		.section {
+			scroll-snap-align: center;
+		}
 	}
 
 	@include breakpoint('md', max) {
