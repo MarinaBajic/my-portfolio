@@ -22,12 +22,12 @@
 		}
 
 		&::-webkit-scrollbar-thumb {
-			background: $gold-light;
+			background: $gold;
 			border-radius: 5px;
 		}
 
 		&::-webkit-scrollbar-thumb:hover {
-			background: $gold;
+			background: $gold-light;
 		}
 	}
 

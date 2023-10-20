@@ -344,10 +344,10 @@ h3,
   z-index: 2;
 }
 .header.header--left {
-  left: max(25px, (100dvw - 1000px - 20rem) / 2);
+  left: max(25px, (100dvw - 1200px - 20rem) / 2);
 }
 .header.header--right {
-  right: max(25px, (100dvw - 1000px - 20rem) / 2);
+  right: max(25px, (100dvw - 1200px - 20rem) / 2);
 }
 .header.header--sm {
   width: 100%;
@@ -478,11 +478,11 @@ h3,
     width: 10px;
   }
   .main::-webkit-scrollbar-thumb {
-    background: #e5b906;
+    background: #c90;
     border-radius: 5px;
   }
   .main::-webkit-scrollbar-thumb:hover {
-    background: #c90;
+    background: #e5b906;
   }
 }
 @media screen and (max-width: 1160px) {
@@ -499,7 +499,7 @@ h3,
 .footer__socials {
   flex-direction: column;
   position: fixed;
-  right: max(25px, (100dvw - 1000px - 20rem) / 2);
+  right: max(25px, (100dvw - 1200px - 20rem) / 2);
   bottom: 50px;
 }
 .footer__socials .icon {
@@ -929,6 +929,47 @@ h3,
   .signature .signature__name {
     font-size: 3.4rem;
   }
+}
+
+.scroller {
+  height: 36rem;
+  list-style-type: none;
+  position: fixed;
+  left: max(25px, (100dvw - 1200px - 20rem) / 2);
+  bottom: 166px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1160px) {
+  .scroller {
+    display: none;
+    position: absolute;
+  }
+}
+
+.scroller__item {
+  font-size: 18px;
+}
+.scroller__item a {
+  color: #037f80;
+  text-decoration: none;
+}
+@media (hover: hover) {
+  .scroller__item a:hover {
+    color: #f6f6f6;
+  }
+}
+.scroller__item a:focus {
+  color: #f6f6f6;
+}
+
+.scroller__indicator {
+  width: 3px;
+  height: 30px;
+  background-color: #c90;
+  position: absolute;
+  left: 35px;
 }
 /*!****************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/swiper.scss ***!
