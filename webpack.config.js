@@ -55,11 +55,7 @@ module.exports = {
 				{
 					from: 'src/assets',
 					to: 'assets',
-				},
-				{
-					from: 'src/index.html',
-					to: '',
-				},
+				}
 			],
 		}),
 	]

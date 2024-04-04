@@ -323,13 +323,13 @@ h3,
 }
 @media (hover: hover) {
   .btn.btn--secondary:hover {
-    color: #004041;
-    background-color: #c90;
+    color: #e5b906;
+    border-color: #e5b906;
   }
 }
 .btn.btn--secondary:focus {
-  color: #004041;
-  background-color: #c90;
+  color: #e5b906;
+  border-color: #e5b906;
 }
 .btn.btn--tertiary {
   height: -moz-fit-content;
@@ -748,10 +748,10 @@ h3,
 }
 
 .tools {
-  width: -moz-fit-content;
-  width: fit-content;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 .tools .tools__item {

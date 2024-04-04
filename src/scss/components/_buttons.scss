@@ -26,8 +26,8 @@
 		border: 3px solid $gold;
 
 		@include hover-focus {
-			color: $teal-dark;
-			background-color: $gold;
+			color: $gold-light;
+			border-color: $gold-light;
 		}
 	}
 
