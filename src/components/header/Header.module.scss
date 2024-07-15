@@ -1,0 +1,87 @@
+@use '../../styles/abstracts/colors' as *;
+@use '../../styles/abstracts/mixins' as *;
+
+.header {
+	height: 100dvh;
+	width: 100dvw;
+	padding-inline: 96px;
+	padding-block: 48px;
+	position: fixed;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	pointer-events: none;
+
+	@include breakpoint('md', max) {
+		padding: 24px;
+	}
+
+	@include breakpoint('sm', max) {
+		padding-inline: 16px;
+		padding-block: 12px;
+	}
+}
+
+.header__nav {
+	pointer-events: auto;
+
+	@include breakpoint('sm', max) {
+		transform: scale(0);
+		position: absolute;
+	}
+}
+
+.header__nav-sm {
+	transform: scale(0);
+	position: absolute;
+	pointer-events: auto;
+
+	@include breakpoint('sm', max) {
+		transform: scale(1);
+		inset: 0;
+	}
+}
+
+.header__button {
+	transform: scale(0);
+	position: absolute;
+	pointer-events: auto;
+
+	* {
+		font-size: 40px;
+		color: $white;
+	}
+
+	@include breakpoint('sm', max) {
+		width: fit-content;
+		justify-self: flex-end;
+		transform: scale(1);
+		position: relative;
+		z-index: 10;
+	}
+}
+
+.header__socials {
+	grid-column: 2;
+	align-self: flex-end;
+	justify-self: flex-end;
+	pointer-events: auto;
+
+	&.header__socials--sm {
+		transform: scale(0);
+		position: absolute;
+	}
+
+	@include breakpoint('sm', max) {
+		transform: scale(0);
+		position: absolute;
+
+		&.header__socials--sm {
+			grid-column: span 2;
+			transform: scale(1);
+			position: relative;
+			bottom: 96px;
+			display: flex;
+			margin-inline: auto;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+@use '../../styles/abstracts/colors' as *;
+@use '../../styles/abstracts/mixins' as *;
+
+.nav__item {
+	font-size: 18px;
+	text-transform: uppercase;
+
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+
+	@include hover-focus {
+		box-shadow: 0 -2px 0 $gold inset;
+	}
+}

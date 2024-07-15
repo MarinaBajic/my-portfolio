@@ -1,0 +1,18 @@
+@use '../../styles/abstracts/mixins' as *;
+@use '../../styles/abstracts/colors' as *;
+
+.nav__list {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 18px;
+
+	@include breakpoint('sm', max) {
+		background-color: $teal-dark;
+		align-items: center;
+		gap: 32px;
+		height: 100dvh;
+		padding-top: 160px;
+	}
+}

@@ -1,0 +1,12 @@
+@use '../../styles/abstracts/mixins' as *;
+@use '../../styles/abstracts/colors' as *;
+
+
+.icon {
+	font-size: 40px;
+	color: $teal-lighter;
+
+	@include breakpoint('md', max) {
+		font-size: 32px;
+	}
+}

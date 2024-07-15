@@ -1,0 +1,11 @@
+@use '../../styles/abstracts/mixins' as *;
+
+.socials {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+
+	@include breakpoint('sm', max) {
+		flex-direction: row;
+	}
+}
