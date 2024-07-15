@@ -1,5 +1,5 @@
 import './App.css';
-import Header from './components/header/Header';
+import Header from './sections/header/Header';
 import Navigation from './components/navigation/Navigation';
 import NavigationLink from './components/navigation/NavigationLink';
 import SocialLink from './components/socials/SocialLink';
@@ -7,6 +7,7 @@ import Socials from './components/socials/Socials';
 import Logo from './components/logo/Logo';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
+import Hero from './sections/hero/Hero';
 
 function App() {
 	return (
@@ -40,6 +41,9 @@ function App() {
 					</Socials>
 				}
 			/>
+			<main>
+				<Hero />
+			</main>
 		</>
 	);
 }

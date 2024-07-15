@@ -1,0 +1,35 @@
+@use './colors' as *;
+@use './breakpoints' as *;
+
+@mixin serif-regular {
+	font-family: 'Cinzel', serif;
+	font-optical-sizing: auto;
+}
+
+@mixin serif-fancy {
+	font-family: 'Cinzel Decorative', serif;
+}
+
+.sans-regular {
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+}
+
+@mixin sans-fancy {
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.heading {
+	@include serif-fancy;
+
+	&.heading--primary {
+		font-size: 150px;
+		font-weight: 400;
+		color: $gold;
+	}
+
+	&.heading--secondary {
+		font-size: 36px;
+		font-weight: 700;
+	}
+}

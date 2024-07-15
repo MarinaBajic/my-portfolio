@@ -1,0 +1,22 @@
+@use '../../styles/abstracts/typography' as *;
+@use '../../styles/abstracts/colors' as *;
+
+.hero {
+	height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.banner__subheading {
+	@include serif-regular;
+	font-size: 36px;
+	color: $teal-lighter;
+	display: flex;
+	justify-content: center;
+}
+
+.banner__text {
+	@include sans-fancy;
+	font-size: 28px;
+}
