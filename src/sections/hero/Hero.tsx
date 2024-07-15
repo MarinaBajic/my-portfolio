@@ -1,11 +1,14 @@
+import Button from '../../components/buttons/Button';
 import Slider from '../../components/slider/Slider';
-import styles from "./Hero.module.scss"
+import styles from './Hero.module.scss';
 
 const Hero = () => {
 	return (
 		<div className={styles.hero}>
-			<div className={`${styles["hero__banner"]} ${styles.banner}`}>
-				<span className={styles["banner__subheading"]}>Marina Bajić</span>
+			<div className={styles.banner}>
+				<span className={styles['banner__subheading']}>
+					Marina Bajić
+				</span>
 				<Slider
 					slides={[
 						<h1 className="heading heading--primary">
@@ -34,14 +37,9 @@ const Hero = () => {
 					reversed={true}
 				/>
 			</div>
-			{/* <div className="hero__btns">
-				<a className="btn btn--primary" href="#work">
-					See my work
-				</a>
-				<a className="btn btn--secondary" href="#about">
-					About me
-				</a>
-			</div> */}
+			<div className={styles['hero__btn']}>
+				<Button href="#projects">My work</Button>
+			</div>
 		</div>
 	);
 };

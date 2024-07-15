@@ -10,7 +10,7 @@
 	font-family: 'Cinzel Decorative', serif;
 }
 
-.sans-regular {
+@mixin sans-regular {
 	font-family: 'Montserrat', sans-serif;
 	font-optical-sizing: auto;
 }
