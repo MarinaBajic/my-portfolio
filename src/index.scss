@@ -1,0 +1,26 @@
+@use 'styles/base/reset';
+@use 'styles/abstracts/colors' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Montserrat+Alternates:wght@400;500;600;700;800;900&family=Montserrat:wght@100..900&display=swap');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+
+	color: $white;
+	background-color: $teal-dark;
+	overflow-x: hidden;
+
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: $gold;
+		border-radius: 5px;
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background: $gold-light;
+	}
+}
