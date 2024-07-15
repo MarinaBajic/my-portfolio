@@ -1,0 +1,41 @@
+@use 'breakpoints' as *;
+
+@mixin breakpoint($size, $direction: minmax) {
+	@if map-has-key($breakpoints, $size) {
+		@if $direction == min {
+			@media screen and (min-width: map-get($breakpoints, $size, min)) {
+				@content;
+			}
+		} @else if $direction == max {
+			@media screen and (max-width: map-get($breakpoints, $size, max)) {
+				@content;
+			}
+		} @else {
+			@media screen and (min-width: map-get($breakpoints, $size, min)) and (max-width: map-get($breakpoints, $size, max)) {
+				@content;
+			}
+		}
+	} @else if $direction == min {
+		@media screen and (min-width: $size) {
+			@content;
+		}
+	} @else if $direction == max {
+		@media screen and (max-width: $size) {
+			@content;
+		}
+	} @else {
+		@error 'The keyword #{$size} is not in the $breakpoints map';
+	}
+}
+
+@mixin hover-focus {
+	@media (hover: hover) {
+		&:hover {
+			@content;
+		}
+	}
+
+	&:focus {
+		@content;
+	}
+}
