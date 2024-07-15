@@ -37,7 +37,9 @@ const Header = (props: Props) => {
 			)}
 			<div className={styles['header__socials']}>{props.socials}</div>
 			{menuOpen && (
-				<div className={`${styles['header__socials']} ${styles["header__socials--sm"]}`}>
+				<div
+					className={`${styles['header__socials']} ${styles['header__socials--sm']}`}
+				>
 					{props.socials}
 				</div>
 			)}
