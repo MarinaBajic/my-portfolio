@@ -8,7 +8,7 @@ type Props = {
 };
 
 const Skills = ({ skills, skillsMobile }: Props) => {
-	const isMobile = useMediaQuery('(max-width:833px)');
+	const isMobile = useMediaQuery('(max-width: 833px)');
 
 	if (isMobile) skills = skillsMobile;
 
