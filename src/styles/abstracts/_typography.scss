@@ -1,5 +1,5 @@
 @use './colors' as *;
-@use './breakpoints' as *;
+@use './mixins' as *;
 
 @mixin serif-regular {
 	font-family: 'Cinzel', serif;
@@ -26,10 +26,25 @@
 		font-size: 150px;
 		font-weight: 400;
 		color: $gold;
+		line-height: 112%;
 	}
 
 	&.heading--secondary {
 		font-size: 36px;
 		font-weight: 700;
 	}
+
+	@include breakpoint('md', max) {
+		&.heading--primary {
+			font-size: 96px;
+		}
+	}
+
+	@include breakpoint("sm", max) {
+		&.heading--primary {
+			font-size: 54px;
+			line-height: normal;
+		}
+	}
 }
+

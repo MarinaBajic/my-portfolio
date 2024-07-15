@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Header from './sections/header/Header';
 import Navigation from './components/navigation/Navigation';
 import NavigationLink from './components/navigation/NavigationLink';
@@ -41,7 +41,7 @@ function App() {
 					</Socials>
 				}
 			/>
-			<main>
+			<main className='main'>
 				<Hero />
 			</main>
 		</>

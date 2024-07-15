@@ -1,5 +1,6 @@
 @use '../../styles/abstracts/typography' as *;
 @use '../../styles/abstracts/colors' as *;
+@use '../../styles/abstracts/mixins' as *;
 
 .hero {
 	height: 100dvh;
@@ -7,6 +8,10 @@
 	flex-direction: column;
 	justify-content: center;
 	gap: 48px;
+
+	@include breakpoint("sm", max) {
+		gap: 32px;
+	}
 }
 
 .hero__btn {
@@ -16,7 +21,7 @@
 }
 
 .banner {
-	pointer-events: none
+	pointer-events: none;
 }
 
 .banner__subheading {
@@ -25,9 +30,25 @@
 	color: $teal-lighter;
 	display: flex;
 	justify-content: center;
+
+	@include breakpoint('md', max) {
+		font-size: 32px;
+	}
+
+	@include breakpoint('sm', max) {
+		font-size: 24px;
+	}
 }
 
 .banner__text {
 	@include sans-fancy;
 	font-size: 28px;
+
+	@include breakpoint('md', max) {
+		font-size: 24px;
+	}
+
+	@include breakpoint('sm', max) {
+		font-size: 16px;
+	}
 }
