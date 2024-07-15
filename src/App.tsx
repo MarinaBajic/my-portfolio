@@ -6,8 +6,9 @@ import SocialLink from './components/socials/SocialLink';
 import Socials from './components/socials/Socials';
 import Logo from './components/logo/Logo';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import Hero from './sections/hero/Hero';
+import Skills from './sections/skills/Skills';
 
 function App() {
 	return (
@@ -19,7 +20,9 @@ function App() {
 						<NavigationLink href="#experience">
 							Experience
 						</NavigationLink>
-						<NavigationLink href="#projects">Projects</NavigationLink>
+						<NavigationLink href="#projects">
+							Projects
+						</NavigationLink>
 						<NavigationLink href="#about">About</NavigationLink>
 						<NavigationLink href="#contact">Contact</NavigationLink>
 					</Navigation>
@@ -41,8 +44,22 @@ function App() {
 					</Socials>
 				}
 			/>
-			<main className='main'>
+			<main className="main">
 				<Hero />
+				<Skills
+					skills={[
+						['Sass', 'Tailwind', 'React', 'Angular', 'Astro'],
+						['Spring Boot', 'Microservices', 'PHP', 'Android Java'],
+						['Figma', 'GitHub', 'Docker', 'MySQL'],
+					]}
+					skillsMobile={[
+						['Sass', 'Tailwind'],
+						['React', 'Angular', 'Astro'],
+						['Spring Boot', 'Microservices'],
+						['PHP', 'Android Java', 'Figma'],
+						['GitHub', 'Docker', 'MySQL'],
+					]}
+				/>
 			</main>
 		</>
 	);

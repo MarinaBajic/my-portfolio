@@ -4,7 +4,7 @@ import styles from './Hero.module.scss';
 
 const Hero = () => {
 	return (
-		<div className={styles.hero}>
+		<section className={styles.hero}>
 			<div className={styles.banner}>
 				<span className={styles['banner__subheading']}>
 					Marina Bajić
@@ -40,7 +40,7 @@ const Hero = () => {
 			<div className={styles['hero__btn']}>
 				<Button href="#projects">My work</Button>
 			</div>
-		</div>
+		</section>
 	);
 };
 
