@@ -4,7 +4,7 @@ import styles from './Hero.module.scss';
 
 const Hero = () => {
 	return (
-		<section className={styles.hero}>
+		<section id="hero" className={styles.hero}>
 			<div className={styles.banner}>
 				<span className={styles['banner__subheading']}>
 					Marina Bajić

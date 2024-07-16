@@ -9,7 +9,7 @@
 	justify-content: center;
 	gap: 48px;
 
-	@include breakpoint("sm", max) {
+	@include breakpoint('sm', max) {
 		gap: 32px;
 	}
 }

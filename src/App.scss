@@ -18,6 +18,7 @@
 	padding-block: 48px;
 	margin-block: 300px;
 	margin-inline: auto;
+	scroll-margin-top: 78px;
 
 	@include breakpoint("md", max) {
 		margin-block: 240px;

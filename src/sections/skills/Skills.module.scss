@@ -4,7 +4,7 @@
 	flex-direction: column;
 	gap: 20px;
 
-	@include breakpoint("sm", max) {
+	@include breakpoint('sm', max) {
 		gap: 16px;
 	}
 }
@@ -13,7 +13,7 @@
 	display: flex;
 	gap: 20px;
 
-	@include breakpoint("sm", max) {
+	@include breakpoint('sm', max) {
 		gap: 8px;
 	}
 }

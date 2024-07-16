@@ -10,6 +10,9 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import Hero from './sections/hero/Hero';
 import Skills from './sections/skills/Skills';
 import Experience from './sections/experience/Experience';
+import Projects from './sections/projects/Projects';
+import About from './sections/about/About';
+import Contact from './sections/contact/Contact';
 
 function App() {
 	return (
@@ -62,6 +65,9 @@ function App() {
 					]}
 				/>
 				<Experience />
+				<Projects />
+				<About />
+				<Contact />
 			</main>
 		</>
 	);
