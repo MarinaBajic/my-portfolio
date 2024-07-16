@@ -4,8 +4,11 @@ import styles from './Experience.module.scss';
 const Experience = () => {
 	return (
 		<section id="experience" className={`section`}>
-			<span className="background">Experience</span>
-			<Title subheading="Professional" heading="Experience" />
+			<Title
+				background="Experience"
+				subheading="Professional"
+				heading="Experience"
+			/>
 		</section>
 	);
 };

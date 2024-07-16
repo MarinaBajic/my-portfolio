@@ -4,8 +4,8 @@ import styles from './About.module.scss';
 const About = () => {
 	return (
 		<section id="about" className={`section`}>
-			<span className="background">About</span>
 			<Title
+				background="About"
 				subheading="About me"
 				heading="Dedicated Front-end Developer"
 			/>
