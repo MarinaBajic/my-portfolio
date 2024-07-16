@@ -21,7 +21,16 @@
 	}
 }
 
+.header__logo {
+	width: fit-content;
+	height: fit-content;
+	pointer-events: auto;
+}
+
 .header__nav {
+	width: fit-content;
+	height: fit-content;
+	margin-left: auto;
 	pointer-events: auto;
 
 	@include breakpoint('sm', max) {

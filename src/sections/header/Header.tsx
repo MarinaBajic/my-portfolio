@@ -17,12 +17,12 @@ const Header = (props: Props) => {
 	}, [menuOpen]);
 
 	function toggleMenuOpen() {
-		setMenuOpen(wasMenuOpen => !wasMenuOpen);
+		setMenuOpen((wasMenuOpen) => !wasMenuOpen);
 	}
 
 	return (
 		<header className={styles.header}>
-			{props.logo}
+			<div className={styles['header__logo']}>{props.logo}</div>
 			<div className={styles['header__nav']}>{props.navigation}</div>
 			<button
 				onClick={toggleMenuOpen}
@@ -34,7 +34,6 @@ const Header = (props: Props) => {
 				<div
 					className={styles['header__nav-sm']}
 					onClick={() => setMenuOpen(false)}
-					// x-init="$watch('open', value => window.innerWidth <= 1024 && document.body.classList.toggle('overflow-y-hidden', value))"
 				>
 					{props.navigation}
 				</div>
