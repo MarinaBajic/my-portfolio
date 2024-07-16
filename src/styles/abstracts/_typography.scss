@@ -25,6 +25,7 @@
 	&.heading--primary {
 		font-size: 150px;
 		font-weight: 400;
+		text-transform: uppercase;
 		color: $gold;
 		line-height: 112%;
 	}
@@ -32,18 +33,40 @@
 	&.heading--secondary {
 		font-size: 36px;
 		font-weight: 700;
+		text-transform: uppercase;
+
+	}
+
+	&.heading--tertiary {
+		@include sans-fancy;
+		font-size: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $teal-lighter;
 	}
 
 	@include breakpoint('md', max) {
 		&.heading--primary {
 			font-size: 96px;
 		}
+
+		&.heading--secondary {
+			font-size: 32px;
+		}
 	}
 
-	@include breakpoint("sm", max) {
+	@include breakpoint('sm', max) {
 		&.heading--primary {
 			font-size: 54px;
 			line-height: normal;
+		}
+
+		&.heading--secondary {
+			font-size: 24px;
+		}
+
+		&.heading--tertiary {
+			font-size: 16px;
 		}
 	}
 }
@@ -59,15 +82,13 @@
 	top: -48px;
 	z-index: -10;
 
-
-	@include breakpoint("md", max) {
+	@include breakpoint('md', max) {
 		font-size: 240px;
-		top: -16px
+		top: -16px;
 	}
 
-	@include breakpoint("sm", max) {
+	@include breakpoint('sm', max) {
 		font-size: 120px;
 		top: 0;
 	}
 }
-
