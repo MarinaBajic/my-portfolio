@@ -9,6 +9,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import Hero from './sections/hero/Hero';
 import Skills from './sections/skills/Skills';
+import Experience from './sections/experience/Experience';
 
 function App() {
 	return (
@@ -60,6 +61,7 @@ function App() {
 						['GitHub', 'Docker', 'MySQL'],
 					]}
 				/>
+				<Experience />
 			</main>
 		</>
 	);

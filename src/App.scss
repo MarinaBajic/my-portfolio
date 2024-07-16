@@ -2,8 +2,15 @@
 
 .main {
 	padding-inline: 48px;
+	overflow: hidden;
 
 	@include breakpoint('sm', max) {
 		padding-inline: 16px;
 	}
+}
+
+.section {
+	padding-block: 48px;
+	margin-block: 300px;
+	position: relative;
 }

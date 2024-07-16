@@ -12,6 +12,10 @@ body {
 	background-color: $teal-dark;
 	overflow-x: hidden;
 
+	&.overflow-y-hidden {
+		overflow-y: hidden;
+	}
+
 	&::-webkit-scrollbar {
 		width: 10px;
 	}
@@ -30,8 +34,4 @@ button {
 	background-color: transparent;
 	border: none;
 	height: fit-content;
-}
-
-.overflow-y-hidden {
-	overflow-y: hidden;
 }
