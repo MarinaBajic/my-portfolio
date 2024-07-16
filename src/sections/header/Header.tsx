@@ -1,7 +1,7 @@
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5';
 import styles from './Header.module.scss';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 type Props = {
 	logo: any;
@@ -10,10 +10,14 @@ type Props = {
 };
 
 const Header = (props: Props) => {
-	const [menuOpen, setMenuOpen] = useState<Boolean>(false);
+	const [menuOpen, setMenuOpen] = useState<boolean>(false);
+
+	useEffect(() => {
+		document.body.classList.toggle('overflow-y-hidden', menuOpen);
+	}, [menuOpen]);
 
 	function toggleMenuOpen() {
-		setMenuOpen((wasMenuOpen) => !wasMenuOpen);
+		setMenuOpen(wasMenuOpen => !wasMenuOpen);
 	}
 
 	return (

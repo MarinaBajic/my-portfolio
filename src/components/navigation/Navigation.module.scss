@@ -1,6 +1,12 @@
 @use '../../styles/abstracts/mixins' as *;
 @use '../../styles/abstracts/colors' as *;
 
+
+.nav {
+	position: relative;
+	z-index: 10;
+}
+
 .nav__list {
 	list-style-type: none;
 	display: flex;
