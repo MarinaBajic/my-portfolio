@@ -1,19 +1,29 @@
 import useMediaQuery from '@mui/material/useMediaQuery';
-import Skill from '../../components/skill/Skill';
+import Skill from './Skill';
 import styles from './Skills.module.scss';
+import Section from '../section/Section';
 
-type Props = {
-	skills: string[][];
-	skillsMobile: string[][];
-};
+let skills = [
+	['Sass', 'Tailwind', 'React', 'Angular', 'Astro'],
+	['Spring Boot', 'Microservices', 'PHP', 'Android Java'],
+	['Figma', 'GitHub', 'Docker', 'MySQL'],
+];
 
-const Skills = ({ skills, skillsMobile }: Props) => {
+const skillsMobile = [
+	['Sass', 'Tailwind'],
+	['React', 'Angular', 'Astro'],
+	['Spring Boot', 'Microservices'],
+	['PHP', 'Android Java', 'Figma'],
+	['GitHub', 'Docker', 'MySQL'],
+];
+
+const Skills = () => {
 	const isMobile = useMediaQuery('(max-width: 833px)');
 
 	if (isMobile) skills = skillsMobile;
 
 	return (
-		<section id="skills" className={`section ${styles.skills}`}>
+		<section id="skills" className={styles.skills}>
 			<span className="background">Skills</span>
 			{skills.map((skillGroup, index) => (
 				<div className={styles.group} key={index}>

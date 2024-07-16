@@ -1,0 +1,27 @@
+@use '../../styles/abstracts/mixins' as *;
+
+.section {
+	width: fit-content;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-block: 48px;
+	margin-block: 300px;
+	margin-inline: auto;
+	scroll-margin-top: 78px;
+
+	@include breakpoint('md', max) {
+		margin-block: 240px;
+	}
+
+	@include breakpoint('sm', max) {
+		padding-block: 24px;
+	}
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

@@ -2,14 +2,11 @@ import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5';
 import styles from './Header.module.scss';
 import { useEffect, useState } from 'react';
+import Logo from '../logo/Logo';
+import Navigation from '../navigation/Navigation';
+import Socials from '../socials/Socials';
 
-type Props = {
-	logo: any;
-	navigation: any;
-	socials: any;
-};
-
-const Header = (props: Props) => {
+const Header = () => {
 	const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
 	useEffect(() => {
@@ -22,8 +19,12 @@ const Header = (props: Props) => {
 
 	return (
 		<header className={styles.header}>
-			<div className={styles['header__logo']}>{props.logo}</div>
-			<div className={styles['header__nav']}>{props.navigation}</div>
+			<div className={styles['header__logo']}>
+				<Logo />
+			</div>
+			<div className={styles['header__nav']}>
+				<Navigation />
+			</div>
 			<button
 				onClick={toggleMenuOpen}
 				className={styles['header__button']}
@@ -35,15 +36,17 @@ const Header = (props: Props) => {
 					className={styles['header__nav-sm']}
 					onClick={() => setMenuOpen(false)}
 				>
-					{props.navigation}
+					<Navigation />
 				</div>
 			)}
-			<div className={styles['header__socials']}>{props.socials}</div>
+			<div className={styles['header__socials']}>
+				<Socials />
+			</div>
 			{menuOpen && (
 				<div
 					className={`${styles['header__socials']} ${styles['header__socials--sm']}`}
 				>
-					{props.socials}
+					<Socials />
 				</div>
 			)}
 		</header>

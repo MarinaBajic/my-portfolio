@@ -1,14 +1,13 @@
-import Title from '../../components/title/Title';
 import styles from './Contact.module.scss';
 
 const Contact = () => {
 	return (
 		<section id="contact" className={`section`}>
-			<Title
+			{/* <Title
 				background="Contact"
 				subheading="Contact me"
 				heading="How can I help?"
-			/>
+			/> */}
 		</section>
 	);
 };

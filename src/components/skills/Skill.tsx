@@ -8,9 +8,7 @@ type Props = {
 const Skill = ({ skill, isLast }: Props) => {
 	return (
 		<>
-			<span className={styles.skill}>
-				{skill}
-			</span>
+			<span className={styles.skill}>{skill}</span>
 			{!isLast && <span className={styles.skill}>|</span>}
 		</>
 	);

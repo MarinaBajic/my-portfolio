@@ -1,4 +1,5 @@
 @use '../../styles/abstracts/mixins' as *;
+@use '../../styles/abstracts/colors' as *;
 
 .socials {
 	display: flex;
@@ -7,5 +8,18 @@
 
 	@include breakpoint('sm', max) {
 		flex-direction: row;
+	}
+}
+
+.icon {
+	font-size: 40px;
+	color: $teal-lighter;
+
+	@include hover-focus {
+		color: $white;
+	}
+
+	@include breakpoint('md', max) {
+		font-size: 32px;
 	}
 }
