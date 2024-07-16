@@ -1,11 +1,9 @@
 @use './styles/abstracts/mixins' as *;
 
 .main {
-	@include breakpoint("md", max) {
-		padding-inline: 48px;
-	}
+	padding-inline: 48px;
 
-	@include breakpoint("sm", max) {
+	@include breakpoint('sm', max) {
 		padding-inline: 16px;
 	}
 }

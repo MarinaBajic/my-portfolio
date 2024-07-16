@@ -48,3 +48,28 @@
 	}
 }
 
+.background {
+	@include serif-regular;
+	font-size: 320px;
+	line-height: 112%;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: rgba($black, 0.2);
+	text-align: center;
+	position: absolute;
+	inset-inline: 0;
+	top: -48px;
+	z-index: -10;
+
+
+	@include breakpoint("md", max) {
+		font-size: 240px;
+		top: -16px
+	}
+
+	@include breakpoint("sm", max) {
+		font-size: 120px;
+		top: 0;
+	}
+}
+
