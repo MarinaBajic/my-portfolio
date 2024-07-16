@@ -10,7 +10,13 @@
 }
 
 .section {
+	background-color: red;
+	width: fit-content;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding-block: 48px;
 	margin-block: 300px;
-	position: relative;
+	margin-inline: auto;
 }
