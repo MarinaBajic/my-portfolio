@@ -6,6 +6,10 @@
 	font-size: 40px;
 	color: $teal-lighter;
 
+	@include hover-focus {
+		color: $white;
+	}
+
 	@include breakpoint('md', max) {
 		font-size: 32px;
 	}
