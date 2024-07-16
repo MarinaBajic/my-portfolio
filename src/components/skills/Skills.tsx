@@ -1,7 +1,6 @@
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Skill from './Skill';
 import styles from './Skills.module.scss';
-import Section from '../section/Section';
 
 let skills = [
 	['Sass', 'Tailwind', 'React', 'Angular', 'Astro'],

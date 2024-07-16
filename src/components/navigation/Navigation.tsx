@@ -16,8 +16,8 @@ const Navigation = () => {
 	return (
 		<nav className={styles.nav}>
 			<ul className={styles['nav__list']}>
-				{links.map((link) => (
-					<li className={styles['nav__item']}>
+				{links.map((link, index) => (
+					<li key={index} className={styles['nav__item']}>
 						<a href={link.href}>{link.text}</a>
 					</li>
 				))}

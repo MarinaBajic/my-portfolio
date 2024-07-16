@@ -4,8 +4,10 @@
 	width: fit-content;
 	position: relative;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	gap: 104px;
 	padding-block: 48px;
 	margin-block: 300px;
 	margin-inline: auto;

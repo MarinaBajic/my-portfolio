@@ -69,11 +69,11 @@ const Experience = () => {
 			subheading="Professional"
 			heading="Experience"
 		>
-			{experienceGroups.map((experienceGroup) => (
-				<div>
+			{experienceGroups.map((experienceGroup, index) => (
+				<div key={index}>
 					<span>{experienceGroup.heading}</span>
-					{experienceGroup.experiences.map((experience) => (
-						<div>
+					{experienceGroup.experiences.map((experience, index) => (
+						<div key={index}>
 							<div>
 								<span>{experience.start}</span>
 								<span>{experience.end}</span>

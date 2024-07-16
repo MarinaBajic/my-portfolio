@@ -21,8 +21,8 @@ const socials: Array<Social> = [
 const Socials = () => {
 	return (
 		<div className={styles.socials}>
-			{socials.map((social) => (
-				<a href={social.href} target="_blank" className={styles.icon}>
+			{socials.map((social, index) => (
+				<a key={index} href={social.href} target="_blank" className={styles.icon}>
 					<FontAwesomeIcon icon={social.icon} />
 				</a>
 			))}
