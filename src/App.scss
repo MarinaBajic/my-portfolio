@@ -18,4 +18,12 @@
 	padding-block: 48px;
 	margin-block: 300px;
 	margin-inline: auto;
+
+	@include breakpoint("md", max) {
+		margin-block: 240px;
+	}
+
+	@include breakpoint("sm", max) {
+		padding-block: 24px;
+	}
 }
