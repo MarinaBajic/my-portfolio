@@ -14,9 +14,9 @@ const Skills = ({ skills, skillsMobile }: Props) => {
 
 	return (
 		<section className={styles.skills}>
-			<span className='background'>Skills</span>
-			{skills.map((skillGroup) => (
-				<div className={styles.group}>
+			<span className="background">Skills</span>
+			{skills.map((skillGroup, index) => (
+				<div className={styles.group} key={index}>
 					{skillGroup.map((skill, index) => (
 						<Skill
 							key={skill}

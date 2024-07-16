@@ -10,6 +10,7 @@
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	pointer-events: none;
+	z-index: 10;
 
 	@include breakpoint('md', max) {
 		padding: 24px;
@@ -74,6 +75,7 @@
 	align-self: flex-end;
 	justify-self: flex-end;
 	pointer-events: auto;
+	position: relative;
 
 	&.header__socials--sm {
 		transform: scale(0);
