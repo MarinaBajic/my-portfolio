@@ -7,14 +7,14 @@
 	grid-template-columns: repeat(2, 1fr);
 	gap: 96px;
 
-	@include breakpoint("md", max) {
+	@include breakpoint('md', max) {
 		max-width: 495px;
 		display: flex;
 		flex-direction: column;
 		gap: 80px;
 	}
 
-	@include breakpoint("sm", max) {
+	@include breakpoint('sm', max) {
 		max-width: 343px;
 		gap: 48px;
 	}
@@ -26,7 +26,7 @@
 	align-items: center;
 	margin-top: 24px;
 
-	@include breakpoint("sm", max) {
+	@include breakpoint('sm', max) {
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 16px;
@@ -38,7 +38,7 @@
 	display: flex;
 	flex-direction: column;
 
-	@include breakpoint("sm", max) {
+	@include breakpoint('sm', max) {
 		flex-direction: row;
 		align-items: center;
 		gap: 8px;
