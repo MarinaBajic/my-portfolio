@@ -1,11 +1,11 @@
 import styles from './Navigation.module.scss';
 
-type Link = {
+type TLink = {
 	href: string;
 	text: string;
 };
 
-const links: Array<Link> = [
+const links: Array<TLink> = [
 	{ href: '#experience', text: 'Experience' },
 	{ href: '#projects', text: 'Projects' },
 	{ href: '#about', text: 'About' },

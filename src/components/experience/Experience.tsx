@@ -1,5 +1,5 @@
-import Section from '../section/Section';
 import styles from './Experience.module.scss';
+import Section from '../section/Section';
 
 type TExperience = {
 	start: string;
@@ -8,12 +8,12 @@ type TExperience = {
 	description: string;
 };
 
-type ExperienceGroup = {
+type TExperienceGroup = {
 	heading: string;
 	experiences: Array<TExperience>;
 };
 
-const experienceGroups: Array<ExperienceGroup> = [
+const experienceGroups: Array<TExperienceGroup> = [
 	{
 		heading: 'Education',
 		experiences: [
@@ -61,7 +61,7 @@ const experienceGroups: Array<ExperienceGroup> = [
 	},
 ];
 
-const Experience = () => {
+const Experiences = () => {
 	return (
 		<Section
 			id="experience"
@@ -71,35 +71,50 @@ const Experience = () => {
 		>
 			<div className={styles.experiences}>
 				{experienceGroups.map((experienceGroup, index) => (
-					<div key={index}>
-						<span className="title title--primary">
-							{experienceGroup.heading}
-						</span>
-						{experienceGroup.experiences.map(
-							(experience, index) => (
-								<div key={index} className={styles.card}>
-									<div className={styles.date}>
-										<span>{experience.start}</span>
-										<span className={styles.end}>
-											{experience.end}
-										</span>
-									</div>
-									<div className={styles.content}>
-										<span className="title title--tertiary">
-											{experience.title}
-										</span>
-										<span className={styles.description}>
-											{experience.description}
-										</span>
-									</div>
-								</div>
-							),
-						)}
-					</div>
+					<ExperienceGroup
+						key={index}
+						experienceGroup={experienceGroup}
+					/>
 				))}
 			</div>
 		</Section>
 	);
 };
 
-export default Experience;
+const ExperienceGroup = ({
+	experienceGroup,
+}: {
+	experienceGroup: TExperienceGroup;
+}) => {
+	return (
+		<div>
+			<span className="title title--primary">
+				{experienceGroup.heading}
+			</span>
+			{experienceGroup.experiences.map((experience, index) => (
+				<Experience key={index} experience={experience} />
+			))}
+		</div>
+	);
+};
+
+const Experience = ({ experience }: { experience: TExperience }) => {
+	return (
+		<div className={styles.experience}>
+			<div className={styles.date}>
+				<span>{experience.start}</span>
+				<span className={styles.end}>{experience.end}</span>
+			</div>
+			<div className={styles.content}>
+				<span className="title title--tertiary">
+					{experience.title}
+				</span>
+				<span className={styles.description}>
+					{experience.description}
+				</span>
+			</div>
+		</div>
+	);
+};
+
+export default Experiences;

@@ -3,16 +3,16 @@ import styles from './Button.module.scss';
 type Props = {
 	href: string;
 	hierarchy?: string;
-	children: string;
+	text: string;
 };
 
-const Button = ({ href, hierarchy = 'primary', children }: Props) => {
+const Button = ({ href, hierarchy = 'primary', text }: Props) => {
 	return (
 		<a
 			href={href}
 			className={`${styles.btn} ${styles[`btn--${hierarchy}`]}`}
 		>
-			{children}
+			{text}
 		</a>
 	);
 };

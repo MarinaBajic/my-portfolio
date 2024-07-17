@@ -1,6 +1,6 @@
+import styles from './Header.module.scss';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5';
-import styles from './Header.module.scss';
 import { useEffect, useState } from 'react';
 import Logo from '../logo/Logo';
 import Navigation from '../navigation/Navigation';

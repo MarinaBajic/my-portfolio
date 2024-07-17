@@ -2,14 +2,14 @@ import Button from '../buttons/Button';
 import Section from '../section/Section';
 import styles from './Projects.module.scss';
 
-type Project = {
+type TProject = {
 	subheading: string;
 	heading: string;
 	stack: string[];
 	btns: string[];
 };
 
-const projects: Array<Project> = [
+const projects: Array<TProject> = [
 	{
 		subheading: 'UI/UX Design & Development',
 		heading: 'BarKod Website',
@@ -52,11 +52,11 @@ const Projects = () => {
 };
 
 type CardProps = {
-	project: Project;
+	project: TProject;
 	reversed: boolean;
 };
 
-const ProjectCard = ({ project, reversed = false }: CardProps) => {
+const ProjectCard = ({ project, reversed }: CardProps) => {
 	return (
 		<div className={`${styles.project} ${reversed ? styles.reversed : ''}`}>
 			<ProjectContent project={project} />
@@ -69,7 +69,7 @@ const ProjectCard = ({ project, reversed = false }: CardProps) => {
 	);
 };
 
-const ProjectContent = ({ project }: { project: Project }) => {
+const ProjectContent = ({ project }: { project: TProject }) => {
 	return (
 		<div className={styles.content}>
 			<div className={styles.title}>
@@ -88,9 +88,7 @@ const ProjectContent = ({ project }: { project: Project }) => {
 			</div>
 			<div className={styles.btns}>
 				{project.btns.map((btn, index) => (
-					<Button key={index} href="#">
-						{btn}
-					</Button>
+					<Button key={index} href="#" text={btn} />
 				))}
 			</div>
 		</div>

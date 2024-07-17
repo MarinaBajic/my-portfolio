@@ -22,16 +22,11 @@
 	}
 }
 
-.hero__btn {
-	width: fit-content;
-	margin-inline: auto;
-}
-
 .banner {
 	pointer-events: none;
 }
 
-.banner__subheading {
+.subheading {
 	@include serif-regular;
 	font-size: 36px;
 	color: $teal-lighter;
@@ -47,7 +42,7 @@
 	}
 }
 
-.banner__text {
+.headline {
 	@include sans-fancy;
 	font-size: 28px;
 
@@ -58,4 +53,11 @@
 	@include breakpoint('sm', max) {
 		font-size: 16px;
 	}
+}
+
+.btn {
+	width: fit-content;
+	display: flex;
+	gap: 32px;
+	margin-inline: auto;
 }

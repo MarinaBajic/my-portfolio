@@ -7,12 +7,12 @@ import {
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-type Social = {
+type TSocial = {
 	href: string;
 	icon: IconDefinition;
 };
 
-const socials: Array<Social> = [
+const socials: Array<TSocial> = [
 	{ href: 'https://www.linkedin.com/in/marina-bajic/', icon: faLinkedinIn },
 	{ href: 'https://github.com/MarinaBajic', icon: faGithub },
 	{ href: 'mailto:marinabajic10@gmail.com', icon: faEnvelope },
