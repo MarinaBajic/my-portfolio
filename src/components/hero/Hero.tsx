@@ -1,5 +1,5 @@
-import Button from '../../components/buttons/Button';
-import Slider from '../../components/slider/Slider';
+import Button from '../buttons/Button';
+import Slider from '../slider/Slider';
 import styles from './Hero.module.scss';
 
 const Hero = () => {

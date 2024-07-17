@@ -1,11 +1,11 @@
 import './App.scss';
 import Header from './components/header/Header';
-import Hero from './sections/hero/Hero';
+import Hero from './components/hero/Hero';
 import Skills from './components/skills/Skills';
 import Experience from './components/experience/Experience';
-import Projects from './sections/projects/Projects';
-import About from './sections/about/About';
-import Contact from './sections/contact/Contact';
+import Projects from './components/projects/Projects';
+import About from './components/about/About';
+import Contact from './components/contact/Contact';
 
 function App() {
 	return (
