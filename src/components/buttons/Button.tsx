@@ -6,9 +6,12 @@ type Props = {
 	children: string;
 };
 
-const Button = ({ href, hierarchy="primary", children }: Props) => {
+const Button = ({ href, hierarchy = 'primary', children }: Props) => {
 	return (
-		<a href={href} className={`${styles.btn} ${styles[`btn--${hierarchy}`]}`}>
+		<a
+			href={href}
+			className={`${styles.btn} ${styles[`btn--${hierarchy}`]}`}
+		>
 			{children}
 		</a>
 	);

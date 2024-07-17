@@ -25,12 +25,12 @@
 		box-shadow: 0 0 0 2px inset;
 	}
 
-	@include breakpoint("md", max) {
+	@include breakpoint('md', max) {
 		font-size: 20px;
 		box-shadow: 0 0 0 2px inset;
 	}
 
-	@include breakpoint("sm", max) {
+	@include breakpoint('sm', max) {
 		font-size: 16px;
 	}
 }

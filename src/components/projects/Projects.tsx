@@ -59,36 +59,40 @@ type CardProps = {
 const ProjectCard = ({ project, reversed = false }: CardProps) => {
 	return (
 		<div className={`${styles.project} ${reversed ? styles.reversed : ''}`}>
-			<div className={styles.content}>
-				<div className={styles.title}>
-					<span className="title title--quarternary">
-						{project.subheading}
-					</span>
-					<span className="title title--primary">
-						{project.heading}
-					</span>
-				</div>
-				<div className={styles.stack}>
-					{project.stack.map((tech, index) => (
-						<span
-							key={index}
-							className={styles.tech}
-						>{`[ ${tech} ]`}</span>
-					))}
-				</div>
-				<div className={styles.btns}>
-					{project.btns.map((btn, index) => (
-						<Button key={index} href="#">
-							{btn}
-						</Button>
-					))}
-				</div>
-			</div>
+			<ProjectContent project={project} />
 			<div
 				className={`${styles.images} ${
 					reversed ? styles.reversed : ''
 				}`}
 			></div>
+		</div>
+	);
+};
+
+const ProjectContent = ({ project }: { project: Project }) => {
+	return (
+		<div className={styles.content}>
+			<div className={styles.title}>
+				<span className="title title--quarternary">
+					{project.subheading}
+				</span>
+				<span className="title title--primary">{project.heading}</span>
+			</div>
+			<div className={styles.stack}>
+				{project.stack.map((tech, index) => (
+					<span
+						key={index}
+						className={styles.tech}
+					>{`[ ${tech} ]`}</span>
+				))}
+			</div>
+			<div className={styles.btns}>
+				{project.btns.map((btn, index) => (
+					<Button key={index} href="#">
+						{btn}
+					</Button>
+				))}
+			</div>
 		</div>
 	);
 };

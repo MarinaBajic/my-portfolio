@@ -12,7 +12,7 @@
 	margin-inline: auto;
 	gap: 48px;
 
-	@include breakpoint("md", max) {
+	@include breakpoint('md', max) {
 		max-width: 740px;
 	}
 
