@@ -74,18 +74,24 @@
 
 .title {
 	@include serif-regular;
+	text-transform: uppercase;
 
 	&.title--primary {
 		font-size: 40px;
 		font-weight: 700;
-		text-transform: uppercase;
 	}
 
 	&.title--tertiary {
 		font-size: 24px;
 		font-weight: 700;
-		text-transform: uppercase;
 		color: $gold;
+	}
+
+	&.title--quarternary {
+		@include sans-regular;
+		font-size: 20px;
+		font-weight: 500;
+		color: $teal-lighter;
 	}
 
 	@include breakpoint('md', max) {
@@ -104,6 +110,10 @@
 
 		&.title--tertiary {
 			font-size: 20px;
+		}
+
+		&.title--quarternary {
+			font-size: 16px;
 		}
 	}
 }
