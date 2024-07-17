@@ -1,6 +1,10 @@
-import useMediaQuery from '@mui/material/useMediaQuery';
-import Skill from './Skill';
 import styles from './Skills.module.scss';
+import { isMobile } from '../../utils/mediaQueryUtils';
+
+type SkillProps = {
+	skill: string;
+	isLast: boolean;
+};
 
 let skills = [
 	['Sass', 'Tailwind', 'React', 'Angular', 'Astro'],
@@ -17,9 +21,7 @@ const skillsMobile = [
 ];
 
 const Skills = () => {
-	const isMobile = useMediaQuery('(max-width: 833px)');
-
-	if (isMobile) skills = skillsMobile;
+	if (isMobile()) skills = skillsMobile;
 
 	return (
 		<section id="skills" className={styles.skills}>
@@ -36,6 +38,15 @@ const Skills = () => {
 				</div>
 			))}
 		</section>
+	);
+};
+
+const Skill = ({ skill, isLast }: SkillProps) => {
+	return (
+		<>
+			<span className={styles.skill}>{skill}</span>
+			{!isLast && <span className={styles.skill}>|</span>}
+		</>
 	);
 };
 

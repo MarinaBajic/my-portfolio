@@ -15,14 +15,20 @@ const links: Array<TLink> = [
 const Navigation = () => {
 	return (
 		<nav className={styles.nav}>
-			<ul className={styles['nav__list']}>
+			<ul className={styles.menu}>
 				{links.map((link, index) => (
-					<li key={index} className={styles['nav__item']}>
-						<a href={link.href}>{link.text}</a>
-					</li>
+					<Link key={index} link={link} />
 				))}
 			</ul>
 		</nav>
+	);
+};
+
+const Link = ({ link }: { link: TLink }) => {
+	return (
+		<li className={styles.link}>
+			<a href={link.href}>{link.text}</a>
+		</li>
 	);
 };
 

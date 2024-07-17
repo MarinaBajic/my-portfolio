@@ -1,12 +1,17 @@
+import styles from './Projects.module.scss';
 import Button from '../buttons/Button';
 import Section from '../section/Section';
-import styles from './Projects.module.scss';
 
 type TProject = {
 	subheading: string;
 	heading: string;
 	stack: string[];
 	btns: string[];
+};
+
+type CardProps = {
+	project: TProject;
+	reversed: boolean;
 };
 
 const projects: Array<TProject> = [
@@ -49,11 +54,6 @@ const Projects = () => {
 			</div>
 		</Section>
 	);
-};
-
-type CardProps = {
-	project: TProject;
-	reversed: boolean;
 };
 
 const ProjectCard = ({ project, reversed }: CardProps) => {

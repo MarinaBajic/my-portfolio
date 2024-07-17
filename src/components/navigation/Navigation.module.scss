@@ -6,7 +6,7 @@
 	z-index: 10;
 }
 
-.nav__list {
+.menu {
 	list-style-type: none;
 	display: flex;
 	flex-direction: column;
@@ -22,7 +22,7 @@
 	}
 }
 
-.nav__item {
+.link {
 	font-size: 18px;
 	text-transform: uppercase;
 
