@@ -1,0 +1,72 @@
+@use '../../styles/abstracts/mixins' as *;
+
+.experiences {
+	max-width: 1040px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 96px;
+
+	@include breakpoint("md", max) {
+		max-width: 495px;
+		display: flex;
+		flex-direction: column;
+		gap: 80px;
+	}
+
+	@include breakpoint("sm", max) {
+		max-width: 343px;
+		gap: 48px;
+	}
+}
+
+.card {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+	margin-top: 24px;
+
+	@include breakpoint("sm", max) {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+	}
+}
+
+.date {
+	font-family: 'Cinzel', serif;
+	display: flex;
+	flex-direction: column;
+
+	@include breakpoint("sm", max) {
+		flex-direction: row;
+		align-items: center;
+		gap: 8px;
+	}
+}
+
+.end {
+	font-size: 32px;
+	font-weight: 700;
+
+	@include breakpoint('md', max) {
+		font-size: 24px;
+	}
+
+	@include breakpoint('md', max) {
+		font-size: 20px;
+	}
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+.description {
+	font-size: 20px;
+
+	@include breakpoint('sm', max) {
+		font-size: 14px;
+	}
+}

@@ -18,6 +18,7 @@
 	}
 
 	@include breakpoint('sm', max) {
+		gap: 96px;
 		padding-block: 24px;
 	}
 }

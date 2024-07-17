@@ -69,23 +69,35 @@ const Experience = () => {
 			subheading="Professional"
 			heading="Experience"
 		>
-			{experienceGroups.map((experienceGroup, index) => (
-				<div key={index}>
-					<span>{experienceGroup.heading}</span>
-					{experienceGroup.experiences.map((experience, index) => (
-						<div key={index}>
-							<div>
-								<span>{experience.start}</span>
-								<span>{experience.end}</span>
-							</div>
-							<div>
-								<span>{experience.title}</span>
-								<span>{experience.description}</span>
-							</div>
-						</div>
-					))}
-				</div>
-			))}
+			<div className={styles.experiences}>
+				{experienceGroups.map((experienceGroup, index) => (
+					<div key={index}>
+						<span className="title title--primary">
+							{experienceGroup.heading}
+						</span>
+						{experienceGroup.experiences.map(
+							(experience, index) => (
+								<div key={index} className={styles.card}>
+									<div className={styles.date}>
+										<span>{experience.start}</span>
+										<span className={styles.end}>
+											{experience.end}
+										</span>
+									</div>
+									<div className={styles.content}>
+										<span className="title title--tertiary">
+											{experience.title}
+										</span>
+										<span className={styles.description}>
+											{experience.description}
+										</span>
+									</div>
+								</div>
+							),
+						)}
+					</div>
+				))}
+			</div>
 		</Section>
 	);
 };

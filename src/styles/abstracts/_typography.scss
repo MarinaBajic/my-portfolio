@@ -72,6 +72,42 @@
 	}
 }
 
+.title {
+	@include serif-regular;
+
+	&.title--primary {
+		font-size: 40px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&.title--tertiary {
+		font-size: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $gold;
+	}
+
+	@include breakpoint('md', max) {
+		&.title--primary {
+			font-size: 36px;
+		}
+	}
+
+	@include breakpoint('sm', max) {
+		&.title--primary {
+			font-size: 24px;
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+		}
+
+		&.title--tertiary {
+			font-size: 20px;
+		}
+	}
+}
+
 .background {
 	@include serif-regular;
 	font-size: 320px;
