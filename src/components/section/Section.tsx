@@ -11,7 +11,10 @@ type Props = {
 
 const Section = (props: Props) => {
 	return (
-		<section id={props.id} className={`${styles.section} ${props.style}`}>
+		<section
+			id={props.id}
+			className={`${styles.section} ${props.style ? props.style : ''}`}
+		>
 			<span className="background">{props.background}</span>
 			<div className={styles.title}>
 				<h2 className="heading heading--tertiary">
