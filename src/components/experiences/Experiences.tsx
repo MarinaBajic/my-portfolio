@@ -61,7 +61,7 @@ const Experience = ({ experience }: { experience: TExperience }) => {
 				<span className={styles.end}>{experience.end}</span>
 			</div>
 			<div className={styles.content}>
-				<span className="title title--tertiary">
+				<span className="title title--secondary">
 					{experience.title}
 				</span>
 				<span className={styles.description}>

@@ -55,7 +55,7 @@ const ProjectContent = ({ project }: { project: TProject }) => {
 	return (
 		<div className={styles.content}>
 			<div className={styles.title}>
-				<span className="title title--quarternary">
+				<span className="title title--tertiary">
 					{project.subheading}
 				</span>
 				<span className="title title--primary">{project.heading}</span>
