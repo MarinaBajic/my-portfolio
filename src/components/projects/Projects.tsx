@@ -1,6 +1,7 @@
 import styles from './Projects.module.scss';
 import Button from '../buttons/Button';
 import Section from '../section/Section';
+import projectsData from './projectsData.json';
 
 type TProject = {
 	subheading: string;
@@ -14,28 +15,9 @@ type CardProps = {
 	reversed: boolean;
 };
 
-const projects: Array<TProject> = [
-	{
-		subheading: 'UI/UX Design & Development',
-		heading: 'BarKod Website',
-		stack: ['Figma', 'Astro.js', 'Tailwind.css'],
-		btns: ['Figma', 'Live Site'],
-	},
-	{
-		subheading: 'Front-end Development',
-		heading: 'Regal Equine Oasis',
-		stack: ['Sass', 'Angular', 'TypeScript'],
-		btns: ['GitHub'],
-	},
-	{
-		subheading: 'Back-end Development',
-		heading: 'Regal Equine Oasis',
-		stack: ['Spring Boot', 'MySQL', 'Docker'],
-		btns: ['GitHub'],
-	},
-];
-
 const Projects = () => {
+	const projects: Array<TProject> = projectsData;
+
 	return (
 		<Section
 			id="projects"

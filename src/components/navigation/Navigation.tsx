@@ -1,18 +1,14 @@
 import styles from './Navigation.module.scss';
+import navigationData from './navigationData.json';
 
 type TLink = {
 	href: string;
 	text: string;
 };
 
-const links: Array<TLink> = [
-	{ href: '#experience', text: 'Experience' },
-	{ href: '#projects', text: 'Projects' },
-	{ href: '#about', text: 'About' },
-	{ href: '#contact', text: 'Contact' },
-];
-
 const Navigation = () => {
+	const links: Array<TLink> = navigationData;
+
 	return (
 		<nav className={styles.nav}>
 			<ul className={styles.menu}>

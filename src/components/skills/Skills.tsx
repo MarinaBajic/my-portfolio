@@ -1,27 +1,14 @@
 import styles from './Skills.module.scss';
 import { isMobile } from '../../utils/mediaQueryUtils';
+import skillsData from './skillsData.json';
 
 type SkillProps = {
 	skill: string;
 	isLast: boolean;
 };
 
-let skills = [
-	['Sass', 'Tailwind', 'React', 'Angular', 'Astro'],
-	['Spring Boot', 'Microservices', 'PHP', 'Android Java'],
-	['Figma', 'GitHub', 'Docker', 'MySQL'],
-];
-
-const skillsMobile = [
-	['Sass', 'Tailwind'],
-	['React', 'Angular', 'Astro'],
-	['Spring Boot', 'Microservices'],
-	['PHP', 'Android Java', 'Figma'],
-	['GitHub', 'Docker', 'MySQL'],
-];
-
 const Skills = () => {
-	if (isMobile()) skills = skillsMobile;
+	const skills = isMobile() ? skillsData.mobile : skillsData.desktop;
 
 	return (
 		<section id="skills" className={styles.skills}>

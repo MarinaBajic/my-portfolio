@@ -1,5 +1,6 @@
 import styles from './Slider.module.scss';
 import { register } from 'swiper/element/bundle';
+
 register();
 
 type Props = {

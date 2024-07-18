@@ -1,5 +1,6 @@
-import styles from './Experience.module.scss';
+import styles from './Experiences.module.scss';
 import Section from '../section/Section';
+import experienceGroupsData from './experiencesData.json';
 
 type TExperience = {
 	start: string;
@@ -13,55 +14,9 @@ type TExperienceGroup = {
 	experiences: Array<TExperience>;
 };
 
-const experienceGroups: Array<TExperienceGroup> = [
-	{
-		heading: 'Education',
-		experiences: [
-			{
-				start: '2020 -',
-				end: '2024',
-				title: 'University of Novi Sad, Faculty of Sciences',
-				description: "Bachelor's degree in Information Technologies",
-			},
-		],
-	},
-	{
-		heading: 'Internships',
-		experiences: [
-			{
-				start: 'May - Jun',
-				end: '2024',
-				title: 'Synechron | Web Developer',
-				description: 'Microservices | Spring Boot | React',
-			},
-			{
-				start: 'Sep',
-				end: '2023',
-				title: 'Vega IT | Web UI Developer',
-				description: 'HTML5 | Sass | JavaScript | Gsap',
-			},
-		],
-	},
-	{
-		heading: 'Organizations',
-		experiences: [
-			{
-				start: 'Mar -',
-				end: '2024',
-				title: 'BarKod | UI/UX Designer & Web Developer',
-				description: 'Figma | Astro | Tailwind',
-			},
-			{
-				start: '2022 -',
-				end: '2023',
-				title: 'BEST | IT Coordinator & Front-end Developer',
-				description: 'Figma | JavaScript | CSS | Notion',
-			},
-		],
-	},
-];
-
 const Experiences = () => {
+	const experienceGroups: Array<TExperienceGroup> = experienceGroupsData;
+
 	return (
 		<Section
 			id="experience"

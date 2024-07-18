@@ -1,0 +1,48 @@
+{
+	"desktop": [
+		[
+			"Sass",
+			"Tailwind",
+			"React",
+			"Angular",
+			"Astro"
+		],
+		[
+			"Spring Boot",
+			"Microservices",
+			"PHP",
+			"Android Java"
+		],
+		[
+			"Figma",
+			"GitHub",
+			"Docker",
+			"MySQL"
+		]
+	],
+	"mobile": [
+		[
+			"Sass",
+			"Tailwind"
+		],
+		[
+			"React",
+			"Angular",
+			"Astro"
+		],
+		[
+			"Spring Boot",
+			"Microservices"
+		],
+		[
+			"PHP",
+			"Android Java",
+			"Figma"
+		],
+		[
+			"GitHub",
+			"Docker",
+			"MySQL"
+		]
+	]
+}

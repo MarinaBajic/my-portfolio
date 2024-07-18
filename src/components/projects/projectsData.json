@@ -1,0 +1,39 @@
+[
+	{
+		"subheading": "UI/UX Design & Development",
+		"heading": "BarKod Website",
+		"stack": [
+			"Figma",
+			"Astro.js",
+			"Tailwind.css"
+		],
+		"btns": [
+			"Figma",
+			"Live Site"
+		]
+	},
+	{
+		"subheading": "Front-end Development",
+		"heading": "Regal Equine Oasis",
+		"stack": [
+			"Sass",
+			"Angular",
+			"TypeScript"
+		],
+		"btns": [
+			"GitHub"
+		]
+	},
+	{
+		"subheading": "Back-end Development",
+		"heading": "Regal Equine Oasis",
+		"stack": [
+			"Spring Boot",
+			"MySQL",
+			"Docker"
+		],
+		"btns": [
+			"GitHub"
+		]
+	}
+]
