@@ -19,6 +19,10 @@
 	font-family: 'Montserrat Alternates', sans-serif;
 }
 
+@mixin cursive {
+	font-family: 'Corinthia', cursive;
+}
+
 .heading {
 	@include serif-fancy;
 

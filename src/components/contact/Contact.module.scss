@@ -1,0 +1,114 @@
+@use '../../styles/abstracts/colors' as *;
+@use '../../styles/abstracts/mixins' as *;
+@use '../../styles/abstracts/typography' as *;
+
+.card {
+	width: 480px;
+	height: 280px;
+	perspective: 600px;
+
+	@include breakpoint('lg', min) {
+		@include hover-focus {
+			.content {
+				transform: rotateY(180deg);
+				transition: transform 0.5s;
+			}
+		}
+	}
+
+	@include breakpoint('sm', max) {
+		height: 164px;
+		width: 280px;
+	}
+}
+
+.content {
+	background-color: $teal;
+	padding: 20px;
+
+	@include breakpoint('lg', min) {
+		transition: transform 1s;
+		transform-style: preserve-3d;
+	}
+
+	@include breakpoint('sm', max) {
+		padding: 10px;
+	}
+}
+
+.front,
+.back {
+	width: 440px;
+	height: 240px;
+	display: grid;
+	border: 2px solid $gold;
+	color: $gold;
+	backface-visibility: hidden;
+}
+
+.front {
+	align-items: center;
+	justify-items: center;
+
+	@include breakpoint('md', max) {
+		transform: scale(0);
+		position: absolute;
+	}
+}
+
+.back {
+	grid-template-columns: auto;
+	position: absolute;
+	top: 20px;
+	padding: 35px 40px;
+	text-decoration: none;
+	transform: rotateY(180deg);
+
+	.logo {
+		width: 73px;
+	}
+
+	.email {
+		grid-column-start: 2;
+		align-self: flex-end;
+		justify-self: flex-end;
+	}
+
+	@include breakpoint('md', max) {
+		position: static;
+		transform: rotateY(0deg);
+	}
+
+	@include breakpoint('sm', max) {
+		width: 100%;
+		height: 100%;
+		grid-template-columns: 0 auto;
+		row-gap: 20px;
+		padding: 20px;
+
+		.logo {
+			transform: scale(0);
+		}
+	}
+}
+
+.signature {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	white-space: nowrap;
+
+	.name {
+		@include cursive;
+		font-size: 48px;
+		line-height: normal;
+	}
+
+	@include breakpoint('sm', max) {
+		align-items: center;
+
+		.name {
+			font-size: 34px;
+		}
+	}
+}
