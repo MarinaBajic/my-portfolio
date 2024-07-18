@@ -73,7 +73,7 @@
 	display: flex;
 	gap: 48px;
 
-	@include breakpoint("sm", max) {
+	@include breakpoint('sm', max) {
 		gap: 24px;
 	}
 }
@@ -95,7 +95,7 @@
 		margin-inline: 0;
 	}
 
-	@include breakpoint("sm", max) {
+	@include breakpoint('sm', max) {
 		width: 343px;
 		height: 343px;
 	}
