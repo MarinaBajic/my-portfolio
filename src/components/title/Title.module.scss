@@ -1,0 +1,25 @@
+@use '../../styles/abstracts/mixins' as *;
+@use '../../styles/abstracts/colors' as *;
+
+.title {
+	display: flex;
+	flex-direction: column;
+
+	& :first-child {
+		color: $teal-lighter;
+	}
+
+	@include breakpoint('md', max) {
+		align-items: center;
+	}
+}
+
+.gold {
+	& :first-child {
+		color: $gold-lightest;
+	}
+
+	& :last-child {
+		color: $gold;
+	}
+}

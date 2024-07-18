@@ -91,7 +91,6 @@
 		@include sans-regular;
 		font-size: 20px;
 		font-weight: 500;
-		color: $teal-lighter;
 	}
 
 	@include breakpoint('md', max) {

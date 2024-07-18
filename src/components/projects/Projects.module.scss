@@ -32,18 +32,9 @@
 	gap: 48px;
 	z-index: 5;
 
-	.title {
-		display: flex;
-		flex-direction: column;
-	}
-
 	@include breakpoint('md', max) {
 		align-items: center;
 		gap: 32px;
-
-		.title {
-			align-items: center;
-		}
 	}
 }
 

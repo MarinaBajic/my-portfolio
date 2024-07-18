@@ -3,6 +3,7 @@ import Button from '../buttons/Button';
 import Section from '../section/Section';
 import projectsData from './projectsData.json';
 import { isLargeScreen } from '../../utils/mediaQueryUtils';
+import Title from '../title/Title';
 
 type TProject = {
 	subheading: string;
@@ -56,12 +57,7 @@ const ProjectCard = ({ project, reversed }: CardProps) => {
 const ProjectContent = ({ project }: { project: TProject }) => {
 	return (
 		<div className={styles.content}>
-			<div className={styles.title}>
-				<span className="title title--tertiary">
-					{project.subheading}
-				</span>
-				<span className="title title--primary">{project.heading}</span>
-			</div>
+			<Title subtitle={project.subheading} title={project.heading} />
 			<div className={styles.stack}>
 				{project.stack.map((tech, index) => (
 					<span
