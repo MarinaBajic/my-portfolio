@@ -1,3 +1,4 @@
+import Background from '../background/Background';
 import styles from './Section.module.scss';
 
 type Props = {
@@ -15,7 +16,7 @@ const Section = (props: Props) => {
 			id={props.id}
 			className={`${styles.section} ${props.style ? props.style : ''}`}
 		>
-			<span className="background">{props.background}</span>
+			<Background text={props.background} />
 			<div className={styles.title}>
 				<h2 className="heading heading--tertiary">
 					{props.subheading}

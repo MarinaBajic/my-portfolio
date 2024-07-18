@@ -1,6 +1,7 @@
 import styles from './Skills.module.scss';
 import { isSmallScreen } from '../../utils/mediaQueryUtils';
 import skillsData from './skillsData.json';
+import Background from '../background/Background';
 
 type SkillProps = {
 	skill: string;
@@ -12,7 +13,7 @@ const Skills = () => {
 
 	return (
 		<section id="skills" className={styles.skills}>
-			<span className="background">Skills</span>
+			<Background text="Skills" />
 			{skills.map((skillGroup, index) => (
 				<div className={styles.group} key={index}>
 					{skillGroup.map((skill, index) => (
