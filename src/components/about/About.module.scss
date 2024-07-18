@@ -1,8 +1,14 @@
+@use '../../styles/abstracts/mixins' as *;
+
 .about {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	gap: 80px;
+
+	@include breakpoint('md', max) {
+		flex-direction: column-reverse;
+	}
 }
 
 .content {
@@ -15,6 +21,10 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		gap: 24px;
+	}
+
+	@include breakpoint('md', max) {
 		gap: 24px;
 	}
 }
@@ -35,5 +45,15 @@
 	.text {
 		position: absolute;
 		inset: 0;
+	}
+
+	@include breakpoint('md', max) {
+		max-width: 418px;
+		height: 546px;
+	}
+
+	@include breakpoint('sm', max) {
+		max-width: 338px;
+		height: 441px;
 	}
 }
