@@ -1,5 +1,5 @@
 import styles from './Skills.module.scss';
-import { isMobile } from '../../utils/mediaQueryUtils';
+import { isSmallScreen } from '../../utils/mediaQueryUtils';
 import skillsData from './skillsData.json';
 
 type SkillProps = {
@@ -8,7 +8,7 @@ type SkillProps = {
 };
 
 const Skills = () => {
-	const skills = isMobile() ? skillsData.mobile : skillsData.desktop;
+	const skills = isSmallScreen() ? skillsData.mobile : skillsData.desktop;
 
 	return (
 		<section id="skills" className={styles.skills}>

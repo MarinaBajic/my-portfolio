@@ -1,7 +1,12 @@
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-const MOBILE_MEDIA_QUERY = '(max-width: 833px)';
+const LARGE_MEDIA_QUERY = '(min-width: 1440px)';
+const SMALL_MEDIA_QUERY = '(max-width: 833px)';
 
-export const isMobile = () => {
-	return useMediaQuery(MOBILE_MEDIA_QUERY);
+export const isSmallScreen = () => {
+	return useMediaQuery(SMALL_MEDIA_QUERY);
+};
+
+export const isLargeScreen = () => {
+	return useMediaQuery(LARGE_MEDIA_QUERY);
 };
