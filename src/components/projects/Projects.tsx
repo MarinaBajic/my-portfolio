@@ -2,6 +2,7 @@ import styles from './Projects.module.scss';
 import Button from '../buttons/Button';
 import Section from '../section/Section';
 import projectsData from './projectsData.json';
+import { isLargeScreen } from '../../utils/mediaQueryUtils';
 
 type TProject = {
 	subheading: string;
@@ -30,7 +31,7 @@ const Projects = () => {
 					<ProjectCard
 						key={index}
 						project={project}
-						reversed={index % 2 === 1}
+						reversed={isLargeScreen() && index % 2 === 1}
 					/>
 				))}
 			</div>
