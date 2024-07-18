@@ -72,6 +72,10 @@
 .btns {
 	display: flex;
 	gap: 48px;
+
+	@include breakpoint("sm", max) {
+		gap: 24px;
+	}
 }
 
 .images {
@@ -89,5 +93,10 @@
 	@include breakpoint('md', max) {
 		width: 484px;
 		margin-inline: 0;
+	}
+
+	@include breakpoint("sm", max) {
+		width: 343px;
+		height: 343px;
 	}
 }
