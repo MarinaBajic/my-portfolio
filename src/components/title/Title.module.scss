@@ -1,25 +1,26 @@
 @use '../../styles/abstracts/mixins' as *;
 @use '../../styles/abstracts/colors' as *;
+@use '../../styles/abstracts/typography' as *;
 
-.title {
+.container {
 	display: flex;
 	flex-direction: column;
-
-	& :first-child {
-		color: $teal-lighter;
-	}
 
 	@include breakpoint('md', max) {
 		align-items: center;
 	}
 }
 
-.gold {
-	& :first-child {
-		color: $gold-lightest;
-	}
+.title {
+	@include font-designer;
+	font-size: 32px;
+	font-weight: 700;
 
-	& :last-child {
-		color: $gold;
+	@include breakpoint('sm', max) {
+		font-size: 24px;
 	}
+}
+
+.subtitle {
+	color: rgba($white, 0.8);
 }

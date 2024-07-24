@@ -6,19 +6,10 @@ import curvedText from '../../assets/curved-text.svg';
 
 const About = () => {
 	return (
-		<Section
-			id="about"
-			background="About"
-			subheading="About me"
-			heading="Dedicated Front-end Developer"
-		>
+		<Section id="about" background="about" heading="About me">
 			<div className={styles.about}>
 				<div className={styles.content}>
-					<Title
-						subtitle="Hello, my name is"
-						title="Marina Bajić"
-						color="gold"
-					/>
+					<Title subtitle="Hello, my name is" title="Marina Bajić" />
 					<div className={styles.text}>
 						<p>
 							Creating high-quality code and design is what I do.
