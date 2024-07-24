@@ -8,8 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 body {
-	font-family: 'Montserrat', sans-serif;
-	font-optical-sizing: auto;
+	@include font-regular;
 	font-size: 20px;
 
 	color: $white;

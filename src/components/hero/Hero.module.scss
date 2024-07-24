@@ -27,7 +27,6 @@
 }
 
 .subheading {
-	@include serif-regular;
 	font-size: 36px;
 	color: $teal-lighter;
 	display: flex;
@@ -43,7 +42,6 @@
 }
 
 .headline {
-	@include sans-fancy;
 	font-size: 28px;
 
 	@include breakpoint('md', max) {
