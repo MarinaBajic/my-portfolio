@@ -6,6 +6,7 @@ declare namespace JSX {
 		> & {
 			loop?: string;
 			speed?: string;
+			direction: string;
 		};
 		'swiper-slide': React.DetailedHTMLProps<
 			React.HTMLAttributes<HTMLElement>,

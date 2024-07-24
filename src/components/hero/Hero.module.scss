@@ -9,8 +9,9 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	padding-top: 64px;
 	margin-inline: auto;
-	gap: 48px;
+	gap: 96px;
 
 	@include breakpoint('md', max) {
 		max-width: 740px;
@@ -23,33 +24,32 @@
 }
 
 .banner {
-	pointer-events: none;
-}
-
-.subheading {
-	font-size: 36px;
-	color: $teal-lighter;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 
-	@include breakpoint('md', max) {
-		font-size: 32px;
-	}
-
-	@include breakpoint('sm', max) {
-		font-size: 24px;
+	.background {
+		text-align: center;
+		position: relative;
+		z-index: -20;
+		top: 0;
+		margin-block: -48px;
 	}
 }
 
-.headline {
-	font-size: 28px;
+.heading {
+	@include font-designer;
+	font-size: 64px;
+	line-height: 100%;
+	font-weight: 900;
+	color: $gold;
+	text-transform: uppercase;
 
 	@include breakpoint('md', max) {
-		font-size: 24px;
+		font-size: 48px;
 	}
 
 	@include breakpoint('sm', max) {
-		font-size: 16px;
+		font-size: 24px;
 	}
 }
 

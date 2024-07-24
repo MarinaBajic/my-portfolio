@@ -1,47 +1,24 @@
 import styles from './Hero.module.scss';
 import Button from '../buttons/Button';
 import Slider from '../slider/Slider';
+import Background from '../background/Background';
 
 const Hero = () => {
 	return (
 		<section id="hero" className={styles.hero}>
 			<div className={styles.banner}>
-				<span className={styles.subheading}>Marina Bajić</span>
+				<Background text="marina" style={styles.background} />
 				<Slider
 					slides={[
-						<h1 className="heading heading--primary">
-							Front-end
-							<br />
-							Developer
-						</h1>,
-						<span className="heading heading--primary">
-							Web
-							<br />
-							Designer
-						</span>,
+						<h1 className={styles.heading}>Front-end Developer</h1>,
+						<span className={styles.heading}>UI/UX Designer</span>,
 					]}
 				/>
-				<Slider
-					slides={[
-						<span className={styles.headline}>
-							I turn designs into pixel-perfect and responsive web
-							sites.
-						</span>,
-						<span className={styles.headline}>
-							I design modern and elegant web sites for people
-							with taste.
-						</span>,
-					]}
-					reversed={true}
-				/>
+				<Background text="bajic" style={styles.background} />
 			</div>
 			<div className={styles.btn}>
-				<Button href="#projects" text="My work" />
-				<Button
-					href="#contact"
-					hierarchy="secondary"
-					text="Get in touch"
-				/>
+				<Button href="#projects" color="gold" text="My work" />
+				<Button href="#contact" color="teal" text="Get in touch" />
 			</div>
 		</section>
 	);

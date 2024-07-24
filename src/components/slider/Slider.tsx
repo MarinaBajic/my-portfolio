@@ -12,6 +12,7 @@ const Slider = ({ slides, reversed = false }: Props) => {
 	return (
 		<swiper-container
 			className={styles.slider}
+			direction="vertical"
 			loop="true"
 			autoplay-delay="2500"
 			autoplay-reverse-direction={reversed}
