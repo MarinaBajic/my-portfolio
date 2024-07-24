@@ -1,6 +1,7 @@
 @use 'styles/base/reset';
 @use 'styles/abstracts/typography';
 @use 'styles/abstracts/colors' as *;
+@use 'styles/abstracts/mixins' as *;
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Montserrat+Alternates:wght@400;500;600;700;800;900&family=Montserrat:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Corinthia&display=swap');
@@ -8,7 +9,7 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-optical-sizing: auto;
-	font-size: 16px;
+	font-size: 20px;
 
 	color: $white;
 	background-color: $teal-dark;
@@ -29,6 +30,10 @@ body {
 
 	&::-webkit-scrollbar-thumb:hover {
 		background: $gold-light;
+	}
+
+	@include breakpoint('sm', max) {
+		font-size: 16px;
 	}
 }
 

@@ -10,7 +10,7 @@ const Navigation = () => {
 	const links: Array<TLink> = navigationData;
 
 	return (
-		<nav className={styles.nav}>
+		<nav>
 			<ul className={styles.menu}>
 				{links.map((link, index) => (
 					<Link key={index} link={link} />
@@ -23,7 +23,7 @@ const Navigation = () => {
 const Link = ({ link }: { link: TLink }) => {
 	return (
 		<li className={styles.link}>
-			<a href={link.href}>{link.text}</a>
+			<a href={link.href}>/ {link.text}</a>
 		</li>
 	);
 };

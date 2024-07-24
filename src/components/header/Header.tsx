@@ -33,7 +33,7 @@ const Header = () => {
 			</button>
 			{menuOpen && (
 				<div
-					className={styles['header__nav-sm']}
+					className={styles['header__nav-md']}
 					onClick={() => setMenuOpen(false)}
 				>
 					<Navigation />
@@ -44,7 +44,7 @@ const Header = () => {
 			</div>
 			{menuOpen && (
 				<div
-					className={`${styles['header__socials']} ${styles['header__socials--sm']}`}
+					className={`${styles['header__socials']} ${styles['header__socials--md']}`}
 				>
 					<Socials />
 				</div>

@@ -8,11 +8,15 @@
 		height: 50px;
 	}
 
+	@include breakpoint('md', max) {
+		img {
+			height: 37px;
+		}
+	}
+
 	@include breakpoint('sm', max) {
 		img {
 			height: 30px;
-			position: relative;
-			z-index: 10;
 		}
 	}
 }

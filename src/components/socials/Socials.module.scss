@@ -3,19 +3,14 @@
 
 .socials {
 	display: flex;
-	flex-direction: column;
 	gap: 24px;
-
-	@include breakpoint('sm', max) {
-		flex-direction: row;
-	}
 }
 
 .icon {
-	font-size: 32px;
-	color: $teal-lighter;
+	font-size: 24px;
+	color: $white;
 
 	@include hover-focus {
-		color: $white;
+		color: $gold;
 	}
 }

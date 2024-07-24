@@ -1,20 +1,15 @@
 @use '../../styles/abstracts/mixins' as *;
 @use '../../styles/abstracts/colors' as *;
 
-.nav {
-	position: relative;
-	z-index: 10;
-}
-
 .menu {
 	list-style-type: none;
 	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	gap: 18px;
+	gap: 24px;
 
-	@include breakpoint('sm', max) {
+	@include breakpoint('md', max) {
+		font-size: 24px;
 		background-color: $teal-dark;
+		flex-direction: column;
 		align-items: center;
 		gap: 32px;
 		height: 100dvh;
@@ -23,15 +18,14 @@
 }
 
 .link {
-	font-size: 18px;
-	text-transform: uppercase;
-
 	a {
 		text-decoration: none;
 		color: $white;
 	}
 
 	@include hover-focus {
-		box-shadow: 0 -2px 0 $gold inset;
+		a {
+			color: $gold;
+		}
 	}
 }
