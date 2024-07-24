@@ -1,25 +1,22 @@
-@use '../../styles/abstracts/typography' as *;
 @use '../../styles/abstracts/colors' as *;
 @use '../../styles/abstracts/mixins' as *;
 
 .background {
-	@include serif-regular;
-	font-size: 320px;
-	line-height: 112%;
+	font-size: 200px;
+	line-height: 100%;
 	font-weight: 900;
-	text-transform: uppercase;
-	color: rgba($black, 0.2);
+	color: rgba($black, 0.25);
 	position: absolute;
 	top: -48px;
 	z-index: -10;
 
 	@include breakpoint('md', max) {
-		font-size: 240px;
+		font-size: 160px;
 		top: -16px;
 	}
 
 	@include breakpoint('sm', max) {
-		font-size: 120px;
+		font-size: 80px;
 		top: 0;
 	}
 }

@@ -6,7 +6,7 @@
 	font-optical-sizing: auto;
 }
 
-@mixin serif-fancy {
+@mixin font-designer {
 	font-family: 'Cinzel Decorative', serif;
 }
 
@@ -23,8 +23,12 @@
 	font-family: 'Corinthia', cursive;
 }
 
+@mixin font-developer {
+	font-family: "Anton", sans-serif;
+}
+
 .heading {
-	@include serif-fancy;
+	@include font-designer;
 
 	&.heading--primary {
 		font-size: 150px;
