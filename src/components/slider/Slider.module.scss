@@ -8,7 +8,7 @@ swiper-container {
 		height: 64px;
 	}
 
-	@include breakpoint('md', max) {
+	@include breakpoint('sm', max) {
 		height: 32px;
 	}
 }

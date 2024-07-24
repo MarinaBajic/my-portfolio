@@ -19,7 +19,7 @@
 
 	@include breakpoint('sm', max) {
 		max-width: 343px;
-		gap: 32px;
+		gap: 64px;
 	}
 }
 
@@ -33,6 +33,18 @@
 		z-index: -20;
 		top: 0;
 		margin-block: -48px;
+	}
+
+	@include breakpoint('md', max) {
+		.background {
+			margin-block: -40px;
+		}
+	}
+
+	@include breakpoint('sm', max) {
+		.background {
+			margin-block: -20px;
+		}
 	}
 }
 
