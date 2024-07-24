@@ -6,7 +6,7 @@ const Contact = () => {
 	return (
 		<Section
 			id="contact"
-			background="Contact"
+			background="ontact"
 			subheading="Contact me"
 			heading="How can I help?"
 		>
