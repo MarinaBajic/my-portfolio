@@ -1,22 +1,18 @@
-@use '../../styles/abstracts/_mixins.scss' as *;
+@use '../../styles/abstracts/mixins' as *;
 
 .logo {
 	display: block;
 	width: fit-content;
+}
 
-	img {
-		height: 50px;
-	}
+.logo img {
+	height: 50px;
 
 	@include breakpoint('md', max) {
-		img {
-			height: 37px;
-		}
+		height: 37px;
 	}
 
 	@include breakpoint('sm', max) {
-		img {
-			height: 30px;
-		}
+		height: 30px;
 	}
 }
