@@ -1,10 +1,7 @@
-@use '../../styles/abstracts/typography' as *;
 @use '../../styles/abstracts/colors' as *;
 @use '../../styles/abstracts/mixins' as *;
 
 .btn {
-	@include sans-fancy;
-	font-size: 24px;
 	font-weight: 500;
 	text-decoration: none;
 	width: fit-content;
@@ -13,11 +10,15 @@
 	box-shadow: 0 -2px 0 inset;
 	cursor: pointer;
 
-	&.btn--primary {
+	&.btn--white {
+		color: $white;
+	}
+
+	&.btn--gold {
 		color: $gold;
 	}
 
-	&.btn--secondary {
+	&.btn--teal {
 		color: $teal-lighter;
 	}
 
@@ -26,11 +27,6 @@
 	}
 
 	@include breakpoint('md', max) {
-		font-size: 20px;
 		box-shadow: 0 0 0 2px inset;
-	}
-
-	@include breakpoint('sm', max) {
-		font-size: 16px;
 	}
 }
