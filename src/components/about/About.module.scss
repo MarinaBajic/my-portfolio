@@ -1,6 +1,14 @@
 @use '../../styles/abstracts/mixins' as *;
 @use '../../styles/abstracts/colors' as *;
 
+.section {
+	padding-top: 64px;
+
+	@include breakpoint('sm', max) {
+		padding-top: 32px;
+	}
+}
+
 .about {
 	display: flex;
 	flex-direction: row-reverse;
