@@ -16,10 +16,16 @@
 	margin-inline: auto;
 	scroll-margin-top: 78px;
 
+	@include breakpoint('md', max) {
+		max-width: 720px;
+	}
+
 	@include breakpoint('sm', max) {
-		margin-block: 200px;
+		max-width: 343px;
+
 		gap: 64px;
 		padding-block: 24px;
+		margin-block: 200px;
 	}
 }
 

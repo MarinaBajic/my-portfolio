@@ -1,5 +1,5 @@
 @use 'styles/base/reset';
-@use 'styles/abstracts/typography';
+@use 'styles/abstracts/typography' as *;
 @use 'styles/abstracts/colors' as *;
 @use 'styles/abstracts/mixins' as *;
 
@@ -32,7 +32,7 @@ body {
 		background: $gold-light;
 	}
 
-	@include breakpoint('sm', max) {
+	@include breakpoint('md', max) {
 		font-size: 16px;
 	}
 }

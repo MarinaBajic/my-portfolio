@@ -1,7 +1,7 @@
 @use './styles/abstracts/mixins' as *;
 
 .main {
-	padding-inline: 48px;
+	padding-inline: 24px;
 	overflow: hidden;
 
 	@include breakpoint('sm', max) {

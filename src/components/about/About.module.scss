@@ -1,13 +1,20 @@
 @use '../../styles/abstracts/mixins' as *;
+@use '../../styles/abstracts/colors' as *;
 
 .about {
 	display: flex;
+	flex-direction: row-reverse;
 	align-items: center;
 	justify-content: space-between;
-	gap: 80px;
+	gap: 64px;
 
 	@include breakpoint('md', max) {
+		gap: 48px;
+	}
+
+	@include breakpoint('sm', max) {
 		flex-direction: column-reverse;
+		gap: 32px;
 	}
 }
 
@@ -17,11 +24,11 @@
 	gap: 32px;
 
 	.text {
-		max-width: 443px;
+		color: rgba($white, 0.8);
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		gap: 24px;
+		gap: 16px;
 	}
 
 	@include breakpoint('md', max) {
@@ -30,9 +37,9 @@
 }
 
 .profile {
-	max-width: 486px;
+	max-width: 360px;
 	width: 100%;
-	height: 634px;
+	height: 470px;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -44,16 +51,10 @@
 
 	.text {
 		position: absolute;
-		inset: 0;
 	}
 
 	@include breakpoint('md', max) {
-		max-width: 418px;
-		height: 546px;
-	}
-
-	@include breakpoint('sm', max) {
-		max-width: 338px;
-		height: 441px;
+		max-width: 240px;
+		height: 304px;
 	}
 }

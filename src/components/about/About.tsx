@@ -12,18 +12,20 @@ const About = () => {
 					<Title subtitle="Hello, my name is" title="Marina Bajić" />
 					<div className={styles.text}>
 						<p>
-							Creating high-quality code and design is what I do.
+							Creating <b>high-quality</b> code and design is what
+							I do.
 						</p>
 						<p>
-							Recent graduate in Informatics – Information
-							Technologies from the Faculty of Sciences,
-							University of Novi Sad, Serbia, volunteering in a
-							non-governmental organization.
+							Recent graduate in{' '}
+							<b>Informatics – Information Technologies</b> from
+							the Faculty of Sciences, University of Novi Sad,
+							Serbia, volunteering in a non-governmental
+							organization.
 						</p>
 						<p>
-							Loves going to hackathons, designing and developing
-							web applications, reading, sewing, and solving
-							puzzles.
+							Loves going to <b>hackathons</b>, designing and
+							developing web applications, reading, sewing, and
+							solving puzzles.
 						</p>
 					</div>
 				</div>
