@@ -23,7 +23,7 @@ const Projects = () => {
 	return (
 		<Section
 			id="projects"
-			background="Projects"
+			background="projects"
 			subheading="Personal"
 			heading="Projects"
 		>
@@ -36,7 +36,7 @@ const Projects = () => {
 					/>
 				))}
 			</div>
-			<Button href="#" hierarchy="secondary" text="See more" />
+			<Button href="#" color="teal" text="See more" />
 		</Section>
 	);
 };
@@ -57,7 +57,11 @@ const ProjectCard = ({ project, reversed }: CardProps) => {
 const ProjectContent = ({ project }: { project: TProject }) => {
 	return (
 		<div className={styles.content}>
-			<Title subtitle={project.subheading} title={project.heading} />
+			<Title
+				subtitle={project.subheading}
+				title={project.heading}
+				style={styles.title}
+			/>
 			<div className={styles.stack}>
 				{project.stack.map((tech, index) => (
 					<span
@@ -68,7 +72,7 @@ const ProjectContent = ({ project }: { project: TProject }) => {
 			</div>
 			<div className={styles.btns}>
 				{project.btns.map((btn, index) => (
-					<Button key={index} href="#" text={btn} />
+					<Button key={index} href="#" text={btn} color="gold" />
 				))}
 			</div>
 		</div>
