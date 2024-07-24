@@ -13,7 +13,7 @@ const Skills = () => {
 
 	return (
 		<section id="skills" className={styles.skills}>
-			<Background text="Skills" />
+			<Background text="skills" />
 			{skills.map((skillGroup, index) => (
 				<div className={styles.group} key={index}>
 					{skillGroup.map((skill, index) => (

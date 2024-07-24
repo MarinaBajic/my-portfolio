@@ -5,7 +5,7 @@ type Props = {
 	id: string;
 	background: string;
 	subheading?: string;
-	heading?: string;
+	heading: string;
 	style?: string;
 	children: any;
 };
@@ -18,10 +18,10 @@ const Section = (props: Props) => {
 		>
 			<Background text={props.background} />
 			<div className={styles.title}>
-				<h2 className="heading heading--tertiary">
+				<h2 className={styles.subheading}>
 					{props.subheading}
 				</h2>
-				<h3 className="heading heading--secondary">{props.heading}</h3>
+				<h3 className={styles.heading}>{props.heading}</h3>
 			</div>
 			{props.children}
 		</section>
