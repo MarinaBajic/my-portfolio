@@ -5,10 +5,6 @@
 .content {
 	display: flex;
 	flex-direction: column;
-
-	@include breakpoint('md', max) {
-		align-items: center;
-	}
 }
 
 .title {
