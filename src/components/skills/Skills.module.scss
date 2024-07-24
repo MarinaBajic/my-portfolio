@@ -22,12 +22,17 @@
 	display: flex;
 	gap: 20px;
 
+	@include breakpoint('md', max) {
+		gap: 12px;
+	}
+
 	@include breakpoint('sm', max) {
 		gap: 8px;
 	}
 }
 
 .skill {
+	@include font-designer;
 	font-size: 32px;
 	font-weight: 700;
 
