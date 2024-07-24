@@ -1,16 +1,5 @@
 [
 	{
-		"heading": "Education",
-		"experiences": [
-			{
-				"start": "2020 -",
-				"end": "2024",
-				"title": "University of Novi Sad, Faculty of Sciences",
-				"description": "Bachelor's degree in Information Technologies"
-			}
-		]
-	},
-	{
 		"heading": "Internships",
 		"experiences": [
 			{
@@ -24,6 +13,17 @@
 				"end": "2023",
 				"title": "Vega IT | Web UI Developer",
 				"description": "HTML5 | Sass | JavaScript | Gsap"
+			}
+		]
+	},
+	{
+		"heading": "Education",
+		"experiences": [
+			{
+				"start": "2020 -",
+				"end": "2024",
+				"title": "University of Novi Sad, Faculty of Sciences",
+				"description": "Bachelor's degree in Information Technologies"
 			}
 		]
 	},

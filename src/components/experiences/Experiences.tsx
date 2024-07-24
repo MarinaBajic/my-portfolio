@@ -20,7 +20,7 @@ const Experiences = () => {
 	return (
 		<Section
 			id="experience"
-			background="Experience"
+			background="experience"
 			subheading="Professional"
 			heading="Experience"
 		>
@@ -42,10 +42,13 @@ const ExperienceGroup = ({
 	experienceGroup: TExperienceGroup;
 }) => {
 	return (
-		<div>
-			<span className="title title--primary">
-				{experienceGroup.heading}
-			</span>
+		<div className={styles.card}>
+			<div>
+				<span className={styles.heading}>
+					{experienceGroup.heading}
+				</span>
+				<div className={styles.decoration}></div>
+			</div>
 			{experienceGroup.experiences.map((experience, index) => (
 				<Experience key={index} experience={experience} />
 			))}
@@ -61,9 +64,7 @@ const Experience = ({ experience }: { experience: TExperience }) => {
 				<span className={styles.end}>{experience.end}</span>
 			</div>
 			<div className={styles.content}>
-				<span className="title title--secondary">
-					{experience.title}
-				</span>
+				<span className={styles.title}>{experience.title}</span>
 				<span className={styles.description}>
 					{experience.description}
 				</span>

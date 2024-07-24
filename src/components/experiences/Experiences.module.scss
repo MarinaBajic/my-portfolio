@@ -1,70 +1,93 @@
 @use '../../styles/abstracts/mixins' as *;
+@use '../../styles/abstracts/typography' as *;
+@use '../../styles/abstracts/colors' as *;
 
 .experiences {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 96px;
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+}
 
-	@include breakpoint('md', max) {
-		max-width: 495px;
-		display: flex;
-		flex-direction: column;
-		gap: 80px;
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+
+	.heading {
+		@include font-designer;
+		font-size: 32px;
+		font-weight: 700;
+	}
+
+	.decoration {
+		width: 155px;
+		height: 2px;
+		background-color: rgba($white, 0.8);
 	}
 
 	@include breakpoint('sm', max) {
-		max-width: 343px;
-		gap: 48px;
+		align-items: center;
+
+		.heading {
+			font-size: 24px;
+		}
 	}
 }
 
 .experience {
-	display: flex;
-	gap: 24px;
-	align-items: center;
-	margin-top: 24px;
+	display: grid;
+	grid-template-columns: 1fr 5fr;
 
 	@include breakpoint('sm', max) {
+		width: 100%;
+		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
-		gap: 16px;
+		gap: 8px;
 	}
 }
 
 .date {
-	font-family: 'Cinzel', serif;
+	@include font-designer;
+	font-size: 16px;
+	color: $gold-lightest;
+
 	display: flex;
 	flex-direction: column;
+
+	.end {
+		font-size: 24px;
+		font-weight: 700;
+	}
 
 	@include breakpoint('sm', max) {
 		flex-direction: row;
 		align-items: center;
 		gap: 8px;
-	}
-}
 
-.end {
-	font-size: 32px;
-	font-weight: 700;
-
-	@include breakpoint('md', max) {
-		font-size: 24px;
-	}
-
-	@include breakpoint('md', max) {
-		font-size: 20px;
+		.end {
+			font-size: 20px;
+		}
 	}
 }
 
 .content {
 	display: flex;
 	flex-direction: column;
-}
+	gap: 4px;
 
-.description {
-	font-size: 20px;
+	.title {
+		font-size: 24px;
+		font-weight: 700;
+		color: $gold;
+	}
+
+	.description {
+		color: $gold-lightest;
+	}
 
 	@include breakpoint('sm', max) {
-		font-size: 14px;
+		.title {
+			font-size: 20px;
+		}
 	}
 }
