@@ -3,21 +3,11 @@
 
 .footer {
 	padding-inline: 48px;
-	position: relative;
 	display: flex;
 	justify-content: center;
-	overflow: hidden;
 
 	@include breakpoint('sm', max) {
 		padding-inline: 16px;
-	}
-}
-
-.background {
-	top: -8px;
-
-	@include breakpoint('sm', max) {
-		top: 64px;
 	}
 }
 
