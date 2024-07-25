@@ -2,6 +2,8 @@
 @use '../../styles/abstracts/mixins' as *;
 
 .footer {
+	font-size: 14px;
+
 	padding-inline: 48px;
 	display: flex;
 	justify-content: center;
@@ -11,8 +13,21 @@
 	}
 }
 
+.themes {
+	display: flex;
+	position: fixed;
+	left: 48px;
+	bottom: 24px;
+}
+
+.theme {
+
+	.checkbox::before {
+		content: '□';
+	}
+}
+
 .copyright {
-	font-size: 14px;
 	max-width: 820px;
 	width: 100%;
 	display: flex;
