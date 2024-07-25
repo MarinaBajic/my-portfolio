@@ -12,7 +12,7 @@ body {
 	font-size: 20px;
 
 	color: $white;
-	background-color: $teal-dark;
+	background-color: $primary-400;
 	overflow-x: hidden;
 
 	&.overflow-y-hidden {
@@ -24,12 +24,12 @@ body {
 	}
 
 	&::-webkit-scrollbar-thumb {
-		background: $gold;
+		background: $secondary-200;
 		border-radius: 5px;
 	}
 
 	&::-webkit-scrollbar-thumb:hover {
-		background: $gold-light;
+		background: $secondary-100;
 	}
 
 	@include breakpoint('md', max) {

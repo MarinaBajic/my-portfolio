@@ -49,7 +49,7 @@
 .date {
 	@include font-designer;
 	font-size: 16px;
-	color: $gold-light;
+	color: $secondary-100;
 
 	display: flex;
 	flex-direction: column;
@@ -78,11 +78,11 @@
 	.title {
 		font-size: 24px;
 		font-weight: 700;
-		color: $gold;
+		color: $secondary-200;
 	}
 
 	.description {
-		color: $gold-light;
+		color: $secondary-100;
 	}
 
 	@include breakpoint('sm', max) {

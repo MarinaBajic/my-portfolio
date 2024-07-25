@@ -17,8 +17,8 @@ const Hero = () => {
 				<Background text="bajic" style={styles.background} />
 			</div>
 			<div className={styles.btn}>
-				<Button href="#projects" color="gold" text="My work" />
-				<Button href="#contact" color="teal" text="Get in touch" />
+				<Button href="#projects" color="secondary" text="My work" />
+				<Button href="#contact" color="primary" text="Get in touch" />
 			</div>
 		</section>
 	);

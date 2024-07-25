@@ -23,7 +23,7 @@
 }
 
 .content {
-	background-color: $teal;
+	background-color: $primary-300;
 	padding: 20px;
 
 	@include breakpoint('lg', min) {
@@ -41,8 +41,8 @@
 	width: 440px;
 	height: 240px;
 	display: grid;
-	border: 2px solid $gold;
-	color: $gold;
+	border: 2px solid $secondary-200;
+	color: $secondary-200;
 	backface-visibility: hidden;
 }
 

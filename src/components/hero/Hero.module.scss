@@ -53,7 +53,7 @@
 	font-size: 64px;
 	line-height: 100%;
 	font-weight: 900;
-	color: $gold;
+	color: $secondary-200;
 	text-transform: uppercase;
 
 	@include breakpoint('md', max) {

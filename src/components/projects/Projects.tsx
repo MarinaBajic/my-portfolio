@@ -36,7 +36,7 @@ const Projects = () => {
 					/>
 				))}
 			</div>
-			<Button href="#" color="teal" text="See more" />
+			<Button href="#" color="primary" text="See more" />
 		</Section>
 	);
 };
@@ -72,7 +72,7 @@ const ProjectContent = ({ project }: { project: TProject }) => {
 			</div>
 			<div className={styles.btns}>
 				{project.btns.map((btn, index) => (
-					<Button key={index} href="#" text={btn} color="gold" />
+					<Button key={index} href="#" text={btn} color="secondary" />
 				))}
 			</div>
 		</div>

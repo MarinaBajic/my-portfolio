@@ -60,7 +60,7 @@
 .tech {
 	font-size: 24px;
 	font-weight: 700;
-	color: $teal-lighter;
+	color: $primary-100;
 
 	@include breakpoint('sm', max) {
 		font-size: 20px;
@@ -80,7 +80,7 @@
 	width: 597px;
 	height: 463px;
 	border-radius: 4px;
-	background-color: $teal;
+	background-color: $primary-300;
 	margin-left: -40px;
 
 	&.reversed {

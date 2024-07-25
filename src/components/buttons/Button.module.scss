@@ -14,12 +14,12 @@
 		color: $white;
 	}
 
-	&.btn--gold {
-		color: $gold;
+	&.btn--secondary {
+		color: $secondary-200;
 	}
 
-	&.btn--teal {
-		color: $teal-lighter;
+	&.btn--primary {
+		color: $primary-100;
 	}
 
 	@include hover-focus {
