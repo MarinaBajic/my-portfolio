@@ -1,9 +1,7 @@
-$gold-lightest: #fde4c3;
-$gold-lighter: #ffcb74;
-$gold-light: #e5b906;
+$gold-light: #fde4c3;
 $gold: #c90;
 
-$teal-lighter: #90dbd6;
+$teal-lighter: #86d4ce;
 $teal-light: #037f80;
 $teal: #046068;
 $teal-dark: #004041;
@@ -11,3 +9,13 @@ $teal-dark: #004041;
 $white: #f6f6f6;
 $grey: #333;
 $black: #1c1c1c;
+
+$transparent-white-300: rgba($white, 0.3);
+$transparent-white-800: rgba($white, 0.8);
+
+$transparent-black-100: rgba($black, 0.1);
+$transparent-black-250: rgba($black, 0.25);
+$transparent-black-700: rgba($black, 0.7);
+
+$transparent-teal-200: rgba($teal-lighter, 0.2);
+$transparent-teal-800: rgba($teal-lighter, 0.8);
