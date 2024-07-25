@@ -16,20 +16,21 @@ const Footer = () => {
 
 const Themes = () => {
 	const themes: Array<string> = themesData;
-	const { toggleTheme } = useTheme();
+	const { theme, toggleTheme } = useTheme();
 
 	return (
 		<form className={styles.themes}>
-			{themes.map((theme, index) => (
-				<span key={index}>
+			{themes.map((themeName, index) => (
+				<div key={index} className={styles.theme}>
 					<input
 						type="radio"
 						name="theme"
-						id={theme}
-						onChange={() => toggleTheme(theme)}
+						id={themeName}
+						checked={theme == themeName}
+						onChange={() => toggleTheme(themeName)}
 					/>
-					<label htmlFor={theme}>{theme}</label>
-				</span>
+					<label htmlFor={themeName}>{themeName}</label>
+				</div>
 			))}
 		</form>
 	);

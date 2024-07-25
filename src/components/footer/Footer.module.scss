@@ -14,16 +14,34 @@
 }
 
 .themes {
-	display: flex;
 	position: fixed;
 	left: 48px;
 	bottom: 24px;
+	display: flex;
+	gap: 16px;
+	transform: rotate(-90deg);
+	transform-origin: left bottom;
 }
 
 .theme {
+	display: flex;
+	align-items: center;
+	gap: 4px;
 
-	.checkbox::before {
-		content: '□';
+	input {
+		appearance: none;
+		width: 8px;
+		height: 8px;
+		border: 1px solid $white;
+		cursor: pointer;
+
+		&:checked {
+			background-color: $white;
+		}
+	}
+
+	label {
+		cursor: pointer;
 	}
 }
 
