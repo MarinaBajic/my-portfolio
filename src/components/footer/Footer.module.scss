@@ -21,6 +21,13 @@
 	gap: 16px;
 	transform: rotate(-90deg);
 	transform-origin: left bottom;
+
+	@include breakpoint('md', max) {
+		position: absolute;
+		right: 48px;
+		justify-content: center;
+		transform: rotate(0deg);
+	}
 }
 
 .theme {
