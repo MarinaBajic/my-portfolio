@@ -99,7 +99,7 @@
 	white-space: nowrap;
 
 	.name {
-		@include cursive;
+		font-family: $cursive;
 		font-size: 48px;
 		line-height: normal;
 	}

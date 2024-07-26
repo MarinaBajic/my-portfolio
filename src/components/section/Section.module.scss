@@ -47,7 +47,7 @@
 }
 
 .heading {
-	@include font-designer;
+	font-family: $font-designer;
 	font-size: 48px;
 	line-height: 100%;
 	font-weight: 900;

@@ -1,13 +1,18 @@
 @use '../abstracts/colors' as *;
+@use '../abstracts/typography' as *;
 
 body[data-theme='designer'] {
+	--fancy-font: #{$font-regular};
 	--background-color: #{$primary-300};
+	--color: #{$white};
 }
 
 body[data-theme='developer'] {
 	--background-color: #{$primary-200};
+	--color: #{$white};
 }
 
 body[data-theme='cybersec'] {
 	--background-color: #{$black};
+	--color: #{$primary-100};
 }

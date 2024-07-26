@@ -1,19 +1,4 @@
-@use './colors' as *;
-@use './mixins' as *;
-
-@mixin font-regular {
-	font-family: 'Montserrat', sans-serif;
-	font-optical-sizing: auto;
-}
-
-@mixin font-designer {
-	font-family: 'Cinzel Decorative', serif;
-}
-
-@mixin font-developer {
-	font-family: 'Anton', sans-serif;
-}
-
-@mixin cursive {
-	font-family: 'Corinthia', cursive;
-}
+$font-regular: 'Montserrat', sans-serif;
+$font-designer: 'Cinzel Decorative', serif;
+$font-developer: 'Anton', sans-serif;
+$cursive: 'Corinthia', cursive;

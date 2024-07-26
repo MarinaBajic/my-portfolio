@@ -14,7 +14,7 @@
 	gap: 32px;
 
 	.heading {
-		@include font-designer;
+		font-family: $font-designer;
 		font-size: 32px;
 		font-weight: 700;
 	}
@@ -47,7 +47,7 @@
 }
 
 .date {
-	@include font-designer;
+	font-family: $font-designer;
 	font-size: 16px;
 	color: $secondary-100;
 

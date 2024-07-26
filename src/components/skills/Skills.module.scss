@@ -32,7 +32,7 @@
 }
 
 .skill {
-	@include font-designer;
+	font-family: $font-designer;
 	font-size: 32px;
 	font-weight: 700;
 
