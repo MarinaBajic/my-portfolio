@@ -30,9 +30,17 @@
 	.background {
 		text-align: center;
 		position: relative;
-		z-index: -20;
 		top: 0;
+		z-index: -20;
+	}
+
+	.background--designer {
 		margin-block: -48px;
+	}
+
+	.background--developer,
+	.background--cybersec {
+		margin-block: -40px;
 	}
 
 	@include breakpoint('md', max) {

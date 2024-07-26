@@ -1,14 +1,31 @@
 @use '../../styles/abstracts/colors' as *;
 @use '../../styles/abstracts/mixins' as *;
+@use '../../styles/themes/theme' as *;
 
 .background {
-	font-size: 200px;
+	font-family: var(--font-background);
+	font-size: 240px;
 	line-height: 100%;
 	font-weight: 900;
-	color: $transparent-black-250;
 	position: absolute;
 	top: -28px;
 	z-index: -10;
+
+	&.background--designer {
+		font-size: 200px;
+		color: $transparent-black-250;
+	}
+
+	&.background--developer,
+	&.background--cybersec {
+		color: black;
+		mix-blend-mode: screen;
+		letter-spacing: 8px;
+		text-shadow: -1px -1px 0 var(--color-transparent),
+			1px -1px 0 var(--color-transparent),
+			-1px 1px 0 var(--color-transparent),
+			1px 1px 0 var(--color-transparent);
+	}
 
 	@include breakpoint('md', max) {
 		font-size: 160px;

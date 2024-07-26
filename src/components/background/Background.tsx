@@ -1,3 +1,4 @@
+import { useTheme } from '../../context/ThemeProvider';
 import styles from './Background.module.scss';
 
 type Props = {
@@ -6,8 +7,14 @@ type Props = {
 };
 
 const Background = ({ text, style }: Props) => {
+	const { theme } = useTheme();
+
 	return (
-		<span className={`${styles.background} ${style ? style : ''}`}>
+		<span
+			className={`${styles.background} ${style ? style : ''} ${
+				styles[`background--${theme}`]
+			}`}
+		>
 			{text}
 		</span>
 	);
