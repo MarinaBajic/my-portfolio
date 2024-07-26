@@ -2,17 +2,25 @@
 @use '../abstracts/typography' as *;
 
 body[data-theme='designer'] {
-	--fancy-font: #{$font-regular};
+	--fancy-font: #{$font-designer};
 	--background-color: #{$primary-300};
-	--color: #{$white};
+	--color-primary: #{$white};
+	--color-secondary: #{$secondary-200};
+	--color-light: #{$secondary-100};
 }
 
 body[data-theme='developer'] {
+	--fancy-font: #{$font-developer};
 	--background-color: #{$primary-200};
-	--color: #{$white};
+	--color-primary: #{$white};
+	--color-secondary: #{$primary-100};
+	--color-light: #{$transparent-primary-800};
 }
 
 body[data-theme='cybersec'] {
+	--fancy-font: #{$font-developer};
 	--background-color: #{$black};
-	--color: #{$primary-100};
+	--color-primary: #{$primary-100};
+	--color-secondary: #{$white};
+	--color-light: #{$transparent-primary-800};
 }

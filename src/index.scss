@@ -13,7 +13,7 @@ body {
 	font-optical-sizing: auto;
 	font-size: 20px;
 
-	color: var(--color);
+	color: var(--color-primary);
 	background-color: var(--background-color);
 	overflow-x: hidden;
 
@@ -26,12 +26,12 @@ body {
 	}
 
 	&::-webkit-scrollbar-thumb {
-		background: $secondary-200;
+		background: var(--color-secondary);
 		border-radius: 5px;
 	}
 
 	&::-webkit-scrollbar-thumb:hover {
-		background: $secondary-100;
+		background: var(--color-light);
 	}
 
 	@include breakpoint('md', max) {
