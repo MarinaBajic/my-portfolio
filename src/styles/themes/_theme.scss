@@ -1,0 +1,13 @@
+@use '../abstracts/colors' as *;
+
+body[data-theme='designer'] {
+	--background-color: #{$primary-300};
+}
+
+body[data-theme='developer'] {
+	--background-color: #{$primary-100};
+}
+
+body[data-theme='cybersec'] {
+	--background-color: #{$black};
+}

@@ -22,11 +22,16 @@ type ThemeProviderProps = {
 const ThemeProvider = ({ children }: ThemeProviderProps) => {
 	const [theme, setTheme] = useState<string>(() => {
 		const storedTheme = localStorage.getItem('theme');
+		document.body.setAttribute(
+			'data-theme',
+			storedTheme ? storedTheme : 'designer',
+		);
 		return storedTheme ? storedTheme : 'designer';
 	});
 
 	const toggleTheme = (theme: string) => {
 		setTheme(theme);
+		document.body.setAttribute('data-theme', theme);
 		localStorage.setItem('theme', theme);
 	};
 
