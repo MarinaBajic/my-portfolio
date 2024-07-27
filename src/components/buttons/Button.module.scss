@@ -10,16 +10,16 @@
 	box-shadow: 0 -2px 0 inset;
 	cursor: pointer;
 
-	&.btn--white {
-		color: $white;
-	}
-
-	&.btn--secondary {
+	&.btn--gold {
 		color: $secondary-200;
 	}
 
-	&.btn--primary {
+	&.btn--teal {
 		color: $primary-100;
+	}
+
+	&.btn--white {
+		color: $white;
 	}
 
 	@include hover-focus {

@@ -36,7 +36,7 @@ const Projects = () => {
 					/>
 				))}
 			</div>
-			<Button href="#" color="primary" text="See more" />
+			<Button href="#" hierarchy="secondary" text="See more" />
 		</Section>
 	);
 };
@@ -72,7 +72,12 @@ const ProjectContent = ({ project }: { project: TProject }) => {
 			</div>
 			<div className={styles.btns}>
 				{project.btns.map((btn, index) => (
-					<Button key={index} href="#" text={btn} color="secondary" />
+					<Button
+						key={index}
+						href="#"
+						text={btn}
+						hierarchy="primary"
+					/>
 				))}
 			</div>
 		</div>

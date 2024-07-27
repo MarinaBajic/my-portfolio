@@ -42,8 +42,12 @@ const Hero = () => {
 				/>
 			</div>
 			<div className={styles.btn}>
-				<Button href="#projects" color="secondary" text="My work" />
-				<Button href="#contact" color="primary" text="Get in touch" />
+				<Button href="#projects" hierarchy="primary" text="My work" />
+				<Button
+					href="#contact"
+					hierarchy="secondary"
+					text="Get in touch"
+				/>
 			</div>
 		</section>
 	);
