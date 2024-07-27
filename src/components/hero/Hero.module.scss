@@ -47,11 +47,21 @@
 		.background {
 			margin-block: -40px;
 		}
+
+		.background--developer,
+		.background--cybersec {
+			margin-block: -32px;
+		}
 	}
 
 	@include breakpoint('sm', max) {
 		.background {
 			margin-block: -20px;
+		}
+
+		.background--developer,
+		.background--cybersec {
+			margin-block: -14px;
 		}
 	}
 }
