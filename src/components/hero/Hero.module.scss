@@ -1,6 +1,7 @@
 @use '../../styles/abstracts/typography' as *;
 @use '../../styles/abstracts/colors' as *;
 @use '../../styles/abstracts/mixins' as *;
+@use '../../styles/themes/theme' as *;
 
 .hero {
 	height: 100dvh;
@@ -67,12 +68,16 @@
 }
 
 .heading {
-	font-family: $font-designer;
+	font-family: var(--font-secondary);
 	font-size: 64px;
 	line-height: 100%;
 	font-weight: 900;
-	color: $secondary-200;
-	text-transform: uppercase;
+	margin-bottom: 16px;
+
+	&.heading--designer {
+		color: $secondary-200;
+		text-transform: uppercase;
+	}
 
 	@include breakpoint('md', max) {
 		font-size: 48px;

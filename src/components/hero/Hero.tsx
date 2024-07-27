@@ -18,8 +18,20 @@ const Hero = () => {
 				/>
 				<Slider
 					slides={[
-						<h1 className={styles.heading}>Front-end Developer</h1>,
-						<span className={styles.heading}>UI/UX Designer</span>,
+						<h1
+							className={`${styles.heading} ${
+								styles[`heading--${theme}`]
+							}`}
+						>
+							Front-end Developer
+						</h1>,
+						<span
+							className={`${styles.heading} ${
+								styles[`heading--${theme}`]
+							}`}
+						>
+							UI/UX Designer
+						</span>,
 					]}
 				/>
 				<Background
