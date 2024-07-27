@@ -1,5 +1,6 @@
 @use '../../styles/abstracts/mixins' as *;
 @use '../../styles/abstracts/colors' as *;
+@use '../../styles/themes/theme' as *;
 
 .socials {
 	display: flex;
@@ -8,9 +9,9 @@
 
 .icon {
 	font-size: 24px;
-	color: $white;
+	color: var(--color-primary);
 
 	@include hover-focus {
-		color: $secondary-200;
+		color: var(--color-secondary);
 	}
 }
