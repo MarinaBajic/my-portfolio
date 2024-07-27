@@ -1,6 +1,6 @@
 import styles from './Contact.module.scss';
 import Section from '../section/Section';
-import logo from '../../assets/logo-secondary.svg';
+import logo from '../../assets/logo-gold.svg';
 
 const Contact = () => {
 	return (
