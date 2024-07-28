@@ -28,12 +28,18 @@
 	}
 
 	@include breakpoint('md', max) {
-		font-size: 160px;
 		top: -16px;
+
+		body[data-theme] & {
+			font-size: 160px;
+		}
 	}
 
 	@include breakpoint('sm', max) {
-		font-size: 80px;
 		top: 0;
+
+		body[data-theme] & {
+			font-size: 80px;
+		}
 	}
 }
