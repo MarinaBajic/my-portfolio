@@ -6,6 +6,7 @@ import logoTeal from '../../assets/logo-teal.svg';
 type Color = 'white' | 'gold' | 'teal';
 
 type Props = {
+	linked?: boolean;
 	color: Color;
 	style?: string;
 };
@@ -16,20 +17,22 @@ const logoMap: { [key in Color]: string } = {
 	teal: logoTeal,
 };
 
-const Logo = ({ color, style }: Props) => {
-	return (
-		<a
-			href="#hero"
-			title="Marina Bajic"
-			className={`${styles.logo} ${style ? styles.style : ''}`}
-		>
+const Logo = ({ linked = false, color, style }: Props) => {
+	return linked ? (
+		<a href="#hero" title="Marina Bajic" className={styles.logo}>
 			<img
 				src={logoMap[color] || logoWhite}
 				alt="Marina Bajic Logo"
 				loading="eager"
 			/>
 		</a>
+	) : (
+		<img
+			src={logoMap[color] || logoWhite}
+			alt="Marina Bajic Logo"
+			loading="eager"
+			className={`${styles.logo} ${style ? styles.style : ''}`}
+		/>
 	);
 };
-
 export default Logo;

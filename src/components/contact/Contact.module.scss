@@ -64,9 +64,7 @@
 	justify-items: center;
 
 	& :first-child {
-		img {
-			height: 110px;
-		}
+		height: 110px;
 	}
 
 	@include breakpoint('md', max) {

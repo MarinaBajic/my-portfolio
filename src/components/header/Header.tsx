@@ -22,7 +22,10 @@ const Header = () => {
 	return (
 		<header className={styles.header}>
 			<div className={styles['header__logo']}>
-				<Logo color={theme == 'cybersec' ? 'teal' : 'white'} />
+				<Logo
+					linked={true}
+					color={theme == 'cybersec' ? 'teal' : 'white'}
+				/>
 			</div>
 			<div className={styles['header__nav']}>
 				<Navigation />
