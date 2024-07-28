@@ -16,6 +16,7 @@ body[data-theme='developer'] {
 	--font-default: #{$font-regular};
 	--font-secondary: #{$font-regular};
 	--font-background: #{$font-developer};
+	--font-variant: small-caps;
 
 	--background-color: #{$primary-200};
 	--color-primary: #{$white};
@@ -28,6 +29,7 @@ body[data-theme='cybersec'] {
 	--font-default: #{$font-regular};
 	--font-secondary: #{$font-regular};
 	--font-background: #{$font-developer};
+	--font-variant: small-caps;
 
 	--background-color: #{$black};
 	--color-primary: #{$primary-100};

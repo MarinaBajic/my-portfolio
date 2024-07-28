@@ -32,9 +32,10 @@
 }
 
 .skill {
-	font-family: $font-designer;
+	font-family: var(--font-secondary);
 	font-size: 32px;
 	font-weight: 700;
+	font-variant: var(--font-variant);
 
 	@include breakpoint('md', max) {
 		font-size: 24px;
