@@ -14,7 +14,18 @@ body {
 
 	color: var(--color-primary);
 	background-color: var(--color-background);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
 	overflow-x: hidden;
+
+	&[data-theme='developer'] {
+		background-image: url('assets/bg-dev.png');
+	}
+
+	&[data-theme='cybersec'] {
+		background-image: url('assets/bg-cyber.png');
+	}
 
 	&.overflow-y-hidden {
 		overflow-y: hidden;
