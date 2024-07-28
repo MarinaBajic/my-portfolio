@@ -1,6 +1,7 @@
 import styles from './Experiences.module.scss';
 import Section from '../section/Section';
 import experienceGroupsData from './experiencesData.json';
+import { useTheme } from '../../context/ThemeProvider';
 
 type TExperience = {
 	start: string;
@@ -57,11 +58,21 @@ const ExperienceGroup = ({
 };
 
 const Experience = ({ experience }: { experience: TExperience }) => {
+	const { theme } = useTheme();
+
 	return (
 		<div className={styles.experience}>
 			<div className={styles.date}>
-				<span>{experience.start}</span>
-				<span className={styles.end}>{experience.end}</span>
+				{theme == 'designer' ? (
+					<>
+						<span>{experience.start}</span>
+						<span className={styles.end}>{experience.end}</span>
+					</>
+				) : (
+					<span>
+						{experience.start} {experience.end}
+					</span>
+				)}
 			</div>
 			<div className={styles.content}>
 				<span className={styles.title}>{experience.title}</span>

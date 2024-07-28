@@ -1,6 +1,4 @@
 @use '../../styles/abstracts/mixins' as *;
-@use '../../styles/abstracts/typography' as *;
-@use '../../styles/abstracts/colors' as *;
 
 .experiences {
 	display: flex;
@@ -13,30 +11,43 @@
 	flex-direction: column;
 	gap: 32px;
 
-	.heading {
-		font-family: $font-designer;
-		font-size: 32px;
-		font-weight: 700;
+	@include breakpoint('sm', max) {
+		align-items: center;
 	}
+}
 
-	.decoration {
-		width: 155px;
-		height: 2px;
-		background-color: $transparent-white-800;
+.heading {
+	font-family: var(--font-primary);
+	font-size: 32px;
+	font-weight: 700;
+	font-variant: var(--font-variant);
+
+	body[data-theme='developer'] & {
+		color: var(--color-secondary);
 	}
 
 	@include breakpoint('sm', max) {
-		align-items: center;
+		font-size: 24px;
+	}
+}
 
-		.heading {
-			font-size: 24px;
-		}
+.decoration {
+	width: 155px;
+	height: 2px;
+	background-color: var(--color-primary-light);
+
+	body[data-theme='developer'] & {
+		background-color: var(--color-secondary-light);
 	}
 }
 
 .experience {
 	display: grid;
-	grid-template-columns: 1fr 5fr;
+	grid-template-columns: 1fr 3fr;
+
+	body[data-theme='designer'] & {
+		grid-template-columns: 1fr 5fr;
+	}
 
 	@include breakpoint('sm', max) {
 		width: 100%;
@@ -47,12 +58,19 @@
 }
 
 .date {
-	font-family: $font-designer;
-	font-size: 16px;
-	color: $secondary-100;
+	font-family: var(--font-primary);
+	color: var(--color-secondary-light);
 
-	display: flex;
-	flex-direction: column;
+	body[data-theme='designer'] & {
+		font-size: 16px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	body[data-theme='developer'] & {
+		color: var(--color-primary-light);
+	}
 
 	.end {
 		font-size: 24px;
@@ -60,9 +78,11 @@
 	}
 
 	@include breakpoint('sm', max) {
-		flex-direction: row;
-		align-items: center;
-		gap: 8px;
+		body[data-theme='designer'] & {
+			flex-direction: row;
+			align-items: center;
+			gap: 8px;
+		}
 
 		.end {
 			font-size: 20px;
@@ -74,20 +94,26 @@
 	display: flex;
 	flex-direction: column;
 	gap: 4px;
+}
 
-	.title {
-		font-size: 24px;
-		font-weight: 700;
-		color: $secondary-200;
-	}
+.title {
+	font-size: 24px;
+	font-weight: 700;
+	color: var(--color-secondary);
 
-	.description {
-		color: $secondary-100;
+	body[data-theme='developer'] & {
+		color: var(--color-primary);
 	}
 
 	@include breakpoint('sm', max) {
-		.title {
-			font-size: 20px;
-		}
+		font-size: 20px;
+	}
+}
+
+.description {
+	color: var(--color-secondary-light);
+
+	body[data-theme='developer'] & {
+		color: var(--color-primary-light);
 	}
 }
