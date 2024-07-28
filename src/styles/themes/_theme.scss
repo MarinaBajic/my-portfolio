@@ -28,7 +28,6 @@ body[data-theme='developer'] {
 
 	--color-secondary: #{$primary-100};
 	--color-secondary-light: #{$transparent-primary-800};
-	--color-secondary-transparent: #{$transparent-primary-200};
 }
 
 body[data-theme='cybersec'] {
@@ -44,5 +43,4 @@ body[data-theme='cybersec'] {
 
 	--color-secondary: #{$white};
 	--color-secondary-light: #{$transparent-white-800};
-	--color-secondary-transparent: #{$transparent-white-300};
 }
