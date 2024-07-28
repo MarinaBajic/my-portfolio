@@ -1,6 +1,5 @@
 @use 'styles/base/reset';
 @use 'styles/abstracts/typography' as *;
-@use 'styles/abstracts/colors' as *;
 @use 'styles/abstracts/mixins' as *;
 @use 'styles/themes/theme' as *;
 
@@ -14,7 +13,7 @@ body {
 	font-size: 20px;
 
 	color: var(--color-primary);
-	background-color: var(--background-color);
+	background-color: var(--color-background);
 	overflow-x: hidden;
 
 	&.overflow-y-hidden {
@@ -31,7 +30,7 @@ body {
 	}
 
 	&::-webkit-scrollbar-thumb:hover {
-		background: var(--color-light);
+		background: var(--color-primary);
 	}
 
 	@include breakpoint('md', max) {
