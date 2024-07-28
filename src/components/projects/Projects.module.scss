@@ -1,5 +1,4 @@
 @use '../../styles/abstracts/colors' as *;
-@use '../../styles/abstracts/typography' as *;
 @use '../../styles/abstracts/mixins' as *;
 
 .projects {
@@ -32,14 +31,21 @@
 
 	@include breakpoint('md', max) {
 		align-items: center;
-
-		.title {
-			text-align: center;
-		}
 	}
 
 	@include breakpoint('sm', max) {
 		gap: 24px;
+	}
+}
+
+.title {
+	body[data-theme='developer'] &,
+	body[data-theme='cybersec'] & {
+		text-transform: uppercase;
+	}
+
+	@include breakpoint('md', max) {
+		text-align: center;
 	}
 }
 
@@ -61,6 +67,10 @@
 	font-size: 24px;
 	font-weight: 700;
 	color: $primary-100;
+
+	body[data-theme='cybersec'] & {
+		color: var(--color-secondary);
+	}
 
 	@include breakpoint('sm', max) {
 		font-size: 20px;
