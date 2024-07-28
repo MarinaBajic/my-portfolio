@@ -1,12 +1,20 @@
 import styles from './About.module.scss';
 import Section from '../section/Section';
 import Title from '../title/Title';
-import profilePicture from '../../assets/marina.png';
+import profilePicture from '../../assets/marina.jpg';
 import curvedText from '../../assets/curved-text.svg';
+import { useTheme } from '../../context/ThemeProvider';
 
 const About = () => {
+	const { theme } = useTheme();
+
 	return (
-		<Section id="about" background="about" heading="About me" style={styles.section}>
+		<Section
+			id="about"
+			background="about"
+			heading="About me"
+			style={styles.section}
+		>
 			<div className={styles.about}>
 				<div className={styles.content}>
 					<Title subtitle="Hello, my name is" title="Marina Bajić" />
@@ -30,18 +38,21 @@ const About = () => {
 					</div>
 				</div>
 				<div className={styles.profile}>
-					<img
-						className={styles.image}
-						src={profilePicture}
-						alt="Marina Bajić"
-						loading="lazy"
-					/>
-					<img
-						className={styles.text}
-						src={curvedText}
-						alt="Dedicated Front-end Developer"
-						loading="lazy"
-					/>
+					<div className={styles.image}>
+						<img
+							src={profilePicture}
+							alt="Marina Bajić"
+							loading="lazy"
+						/>
+					</div>
+					{theme == 'designer' && (
+						<img
+							className={styles.background}
+							src={curvedText}
+							alt="Dedicated Front-end Developer"
+							loading="lazy"
+						/>
+					)}
 				</div>
 			</div>
 		</Section>
