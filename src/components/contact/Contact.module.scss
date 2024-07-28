@@ -26,6 +26,14 @@
 	background-color: $primary-300;
 	padding: 20px;
 
+	body[data-theme='developer'] & {
+		background-color: $primary-200;
+	}
+
+	body[data-theme='cybersec'] & {
+		background-color: $black;
+	}
+
 	@include breakpoint('lg', min) {
 		transition: transform 1s;
 		transform-style: preserve-3d;
@@ -41,14 +49,25 @@
 	width: 440px;
 	height: 240px;
 	display: grid;
-	border: 2px solid $secondary-200;
-	color: $secondary-200;
+	border: 2px solid var(--color-primary);
+	color: var(--color-primary);
 	backface-visibility: hidden;
+
+	body[data-theme='designer'] & {
+		border-color: var(--color-secondary);
+		color: var(--color-secondary);
+	}
 }
 
 .front {
 	align-items: center;
 	justify-items: center;
+
+	& :first-child {
+		img {
+			height: 110px;
+		}
+	}
 
 	@include breakpoint('md', max) {
 		transform: scale(0);
@@ -89,6 +108,10 @@
 		.logo {
 			transform: scale(0);
 		}
+
+		.email {
+			justify-self: flex-start;
+		}
 	}
 }
 
@@ -105,7 +128,7 @@
 	}
 
 	@include breakpoint('sm', max) {
-		align-items: center;
+		align-items: flex-start;
 
 		.name {
 			font-size: 34px;

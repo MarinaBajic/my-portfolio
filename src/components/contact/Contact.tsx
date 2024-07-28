@@ -1,8 +1,20 @@
 import styles from './Contact.module.scss';
 import Section from '../section/Section';
-import logo from '../../assets/logo-gold.svg';
+import Logo from '../logo/Logo';
+import { useTheme } from '../../context/ThemeProvider';
+
+type Theme = 'developer' | 'cybersec' | 'designer' | string;
+type Color = 'white' | 'gold' | 'teal';
+
+const themeColors: { [key in Theme]?: Color } = {
+	designer: 'gold',
+	developer: 'white',
+	cybersec: 'teal',
+};
 
 const Contact = () => {
+	const { theme } = useTheme();
+
 	return (
 		<Section
 			id="contact"
@@ -13,13 +25,13 @@ const Contact = () => {
 			<div className={styles.card}>
 				<div className={styles.content}>
 					<div className={styles.front}>
-						<img className={styles.logo} src={logo} alt="Logo" />
+						<Logo color={themeColors[theme] || 'white'} />
 					</div>
 					<a
 						className={styles.back}
 						href="mailto:marinabajic10@gmail.com"
 					>
-						<img className={styles.logo} src={logo} alt="Logo" />
+						<Logo color={themeColors[theme] || 'white'} />
 						<div className={styles.signature}>
 							<span className={styles.name}>Marina Bajić</span>
 							<span>Front-end Developer</span>
