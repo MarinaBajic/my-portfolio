@@ -1,5 +1,4 @@
 @use '../../styles/abstracts/mixins' as *;
-@use '../../styles/abstracts/colors' as *;
 
 .menu {
 	list-style-type: none;
@@ -8,7 +7,7 @@
 
 	@include breakpoint('md', max) {
 		font-size: 24px;
-		background-color: var(--background-color);
+		background-color: var(--color-background);
 		flex-direction: column;
 		align-items: center;
 		gap: 32px;
