@@ -2,38 +2,47 @@
 @use '../abstracts/typography' as *;
 
 body[data-theme='designer'] {
-	--font-default: #{$font-regular};
-	--font-secondary: #{$font-designer};
-	--font-background: #{$font-regular};
+	--font-primary: #{$font-designer};
+	--font-secondary: #{$font-regular};
 
-	--background-color: #{$primary-400};
+	--color-background: #{$primary-400};
+
 	--color-primary: #{$white};
+	--color-primary-light: #{$transparent-white-800};
+	--color-primary-transparent: #{$transparent-white-300};
+
 	--color-secondary: #{$secondary-200};
-	--color-light: #{$secondary-100};
+	--color-secondary-light: #{$secondary-100};
 }
 
 body[data-theme='developer'] {
-	--font-default: #{$font-regular};
-	--font-secondary: #{$font-regular};
-	--font-background: #{$font-developer};
+	--font-primary: #{$font-regular};
+	--font-secondary: #{$font-developer};
 	--font-variant: small-caps;
 
-	--background-color: #{$primary-200};
+	--color-background: #{$primary-200};
+
 	--color-primary: #{$white};
+	--color-primary-light: #{$transparent-white-800};
+	--color-primary-transparent: #{$transparent-white-300};
+
 	--color-secondary: #{$primary-100};
-	--color-light: #{$transparent-white-800};
-	--color-transparent: #{$transparent-white-300};
+	--color-secondary-light: #{$transparent-primary-800};
+	--color-secondary-transparent: #{$transparent-primary-200};
 }
 
 body[data-theme='cybersec'] {
-	--font-default: #{$font-regular};
-	--font-secondary: #{$font-regular};
-	--font-background: #{$font-developer};
+	--font-primary: #{$font-regular};
+	--font-secondary: #{$font-developer};
 	--font-variant: small-caps;
 
-	--background-color: #{$black};
+	--color-background: #{$black};
+
 	--color-primary: #{$primary-100};
+	--color-primary-light: #{$transparent-primary-800};
+	--color-primary-transparent: #{$transparent-primary-200};
+
 	--color-secondary: #{$white};
-	--color-light: #{$transparent-primary-800};
-	--color-transparent: #{$transparent-primary-200};
+	--color-secondary-light: #{$transparent-white-800};
+	--color-secondary-transparent: #{$transparent-white-300};
 }
