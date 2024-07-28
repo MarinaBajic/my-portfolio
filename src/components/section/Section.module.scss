@@ -47,7 +47,7 @@
 }
 
 .heading {
-	font-family: $font-designer;
+	font-family: var(--font-secondary);
 	font-size: 48px;
 	line-height: 100%;
 	font-weight: 900;
