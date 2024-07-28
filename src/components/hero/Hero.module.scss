@@ -29,37 +29,31 @@
 		text-align: center;
 		position: relative;
 		top: 0;
+		margin-block: -40px;
 		z-index: -20;
 	}
 
-	.background--designer {
+	body[data-theme='designer'] & .background {
 		margin-block: -48px;
-	}
-
-	.background--developer,
-	.background--cybersec {
-		margin-block: -40px;
 	}
 
 	@include breakpoint('md', max) {
 		.background {
-			margin-block: -40px;
+			margin-block: -32px;
 		}
 
-		.background--developer,
-		.background--cybersec {
-			margin-block: -32px;
+		body[data-theme='designer'] & .background {
+			margin-block: -40px;
 		}
 	}
 
 	@include breakpoint('sm', max) {
 		.background {
-			margin-block: -20px;
+			margin-block: -14px;
 		}
 
-		.background--developer,
-		.background--cybersec {
-			margin-block: -14px;
+		body[data-theme='designer'] & .background {
+			margin-block: -20px;
 		}
 	}
 }
@@ -78,6 +72,7 @@
 
 	@include breakpoint('md', max) {
 		font-size: 48px;
+		margin-bottom: 0;
 	}
 
 	@include breakpoint('sm', max) {
