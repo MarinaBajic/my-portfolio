@@ -8,9 +8,10 @@
 }
 
 .title {
-	font-family: $font-designer;
+	font-family: var(--font-primary);
 	font-size: 32px;
 	font-weight: 700;
+	font-variant: var(--font-variant);
 
 	@include breakpoint('sm', max) {
 		font-size: 24px;
