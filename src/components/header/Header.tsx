@@ -5,8 +5,10 @@ import { useEffect, useState } from 'react';
 import Logo from '../logo/Logo';
 import Navigation from '../navigation/Navigation';
 import Socials from '../socials/Socials';
+import { useTheme } from '../../context/ThemeProvider';
 
 const Header = () => {
+	const { theme } = useTheme();
 	const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
 	useEffect(() => {
@@ -20,7 +22,7 @@ const Header = () => {
 	return (
 		<header className={styles.header}>
 			<div className={styles['header__logo']}>
-				<Logo />
+				<Logo color={theme == 'cybersec' ? 'teal' : 'white'} />
 			</div>
 			<div className={styles['header__nav']}>
 				<Navigation />
