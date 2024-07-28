@@ -7,13 +7,15 @@
 	line-height: 100%;
 	font-weight: 900;
 	position: absolute;
-	top: -28px;
+	top: -40px;
 	z-index: -10;
 
 	body[data-theme='designer'] & {
 		font-size: 200px;
 		color: $transparent-black-250;
+		top: -28px;
 	}
+
 	body[data-theme='developer'] &,
 	body[data-theme='cybersec'] & {
 		color: black;
