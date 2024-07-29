@@ -6,8 +6,9 @@
 	text-decoration: none;
 	width: fit-content;
 	display: flex;
+	position: relative;
 	padding: 12px 16px;
-	box-shadow: 0 -2px 0 inset;
+	box-shadow: 0 -2px inset;
 	cursor: pointer;
 
 	&.btn--gold {
@@ -22,8 +23,44 @@
 		color: $white;
 	}
 
+	.border {
+		background-color: white;
+		position: absolute;
+	}
+
+	.border--right {
+		width: 2px;
+		height: 0;
+		right: 0;
+		bottom: 0;
+		transition: height 0.1s ease-in;
+	}
+
+	.border--top {
+		width: 0;
+		height: 2px;
+		right: 0;
+		top: 0;
+		transition: width 0.2s 0.1s ease-in;
+	}
+
+	.border--left {
+		width: 2px;
+		height: 0;
+		left: 0;
+		top: 0;
+		transition: height 0.1s 0.3s ease-in;
+	}
+
 	@include hover-focus {
-		box-shadow: 0 0 0 2px inset;
+		.border--top {
+			width: 100%;
+		}
+
+		.border--right,
+		.border--left {
+			height: 100%;
+		}
 	}
 
 	@include breakpoint('md', max) {

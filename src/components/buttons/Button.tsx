@@ -32,6 +32,11 @@ const Button = ({ href, hierarchy, text }: Props) => {
 			href={href}
 			className={`${styles.btn} ${styles[`btn--${decideBtnColor()}`]}`}
 		>
+			<div
+				className={`${styles.border} ${styles['border--right']}`}
+			></div>
+			<div className={`${styles.border} ${styles['border--top']}`}></div>
+			<div className={`${styles.border} ${styles['border--left']}`}></div>
 			{text}
 		</a>
 	);
