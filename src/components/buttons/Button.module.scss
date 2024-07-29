@@ -33,7 +33,7 @@
 		height: 0;
 		right: 0;
 		bottom: 0;
-		transition: height 0.1s ease-in;
+		transition: height 0.1s 0.3s ease-in;
 	}
 
 	.border--top {
@@ -49,17 +49,22 @@
 		height: 0;
 		left: 0;
 		top: 0;
-		transition: height 0.1s 0.3s ease-in;
+		transition: height 0.1s ease-in;
 	}
 
 	@include hover-focus {
+		.border--right {
+			height: 100%;
+			transition-delay: 0;
+		}
+
 		.border--top {
 			width: 100%;
 		}
 
-		.border--right,
 		.border--left {
 			height: 100%;
+			transition-delay: 0.3s;
 		}
 	}
 
