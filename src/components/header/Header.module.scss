@@ -16,6 +16,10 @@
 	align-items: center;
 	z-index: 10;
 
+	&.header--open {
+		mask-image: none;
+	}
+
 	@include breakpoint('md', max) {
 		grid-template-columns: auto auto;
 		padding: 24px;

@@ -20,7 +20,11 @@ const Header = () => {
 	}
 
 	return (
-		<header className={styles.header}>
+		<header
+			className={`${styles.header} ${
+				menuOpen ? styles['header--open'] : ''
+			}`}
+		>
 			<div className={styles['header__logo']}>
 				<Logo
 					linked={true}
