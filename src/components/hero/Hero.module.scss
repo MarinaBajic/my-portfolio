@@ -69,6 +69,7 @@
 	body[data-theme='designer'] & {
 		color: var(--color-secondary);
 		text-transform: uppercase;
+		margin-bottom: -4px;
 	}
 
 	@include breakpoint('md', max) {

@@ -2,7 +2,7 @@
 
 swiper-container {
 	height: 80px;
-	z-index: -10;
+	user-select: none;
 
 	@include breakpoint('md', max) {
 		height: 64px;
