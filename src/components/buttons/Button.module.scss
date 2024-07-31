@@ -13,18 +13,29 @@
 
 	&.btn--gold {
 		color: $secondary-200;
+
+		.border {
+			background-color: $secondary-200;
+		}
 	}
 
 	&.btn--teal {
 		color: $primary-100;
+
+		.border {
+			background-color: $primary-100;
+		}
 	}
 
 	&.btn--white {
 		color: $white;
+
+		.border {
+			background-color: $white;
+		}
 	}
 
 	.border {
-		background-color: white;
 		position: absolute;
 	}
 
