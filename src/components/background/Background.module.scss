@@ -9,6 +9,7 @@
 	position: absolute;
 	top: -40px;
 	z-index: -10;
+	user-select: none;
 
 	body[data-theme='designer'] & {
 		font-size: 200px;
