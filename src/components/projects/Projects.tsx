@@ -5,7 +5,6 @@ import projectsData from './projectsData.json';
 import { isLargeScreen } from '../../utils/mediaQueryUtils';
 import Title from '../title/Title';
 import { useEffect, useState } from 'react';
-import image from '../../assets/barKod.png';
 
 type TProject = {
 	subheading: string;
