@@ -4,6 +4,7 @@ import Section from '../section/Section';
 import projectsData from './projectsData.json';
 import { isLargeScreen } from '../../utils/mediaQueryUtils';
 import Title from '../title/Title';
+import { useEffect, useState } from 'react';
 
 type TProject = {
 	subheading: string;
@@ -42,14 +43,46 @@ const Projects = () => {
 };
 
 const ProjectCard = ({ project, reversed }: CardProps) => {
+	const [position, setPosition] = useState({ x: 0, y: 0 });
+	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+	useEffect(() => {
+		const handleMouseMove = (e: MouseEvent) => {
+			setMousePosition({ x: e.clientX, y: e.clientY });
+		};
+
+		window.addEventListener('mousemove', handleMouseMove);
+
+		const interval = setInterval(() => {
+			setPosition((prevPosition) => ({
+				x: prevPosition.x + (mousePosition.x - prevPosition.x) * 0.1,
+				y: prevPosition.y + (mousePosition.y - prevPosition.y) * 0.1,
+			}));
+		}, 10);
+
+		return () => {
+			window.removeEventListener('mousemove', handleMouseMove);
+			clearInterval(interval);
+		};
+	}, [mousePosition]);
+
 	return (
 		<div className={`${styles.project} ${reversed ? styles.reversed : ''}`}>
 			<ProjectContent project={project} />
 			<div
-				className={`${styles.images} ${
-					reversed ? styles.reversed : ''
-				}`}
+				className={`${styles.image} ${reversed ? styles.reversed : ''}`}
 			></div>
+			<span
+				className={styles.cursor}
+				style={{
+					top: position.y - 12,
+					left: position.x - 12,
+				}}
+			>
+				View
+				<br />
+				Project
+			</span>
 		</div>
 	);
 };

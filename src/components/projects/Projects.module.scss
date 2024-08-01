@@ -86,7 +86,7 @@
 	}
 }
 
-.images {
+.image {
 	width: 597px;
 	height: 463px;
 	border-radius: 4px;
@@ -98,6 +98,13 @@
 		margin-right: -40px;
 	}
 
+	@include hover-focus {
+		& ~ .cursor {
+			scale: 1;
+			opacity: 1;
+		}
+	}
+
 	@include breakpoint('md', max) {
 		width: 484px;
 		margin-inline: 0;
@@ -107,4 +114,25 @@
 		width: 343px;
 		height: 343px;
 	}
+}
+
+.cursor {
+	height: 140px;
+	aspect-ratio: 1;
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: var(--color-secondary);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	pointer-events: none;
+	scale: 0;
+	opacity: 0;
+	transition: scale 0.2s ease-in-out, opacity 0.8s ease-in-out;
 }
