@@ -86,16 +86,43 @@
 	}
 }
 
-.image {
-	width: 597px;
-	height: 463px;
+.screen {
+	width: 600px;
+	aspect-ratio: 6 / 7;
+	border: 2px solid $primary-100;
 	border-radius: 4px;
-	background-color: $primary-300;
+	position: relative;
 	margin-left: -40px;
+	overflow: hidden;
+	cursor: pointer;
 
 	&.reversed {
 		margin-left: 0;
 		margin-right: -40px;
+	}
+
+	.image {
+		height: 100%;
+		width: 100%;
+		background-image: url('../../assets/barKod.png');
+		background-size: 200%;
+		background-position: center;
+		animation: pan-image 24s linear infinite;
+	}
+
+	.overlay {
+		background: linear-gradient(
+			$transparent-primary-200,
+			$transparent-black-100 3px,
+			transparent 3px,
+			transparent 9px
+		);
+		background-color: $transparent-primary-200;
+		background-size: 100% 12px;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		inset: 0;
 	}
 
 	@include hover-focus {
@@ -112,7 +139,7 @@
 
 	@include breakpoint('sm', max) {
 		width: 343px;
-		height: 343px;
+		aspect-ratio: 1;
 	}
 }
 
@@ -135,4 +162,60 @@
 	scale: 0;
 	opacity: 0;
 	transition: scale 0.2s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+@keyframes pan-image {
+	0% {
+		background-position: 0% 0%;
+		background-size: 140%;
+	}
+
+	20% {
+		background-position: 30% 10%;
+		background-size: 140%;
+	}
+
+	20.0001% {
+		/* -- View 2 -- */
+		background-position: 60% 85%;
+		background-size: 180%;
+	}
+
+	40% {
+		background-position: 30% 91%;
+		background-size: 160%;
+	}
+
+	40.0001% {
+		/* -- View 3 -- */
+		background-position: 80% 42%;
+		background-size: 180%;
+	}
+
+	60% {
+		background-position: 84% 33%;
+		background-size: 180%;
+	}
+
+	60.0001% {
+		/* -- View 4 -- */
+		background-position: 32% 96%;
+		background-size: 200%;
+	}
+
+	80% {
+		background-position: 60% 100%;
+		background-size: 180%;
+	}
+
+	80.0001% {
+		/* -- View 5 -- */
+		background-position: 80% 10%;
+		background-size: 120%;
+	}
+
+	100% {
+		background-position: 72% 14%;
+		background-size: 140%;
+	}
 }

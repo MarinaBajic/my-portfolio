@@ -5,6 +5,7 @@ import projectsData from './projectsData.json';
 import { isLargeScreen } from '../../utils/mediaQueryUtils';
 import Title from '../title/Title';
 import { useEffect, useState } from 'react';
+import image from '../../assets/barKod.png';
 
 type TProject = {
 	subheading: string;
@@ -70,8 +71,13 @@ const ProjectCard = ({ project, reversed }: CardProps) => {
 		<div className={`${styles.project} ${reversed ? styles.reversed : ''}`}>
 			<ProjectContent project={project} />
 			<div
-				className={`${styles.image} ${reversed ? styles.reversed : ''}`}
-			></div>
+				className={`${styles.screen} ${
+					reversed ? styles.reversed : ''
+				}`}
+			>
+				<div className={styles.image} />
+				<div className={styles.overlay} />
+			</div>
 			<span
 				className={styles.cursor}
 				style={{
