@@ -13,6 +13,8 @@ body[data-theme='designer'] {
 
 	--color-secondary: #{$secondary-200};
 	--color-secondary-light: #{$secondary-100};
+
+	--gradient: linear-gradient(135deg, #{$primary-300}, #{$primary-200});
 }
 
 body[data-theme='developer'] {
@@ -28,6 +30,12 @@ body[data-theme='developer'] {
 
 	--color-secondary: #{$primary-100};
 	--color-secondary-light: #{$transparent-primary-800};
+
+	--gradient: linear-gradient(
+		135deg,
+		#{$primary-200},
+		#{$transparent-white-300}
+	);
 }
 
 body[data-theme='cybersec'] {
@@ -43,4 +51,6 @@ body[data-theme='cybersec'] {
 
 	--color-secondary: #{$white};
 	--color-secondary-light: #{$transparent-white-800};
+
+	--gradient: linear-gradient(135deg, #{$grey}, #{$primary-400});
 }
