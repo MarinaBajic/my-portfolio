@@ -14,7 +14,7 @@
 	display: grid;
 	grid-template-columns: 1fr auto 1fr;
 	align-items: center;
-	z-index: 10;
+	z-index: 20;
 
 	&.header--open {
 		mask-image: none;
@@ -32,7 +32,7 @@
 
 .header__logo {
 	width: fit-content;
-	z-index: 10;
+	z-index: 20;
 }
 
 .header__nav {
@@ -67,7 +67,7 @@
 		justify-self: flex-end;
 		transform: scale(1);
 		position: relative;
-		z-index: 10;
+		z-index: 20;
 
 		* {
 			font-size: 40px;
