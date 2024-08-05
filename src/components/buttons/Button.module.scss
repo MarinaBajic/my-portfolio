@@ -7,7 +7,7 @@
 	width: fit-content;
 	display: flex;
 	position: relative;
-	padding: 12px 16px;
+	padding: 12px 24px;
 	box-shadow: 0 -2px inset;
 	cursor: pointer;
 
@@ -81,5 +81,9 @@
 
 	@include breakpoint('md', max) {
 		box-shadow: 0 0 0 2px inset;
+	}
+
+	@include breakpoint('sm', max) {
+		padding: 8px 16px;
 	}
 }
