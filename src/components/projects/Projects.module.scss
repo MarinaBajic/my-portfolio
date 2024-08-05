@@ -10,6 +10,7 @@
 .project {
 	display: flex;
 	align-items: center;
+	gap: 64px;
 
 	&.reversed {
 		flex-direction: row-reverse;
@@ -92,14 +93,8 @@
 	border: 2px solid $primary-100;
 	border-radius: 4px;
 	position: relative;
-	margin-left: -40px;
 	overflow: hidden;
 	cursor: pointer;
-
-	&.reversed {
-		margin-left: 0;
-		margin-right: -40px;
-	}
 
 	.image {
 		height: 100%;

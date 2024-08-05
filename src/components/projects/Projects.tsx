@@ -69,11 +69,7 @@ const ProjectCard = ({ project, reversed }: CardProps) => {
 	return (
 		<div className={`${styles.project} ${reversed ? styles.reversed : ''}`}>
 			<ProjectContent project={project} />
-			<div
-				className={`${styles.screen} ${
-					reversed ? styles.reversed : ''
-				}`}
-			>
+			<div className={styles.screen}>
 				<div className={styles.image} />
 				<div className={styles.overlay} />
 			</div>
