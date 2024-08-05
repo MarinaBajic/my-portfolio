@@ -37,7 +37,7 @@ const Projects = () => {
 					/>
 				))}
 			</div>
-			<Button href="#" hierarchy="secondary" text="See more" />
+			<Button href="#" hierarchy="secondary" text="Load more projects" />
 		</Section>
 	);
 };
