@@ -9,28 +9,6 @@
 	left: 50%;
 	translate: -50% -50%;
 	border-radius: 50%;
-	animation: rotate 20s infinite;
 	z-index: -30;
 	filter: blur(100px);
-}
-
-.blur {
-	height: 100dvh;
-	width: 100dvw;
-	position: fixed;
-	top: 0;
-	backdrop-filter: blur(200px);
-	z-index: -20;
-}
-
-@keyframes rotate {
-	from {
-		rotate: 0deg;
-	}
-	50% {
-		scale: 1 1.5;
-	}
-	to {
-		rotate: 360deg;
-	}
 }

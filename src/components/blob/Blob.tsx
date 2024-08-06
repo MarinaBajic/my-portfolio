@@ -26,16 +26,13 @@ const Blob = () => {
 	}, [mousePosition]);
 
 	return (
-		<>
-			<div
-				className={styles.blob}
-				style={{
-					top: position.y - 75,
-					left: position.x - 75,
-				}}
-			></div>
-			{/* <div className={styles.blur}></div> */}
-		</>
+		<div
+			className={styles.blob}
+			style={{
+				top: position.y - 75,
+				left: position.x - 75,
+			}}
+		></div>
 	);
 };
 
