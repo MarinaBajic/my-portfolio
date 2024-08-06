@@ -5,16 +5,16 @@ body[data-theme='designer'] {
 	--font-primary: #{$font-designer};
 	--font-secondary: #{$font-regular};
 
-	--color-background: #{$primary-400};
+	--color-background: #{$teal-500};
 
-	--color-primary: #{$white};
-	--color-primary-light: #{$transparent-white-800};
-	--color-primary-transparent: #{$transparent-white-300};
+	--color-primary: #{$neutral-100};
+	--color-primary-light: #{$neutral-200};
+	--color-primary-transparent: #{$transparent-white};
 
-	--color-secondary: #{$secondary-200};
-	--color-secondary-light: #{$secondary-100};
+	--color-secondary: #{$gold-200};
+	--color-secondary-light: #{$gold-100};
 
-	--gradient: linear-gradient(135deg, #{$primary-300}, #{$primary-200});
+	--gradient: linear-gradient(135deg, #{$teal-500}, #{$teal-400});
 }
 
 body[data-theme='developer'] {
@@ -22,19 +22,19 @@ body[data-theme='developer'] {
 	--font-secondary: #{$font-developer};
 	--font-variant: small-caps;
 
-	--color-background: #{$primary-200};
+	--color-background: #{$teal-300};
 
-	--color-primary: #{$white};
-	--color-primary-light: #{$transparent-white-800};
-	--color-primary-transparent: #{$transparent-white-300};
+	--color-primary: #{$neutral-100};
+	--color-primary-light: #{$neutral-200};
+	--color-primary-transparent: #{$transparent-white};
 
-	--color-secondary: #{$primary-100};
-	--color-secondary-light: #{$transparent-primary-800};
+	--color-secondary: #{$teal-100};
+	--color-secondary-light: #{$teal-200};
 
 	--gradient: linear-gradient(
 		135deg,
-		#{$primary-200},
-		#{$transparent-white-300}
+		#{$teal-400},
+		#{$teal-300}
 	);
 }
 
@@ -43,14 +43,14 @@ body[data-theme='cybersec'] {
 	--font-secondary: #{$font-developer};
 	--font-variant: small-caps;
 
-	--color-background: #{$black};
+	--color-background: #{$neutral-400};
 
-	--color-primary: #{$primary-100};
-	--color-primary-light: #{$transparent-primary-800};
-	--color-primary-transparent: #{$transparent-primary-200};
+	--color-primary: #{$teal-100};
+	--color-primary-light: #{$teal-200};
+	--color-primary-transparent: #{$transparent-teal};
 
-	--color-secondary: #{$white};
-	--color-secondary-light: #{$transparent-white-800};
+	--color-secondary: #{$neutral-100};
+	--color-secondary-light: #{$neutral-200};
 
-	--gradient: linear-gradient(135deg, #{$grey}, #{$primary-400});
+	--gradient: linear-gradient(135deg, #{$neutral-400}, #{$teal-500});
 }
