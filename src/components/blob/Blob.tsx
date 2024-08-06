@@ -34,7 +34,7 @@ const Blob = () => {
 					left: position.x - 75,
 				}}
 			></div>
-			<div className={styles.blur}></div>
+			{/* <div className={styles.blur}></div> */}
 		</>
 	);
 };

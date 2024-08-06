@@ -12,26 +12,26 @@
 	cursor: pointer;
 
 	&.btn--gold {
-		color: $secondary-200;
+		color: $gold-200;
 
 		.border {
-			background-color: $secondary-200;
+			background-color: $gold-200;
 		}
 	}
 
 	&.btn--teal {
-		color: $primary-100;
+		color: $teal-100;
 
 		.border {
-			background-color: $primary-100;
+			background-color: $teal-100;
 		}
 	}
 
 	&.btn--white {
-		color: $white;
+		color: $neutral-100;
 
 		.border {
-			background-color: $white;
+			background-color: $neutral-100;
 		}
 	}
 

@@ -1,23 +1,17 @@
-$secondary-100: #fde4c3;
-$secondary-200: #c90;
+$gold-100: #fde4c3;
+$gold-200: #c90;
 
-$primary-100: #86d4ce;
-$primary-200: #037f80;
-$primary-300: #046068;
-$primary-400: #004041;
+$teal-100: #86d4ce;
+$teal-200: #72b1ac;
+$teal-300: #037f80;
+$teal-400: #046068;
+$teal-500: #004041;
 
-$white: #f6f6f6;
-$grey: #333;
-$black: #1c1c1c;
+$neutral-100: #f6f6f6;
+$neutral-200: #ccc;
+$neutral-300: #333;
+$neutral-400: #1c1c1c;
 
-$transparent: rgba(0, 0, 0, 0);
-
-$transparent-white-300: rgba($white, 0.3);
-$transparent-white-800: rgba($white, 0.8);
-
-$transparent-black-100: rgba($black, 0.1);
-$transparent-black-250: rgba($black, 0.25);
-$transparent-black-700: rgba($black, 0.7);
-
-$transparent-primary-200: rgba($primary-100, 0.2);
-$transparent-primary-800: rgba($primary-100, 0.8);
+$transparent-white: rgba($neutral-100, 0.3);
+$transparent-black: rgba($neutral-400, 0.25);
+$transparent-teal: rgba($teal-100, 0.2);

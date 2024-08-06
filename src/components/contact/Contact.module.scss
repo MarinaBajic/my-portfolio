@@ -23,15 +23,15 @@
 }
 
 .content {
-	background-color: $primary-300;
+	background-color: $teal-400;
 	padding: 20px;
 
 	body[data-theme='developer'] & {
-		background-color: $primary-200;
+		background-color: $teal-300;
 	}
 
 	body[data-theme='cybersec'] & {
-		background-color: $black;
+		background-color: $neutral-400;
 	}
 
 	@include breakpoint('lg', min) {
