@@ -2,8 +2,11 @@
 @use '../../styles/abstracts/mixins' as *;
 
 .btn {
+	--_color: var(--color, $neutral-100);
+
 	font-weight: 500;
 	text-decoration: none;
+	color: var(--_color);
 	width: fit-content;
 	display: flex;
 	position: relative;
@@ -11,32 +14,21 @@
 	box-shadow: 0 -2px inset;
 	cursor: pointer;
 
-	&.btn--gold {
-		color: $gold-200;
+	.border {
+		background-color: var(--_color);
+		position: absolute;
+	}
 
-		.border {
-			background-color: $gold-200;
-		}
+	&.btn--gold {
+		--color: #{$gold-200};
 	}
 
 	&.btn--teal {
-		color: $teal-100;
-
-		.border {
-			background-color: $teal-100;
-		}
+		--color: #{$teal-100};
 	}
 
 	&.btn--white {
-		color: $neutral-100;
-
-		.border {
-			background-color: $neutral-100;
-		}
-	}
-
-	.border {
-		position: absolute;
+		--color: #{$neutral-100};
 	}
 
 	.border--right {
