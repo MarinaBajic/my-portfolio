@@ -30,6 +30,7 @@ const Button = ({ href, hierarchy, text }: Props) => {
 	return (
 		<a
 			href={href}
+			target='_blank'
 			className={`${styles.btn} ${styles[`btn--${decideBtnColor()}`]}`}
 		>
 			<div

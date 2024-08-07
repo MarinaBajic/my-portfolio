@@ -8,8 +8,14 @@
 			"Tailwind.css"
 		],
 		"btns": [
-			"Figma",
-			"Live Site"
+			{
+				"text": "Figma",
+				"href": "https://www.figma.com/design/WgXOjzjGzPdtbS2WtQOdFW/barKod?node-id=0-1&t=XdlBCgxhanwuNNnz-1"
+			},
+			{
+				"text": "Live Site",
+				"href": "https://www.bar-kod.rs/"
+			}
 		]
 	},
 	{
@@ -21,7 +27,10 @@
 			"TypeScript"
 		],
 		"btns": [
-			"GitHub"
+			{
+				"text": "GitHub",
+				"href": "#"
+			}
 		]
 	},
 	{
@@ -33,7 +42,10 @@
 			"Docker"
 		],
 		"btns": [
-			"GitHub"
+			{
+				"text": "GitHub",
+				"href": "#"
+			}
 		]
 	}
 ]

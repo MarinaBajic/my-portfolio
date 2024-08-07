@@ -6,11 +6,16 @@ import { isLargeScreen } from '../../utils/mediaQueryUtils';
 import Title from '../title/Title';
 import { useEffect, useState } from 'react';
 
+type TButton = {
+	text: string;
+	href: string;
+};
+
 type TProject = {
 	subheading: string;
 	heading: string;
 	stack: string[];
-	btns: string[];
+	btns: Array<TButton>;
 };
 
 type CardProps = {
@@ -108,8 +113,8 @@ const ProjectContent = ({ project }: { project: TProject }) => {
 				{project.btns.map((btn, index) => (
 					<Button
 						key={index}
-						href="#"
-						text={btn}
+						href={btn.href}
+						text={btn.text}
 						hierarchy="primary"
 					/>
 				))}
