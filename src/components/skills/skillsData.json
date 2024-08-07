@@ -1,47 +1,37 @@
 {
 	"desktop": [
 		[
-			"Sass",
-			"Tailwind",
 			"React",
 			"Angular",
-			"Astro"
+			"TypeScript"
 		],
 		[
 			"Spring Boot",
 			"Microservices",
-			"PHP",
-			"Android Java"
+			"MySQL"
 		],
 		[
-			"Figma",
-			"GitHub",
-			"Docker",
-			"MySQL"
+			"Sass",
+			"Tailwind",
+			"Figma"
 		]
 	],
 	"mobile": [
 		[
-			"Sass",
-			"Tailwind"
-		],
-		[
 			"React",
 			"Angular",
-			"Astro"
+			"Sass"
+		],
+		[
+			"TypeScript",
+			"Tailwind"
 		],
 		[
 			"Spring Boot",
 			"Microservices"
 		],
 		[
-			"PHP",
-			"Android Java",
-			"Figma"
-		],
-		[
-			"GitHub",
-			"Docker",
+			"Figma",
 			"MySQL"
 		]
 	]
