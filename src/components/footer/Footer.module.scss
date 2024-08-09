@@ -57,9 +57,9 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 16px;
+	gap: 12px;
 	border-top: 1px solid var(--color-primary);
-	padding-block: 32px 96px;
+	padding-block: 24px;
 	margin-inline: auto;
 
 	@include breakpoint('md', max) {
@@ -68,6 +68,5 @@
 
 	@include breakpoint('sm', max) {
 		max-width: 275px;
-		padding-block: 24px 64px;
 	}
 }
