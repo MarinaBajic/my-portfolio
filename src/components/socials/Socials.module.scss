@@ -8,7 +8,8 @@
 .icon {
 	font-size: 24px;
 	color: var(--color-primary);
-	transition: color 0.2s, scale 0.2s, rotate 0.2s;
+	transition: color var(--transition-duration),
+		scale var(--transition-duration), rotate var(--transition-duration);
 
 	@include hover-focus {
 		color: var(--color-secondary);
