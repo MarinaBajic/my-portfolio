@@ -16,7 +16,7 @@ const Hero = () => {
 				/>
 				<Background text="bajic" style={styles.background} />
 			</div>
-			<div className={styles.btn}>
+			<div className={styles.btns}>
 				<Button
 					href="#projects"
 					hierarchy="primary"

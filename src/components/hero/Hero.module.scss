@@ -81,9 +81,18 @@
 	}
 }
 
-.btn {
-	width: fit-content;
+.btns {
 	display: flex;
 	gap: 32px;
 	margin-inline: auto;
+
+	@include breakpoint('sm', max) {
+		width: 100%;
+		gap: 16px;
+
+		a {
+			flex: 1;
+			justify-content: center;
+		}
+	}
 }
