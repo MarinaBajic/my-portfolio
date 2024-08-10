@@ -26,6 +26,10 @@
 		text-decoration: none;
 		color: var(--color-primary);
 		transition: color var(--transition-duration);
+
+		&.active {
+			color: var(--color-secondary);
+		}
 	}
 
 	@include hover-focus {
