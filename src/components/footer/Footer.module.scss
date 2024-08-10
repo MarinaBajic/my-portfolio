@@ -32,6 +32,7 @@
 	display: flex;
 	align-items: center;
 	gap: 4px;
+	transition: color var(--transition-duration);
 
 	input {
 		appearance: none;
@@ -39,14 +40,28 @@
 		height: 8px;
 		border: 1px solid var(--color-primary);
 		cursor: pointer;
+		transition: border-color var(--transition-duration);
 
 		&:checked {
 			background-color: var(--color-primary);
+			transition: background-color var(--transition-duration);
 		}
 	}
 
 	label {
 		cursor: pointer;
+	}
+
+	@include hover-focus {
+		color: var(--color-secondary);
+
+		input {
+			border-color: var(--color-secondary);
+
+			&:checked {
+				background-color: var(--color-secondary);
+			}
+		}
 	}
 }
 
