@@ -8,6 +8,7 @@ import About from './components/about/About';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Blob from './components/blob/Blob';
+import { isLargeScreen } from './utils/mediaQueryUtils';
 
 function App() {
 	return (
@@ -22,7 +23,7 @@ function App() {
 				<Contact />
 			</main>
 			<Footer />
-			<Blob />
+			{isLargeScreen() && <Blob />}
 		</>
 	);
 }
