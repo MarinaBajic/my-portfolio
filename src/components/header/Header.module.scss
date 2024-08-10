@@ -59,7 +59,7 @@
 
 	* {
 		font-size: 50px;
-		color: $neutral-100;
+		color: var(--color-primary);
 	}
 
 	@include breakpoint('md', max) {
@@ -91,7 +91,7 @@
 			grid-column: span 2;
 			transform: scale(1);
 			position: relative;
-			top: 400px;
+			top: 480px;
 			display: flex;
 			margin-inline: auto;
 		}
