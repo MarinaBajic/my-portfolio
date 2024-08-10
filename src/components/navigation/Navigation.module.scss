@@ -17,12 +17,22 @@
 }
 
 .link {
+	.slash {
+		opacity: 0;
+		transition: opacity var(--transition-duration);
+	}
+
 	a {
 		text-decoration: none;
 		color: var(--color-primary);
+		transition: color var(--transition-duration);
 	}
 
 	@include hover-focus {
+		.slash {
+			opacity: 1;
+		}
+
 		a {
 			color: var(--color-secondary);
 		}

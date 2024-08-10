@@ -23,7 +23,10 @@ const Navigation = () => {
 const Link = ({ link }: { link: TLink }) => {
 	return (
 		<li className={styles.link}>
-			<a href={link.href}>/ {link.text}</a>
+			<a href={link.href}>
+				<span className={styles.slash}>/ </span>
+				{link.text}
+			</a>
 		</li>
 	);
 };
