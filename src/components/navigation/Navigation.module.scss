@@ -17,6 +17,10 @@
 }
 
 .link {
+	padding-block: 4px;
+	transition: transform var(--transition-duration);
+	cursor: pointer;
+
 	.slash {
 		opacity: 0;
 		transition: opacity var(--transition-duration);
@@ -33,6 +37,8 @@
 	}
 
 	@include hover-focus {
+		transform: translateY(-4px);
+
 		.slash {
 			opacity: 1;
 		}
