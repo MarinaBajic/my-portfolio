@@ -17,6 +17,7 @@ const Slider = ({ slides, reversed = false }: Props) => {
 			loop="true"
 			autoplay-delay="2500"
 			autoplay-reverse-direction={reversed}
+			autoplay-pause-on-mouse-enter="true"
 			speed="2000"
 		>
 			{slides.map((slide, index) => (
