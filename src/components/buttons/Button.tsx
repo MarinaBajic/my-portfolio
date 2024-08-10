@@ -5,12 +5,13 @@ type Props = {
 	href: string;
 	hierarchy: string;
 	text: string;
+	target?: string;
 };
 
 type Theme = 'developer' | 'cybersec' | string;
 type Hierarchy = 'primary' | 'secondary' | string;
 
-const Button = ({ href, hierarchy, text }: Props) => {
+const Button = ({ href, hierarchy, text, target = '_blank' }: Props) => {
 	const { theme } = useTheme();
 
 	function decideBtnColor() {
@@ -30,7 +31,7 @@ const Button = ({ href, hierarchy, text }: Props) => {
 	return (
 		<a
 			href={href}
-			target='_blank'
+			target={target}
 			className={`${styles.btn} ${styles[`btn--${decideBtnColor()}`]}`}
 		>
 			<div
