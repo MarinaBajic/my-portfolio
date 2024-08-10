@@ -6,7 +6,9 @@ import { useTheme } from '../../context/ThemeProvider';
 type TExperience = {
 	start: string;
 	end: string;
-	title: string;
+	title?: string;
+	company: string;
+	companyLink: string;
 	description: string;
 };
 
@@ -75,7 +77,13 @@ const Experience = ({ experience }: { experience: TExperience }) => {
 				)}
 			</div>
 			<div className={styles.content}>
-				<span className={styles.title}>{experience.title}</span>
+				<span className={styles.title}>
+					{experience.title}
+					<a href={experience.companyLink} target="_blank">
+						{experience.title ? ' at ' : ''}
+						{experience.company}
+					</a>
+				</span>
 				<span className={styles.description}>
 					{experience.description}
 				</span>

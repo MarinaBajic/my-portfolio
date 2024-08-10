@@ -5,13 +5,17 @@
 			{
 				"start": "May - Jun",
 				"end": "2024",
-				"title": "Synechron | Web Developer",
+				"title": "Web Developer",
+				"company": "Synechron",
+				"companyLink": "https://www.synechron.com/en-rs/rs-home",
 				"description": "Microservices | Spring Boot | React"
 			},
 			{
 				"start": "Sep",
 				"end": "2023",
-				"title": "Vega IT | Web UI Developer",
+				"title": "Web UI Developer",
+				"company": "Vega IT",
+				"companyLink": "https://www.vegaitglobal.com/",
 				"description": "HTML5 | Sass | JavaScript | Gsap"
 			}
 		]
@@ -22,7 +26,8 @@
 			{
 				"start": "2020 -",
 				"end": "2024",
-				"title": "University of Novi Sad, Faculty of Sciences",
+				"company": "University of Novi Sad, Faculty of Sciences",
+				"companyLink": "https://informatika.pmf.uns.ac.rs/",
 				"description": "Bachelor's degree in Information Technologies"
 			}
 		]
@@ -33,13 +38,17 @@
 			{
 				"start": "Mar -",
 				"end": "2024",
-				"title": "BarKod | UI/UX Designer & Web Developer",
+				"title": "UI/UX Designer & Web Developer",
+				"company": "BarKod",
+				"companyLink": "https://www.bar-kod.rs/",
 				"description": "Figma | Astro | Tailwind"
 			},
 			{
 				"start": "2022 -",
 				"end": "2023",
-				"title": "BEST | IT Coordinator & Front-end Developer",
+				"title": "IT Coordinator & Front-end Developer",
+				"company": "BEST",
+				"companyLink": "https://bestns.org.rs/",
 				"description": "Figma | JavaScript | CSS | Notion"
 			}
 		]
