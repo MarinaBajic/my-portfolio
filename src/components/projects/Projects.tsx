@@ -116,6 +116,7 @@ const ProjectContent = ({ project }: { project: TProject }) => {
 						href={btn.href}
 						text={btn.text}
 						hierarchy="primary"
+						target="_blank"
 					/>
 				))}
 			</div>

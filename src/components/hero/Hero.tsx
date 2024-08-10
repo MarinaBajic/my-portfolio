@@ -17,17 +17,11 @@ const Hero = () => {
 				<Background text="bajic" style={styles.background} />
 			</div>
 			<div className={styles.btns}>
-				<Button
-					href="#projects"
-					hierarchy="primary"
-					text="My work"
-					target="_self"
-				/>
+				<Button href="#projects" hierarchy="primary" text="My work" />
 				<Button
 					href="#contact"
 					hierarchy="secondary"
 					text="Get in touch"
-					target="_self"
 				/>
 			</div>
 		</section>

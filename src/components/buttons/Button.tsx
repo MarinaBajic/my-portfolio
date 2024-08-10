@@ -11,7 +11,7 @@ type Props = {
 type Theme = 'developer' | 'cybersec' | string;
 type Hierarchy = 'primary' | 'secondary' | string;
 
-const Button = ({ href, hierarchy, text, target = '_blank' }: Props) => {
+const Button = ({ href, hierarchy, text, target = '_self' }: Props) => {
 	const { theme } = useTheme();
 
 	function decideBtnColor() {
