@@ -2,7 +2,6 @@
 
 .footer {
 	font-size: 14px;
-
 	padding-inline: 48px;
 	display: flex;
 	justify-content: center;
@@ -52,21 +51,20 @@
 }
 
 .copyright {
-	max-width: 820px;
-	width: 100%;
+	color: var(--color-primary-light);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 12px;
-	border-top: 1px solid var(--color-primary);
-	padding-block: 24px;
+	border-top: 1px solid;
+	padding: 24px 280px;
 	margin-inline: auto;
 
 	@include breakpoint('md', max) {
-		max-width: 480px;
+		padding-inline: 160px;
 	}
 
 	@include breakpoint('sm', max) {
-		max-width: 275px;
+		padding-inline: 24px;
 	}
 }
