@@ -28,7 +28,7 @@ const Header = () => {
 			<div className={styles['header__logo']}>
 				<Logo
 					linked={true}
-					color={theme == 'cybersec' ? 'teal' : 'white'}
+					color={theme == 'developer' ? 'teal' : 'white'}
 				/>
 			</div>
 			<div className={styles['header__nav']}>

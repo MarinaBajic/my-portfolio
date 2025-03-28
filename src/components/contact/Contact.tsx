@@ -3,13 +3,13 @@ import Section from '../section/Section';
 import Logo from '../logo/Logo';
 import { useTheme } from '../../context/ThemeProvider';
 
-type Theme = 'developer' | 'cybersec' | 'designer' | string;
+type Theme = 'teacher' | 'designer' | 'developer' | string;
 type Color = 'white' | 'gold' | 'teal';
 
 const themeColors: { [key in Theme]?: Color } = {
 	designer: 'gold',
-	developer: 'white',
-	cybersec: 'teal',
+	teacher: 'white',
+	developer: 'teal',
 };
 
 const Contact = () => {

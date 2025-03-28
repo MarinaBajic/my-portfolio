@@ -8,7 +8,7 @@ type Props = {
 	target?: string;
 };
 
-type Theme = 'developer' | 'cybersec' | string;
+type Theme = 'teacher' | 'developer' | string;
 type Hierarchy = 'primary' | 'secondary' | string;
 
 const Button = ({ href, hierarchy, text, target = '_self' }: Props) => {
@@ -16,8 +16,8 @@ const Button = ({ href, hierarchy, text, target = '_self' }: Props) => {
 
 	function decideBtnColor() {
 		const themeColors: { [key in Theme]?: string } = {
-			developer: 'white',
-			cybersec: 'teal',
+			teacher: 'white',
+			developer: 'teal',
 		};
 
 		const hierarchyColors: { [key in Hierarchy]?: string } = {
