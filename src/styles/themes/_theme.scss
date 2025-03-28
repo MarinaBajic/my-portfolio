@@ -17,7 +17,7 @@ body[data-theme='designer'] {
 	--gradient: linear-gradient(135deg, #{$teal-500}, #{$teal-400});
 }
 
-body[data-theme='developer'] {
+body[data-theme='teacher'] {
 	--font-primary: #{$font-regular};
 	--font-secondary: #{$font-developer};
 	--font-variant: small-caps;
@@ -38,7 +38,7 @@ body[data-theme='developer'] {
 	);
 }
 
-body[data-theme='cybersec'] {
+body[data-theme='developer'] {
 	--font-primary: #{$font-regular};
 	--font-secondary: #{$font-developer};
 	--font-variant: small-caps;

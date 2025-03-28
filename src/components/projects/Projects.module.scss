@@ -46,8 +46,8 @@
 }
 
 .title {
-	body[data-theme='developer'] &,
-	body[data-theme='cybersec'] & {
+	body[data-theme='teacher'] &,
+	body[data-theme='developer'] & {
 		text-transform: uppercase;
 	}
 
@@ -75,7 +75,7 @@
 	font-weight: 700;
 	color: $teal-100;
 
-	body[data-theme='cybersec'] & {
+	body[data-theme='developer'] & {
 		color: var(--color-secondary);
 	}
 

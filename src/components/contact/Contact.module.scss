@@ -26,11 +26,11 @@
 	background-color: $teal-400;
 	padding: 20px;
 
-	body[data-theme='developer'] & {
+	body[data-theme='teacher'] & {
 		background-color: $teal-300;
 	}
 
-	body[data-theme='cybersec'] & {
+	body[data-theme='developer'] & {
 		background-color: $neutral-400;
 	}
 

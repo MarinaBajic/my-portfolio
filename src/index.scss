@@ -23,12 +23,12 @@ body {
 	background-repeat: no-repeat;
 	overflow-x: hidden;
 
-	&[data-theme='developer'] {
-		background-image: url('assets/bg-dev.png');
+	&[data-theme='teacher'] {
+		background-image: url('assets/bg-teach.png');
 	}
 
-	&[data-theme='cybersec'] {
-		background-image: url('assets/bg-cyber.png');
+	&[data-theme='developer'] {
+		background-image: url('assets/bg-dev.png');
 	}
 
 	&.overflow-y-hidden {
