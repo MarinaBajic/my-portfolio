@@ -12,6 +12,7 @@ const Hero = () => {
 					slides={[
 						<h1 className={styles.heading}>Front-end Developer</h1>,
 						<span className={styles.heading}>UI/UX Designer</span>,
+						<span className={styles.heading}>Teaching Associate</span>,
 					]}
 				/>
 				<Background text="bajic" style={styles.background} />
