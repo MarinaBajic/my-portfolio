@@ -25,6 +25,12 @@ type CardProps = {
 
 const Projects = () => {
 	const projects: Array<TProject> = projectsData;
+	const [visibleProjects, setVisibleProjects] = useState(3);
+	const largeScreen = isLargeScreen();
+
+	const loadMore = () => {
+		setVisibleProjects((prev) => Math.min(prev + 2, projects.length));
+	};
 
 	return (
 		<Section
@@ -34,15 +40,21 @@ const Projects = () => {
 			heading="Projects"
 		>
 			<div className={styles.projects}>
-				{projects.map((project, index) => (
+				{projects.slice(0, visibleProjects).map((project, index) => (
 					<ProjectCard
 						key={index}
 						project={project}
-						reversed={isLargeScreen() && index % 2 === 1}
+						reversed={largeScreen && index % 2 === 1}
 					/>
 				))}
 			</div>
-			<Button href="#" hierarchy="secondary" text="Load more projects" />
+			{visibleProjects < projects.length && (
+				<Button
+					hierarchy="secondary"
+					text="Load more projects"
+					onClick={loadMore}
+				/>
+			)}
 		</Section>
 	);
 };

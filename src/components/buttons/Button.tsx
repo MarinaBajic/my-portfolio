@@ -2,16 +2,18 @@ import styles from './Button.module.scss';
 import { useTheme } from '../../context/ThemeProvider';
 
 type Props = {
-	href: string;
 	hierarchy: string;
 	text: string;
+	href?: string;
 	target?: string;
+	onClick?: () => void;
 };
 
 type Theme = 'teacher' | 'developer' | string;
 type Hierarchy = 'primary' | 'secondary' | string;
 
-const Button = ({ href, hierarchy, text, target = '_self' }: Props) => {
+const Button = ({ href, hierarchy, text, target = '_self', onClick }: Props) => {
+	const ButtonComponent = href ? "a" : "button";
 	const { theme } = useTheme();
 
 	function decideBtnColor() {
@@ -29,9 +31,8 @@ const Button = ({ href, hierarchy, text, target = '_self' }: Props) => {
 	}
 
 	return (
-		<a
-			href={href}
-			target={target}
+		<ButtonComponent
+			{...(href ? { href, target } : { onClick })}
 			className={`${styles.btn} ${styles[`btn--${decideBtnColor()}`]}`}
 		>
 			<div
@@ -40,7 +41,7 @@ const Button = ({ href, hierarchy, text, target = '_self' }: Props) => {
 			<div className={`${styles.border} ${styles['border--top']}`}></div>
 			<div className={`${styles.border} ${styles['border--left']}`}></div>
 			{text}
-		</a>
+		</ButtonComponent>
 	);
 };
 
