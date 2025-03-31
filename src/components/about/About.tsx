@@ -26,13 +26,13 @@ const About = () => {
 						<p>
 							<b>Master's</b> student and <b>Teaching Associate</b> 
 							{' '}at Faculty of Sciences, University of Novi Sad. 
-							Graduate in <b>Informatics – Information Technologies</b>, 
-							volunteering in a non-governmental organization.
+							Graduate in <b>Informatics – Information Technologies</b>. 
+							Volunteering in a non-governmental organization.
 						</p>
 						<p>
 							Loves going to <b>hackathons</b>, designing and
 							developing web applications, reading, sewing, and
-							solving puzzles.
+							doing puzzles.
 						</p>
 					</div>
 				</div>
