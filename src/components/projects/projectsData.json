@@ -35,6 +35,20 @@
 		]
 	},
 	{
+		"subheading": "Game Development",
+		"heading": "Midnight Descent",
+		"stack": [
+			"Unity",
+			"C#"
+		],
+		"btns": [
+			{
+				"text": "GitHub",
+				"href": "https://github.com/MarinaBajic/RMA-Sewista"
+			}
+		]
+	},
+	{
 		"subheading": "Full-stack Development",
 		"heading": "Dance Verse",
 		"stack": [
@@ -46,20 +60,6 @@
 			{
 				"text": "GitHub",
 				"href": "https://github.com/MarinaBajic/WP-DanceVerse"
-			}
-		]
-	},
-	{
-		"subheading": "Game Development",
-		"heading": "Midnight Descent",
-		"stack": [
-			"Unity",
-			"C#"
-		],
-		"btns": [
-			{
-				"text": "GitHub",
-				"href": "https://github.com/MarinaBajic/RMA-Sewista"
 			}
 		]
 	},
