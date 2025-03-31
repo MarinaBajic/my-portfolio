@@ -8,7 +8,7 @@ const Footer = () => {
 			<Themes />
 			<div className={styles.copyright}>
 				<span>Made with love by Marina Bajić</span>
-				<span>Copyright © 2024</span>
+				<span>Copyright © 2025</span>
 			</div>
 		</footer>
 	);
