@@ -24,11 +24,10 @@ const About = () => {
 							I do.
 						</p>
 						<p>
-							Recent graduate in{' '}
-							<b>Informatics – Information Technologies</b> from
-							the Faculty of Sciences, University of Novi Sad,
-							Serbia, volunteering in a non-governmental
-							organization.
+							<b>Master's</b> student and <b>Teaching Associate</b> 
+							{' '}at Faculty of Sciences, University of Novi Sad. 
+							Graduate in <b>Informatics – Information Technologies</b>, 
+							volunteering in a non-governmental organization.
 						</p>
 						<p>
 							Loves going to <b>hackathons</b>, designing and
