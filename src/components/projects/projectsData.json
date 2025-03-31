@@ -19,32 +19,81 @@
 		]
 	},
 	{
-		"subheading": "Front-end Development",
+		"subheading": "Full-stack Development",
 		"heading": "Regal Equine Oasis",
 		"stack": [
-			"Sass",
 			"Angular",
-			"TypeScript"
+			"Tailwind.css",
+			"Spring Boot",
+			"MySQL"
 		],
 		"btns": [
 			{
 				"text": "GitHub",
-				"href": "#"
+				"href": "https://github.com/MarinaBajic/RegalEquineOasis"
 			}
 		]
 	},
 	{
-		"subheading": "Back-end Development",
-		"heading": "Regal Equine Oasis",
+		"subheading": "Full-stack Development",
+		"heading": "Dance Verse",
 		"stack": [
-			"Spring Boot",
-			"MySQL",
-			"Docker"
+			"Sass",
+			"PHP",
+			"MySQL"
 		],
 		"btns": [
 			{
 				"text": "GitHub",
-				"href": "#"
+				"href": "https://github.com/MarinaBajic/WP-DanceVerse"
+			}
+		]
+	},
+	{
+		"subheading": "Game Development",
+		"heading": "Midnight Descent",
+		"stack": [
+			"Unity",
+			"C#"
+		],
+		"btns": [
+			{
+				"text": "GitHub",
+				"href": "https://github.com/MarinaBajic/RMA-Sewista"
+			}
+		]
+	},
+	{
+		"subheading": "Mobile Development",
+		"heading": "Sewista",
+		"stack": [
+			"Android",
+			"Java",
+			"Room DB"
+		],
+		"btns": [
+			{
+				"text": "GitHub",
+				"href": "https://github.com/MarinaBajic/RMA-Sewista"
+			}
+		]
+	},
+	{
+		"subheading": "Front-end Development",
+		"heading": "AIBG",
+		"stack": [
+			"CSS",
+			"JavaScript",
+			"Figma"
+		],
+		"btns": [
+			{
+				"text": "Live Site",
+				"href": "https://aibg.bestns.org.rs/"
+			},
+			{
+				"text": "Figma",
+				"href": "https://www.figma.com/design/uQppFUqvazR3zdwNTBd7Fs/AIBG-sajt-v3.0?node-id=0-1&t=oTiU3PjFqAvZmmAW-1"
 			}
 		]
 	}
