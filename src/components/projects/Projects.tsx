@@ -85,9 +85,12 @@ const ProjectCard = ({ project, reversed }: CardProps) => {
 					left: position.x - 12,
 				}}
 			>
-				View
+				{/* View
 				<br />
-				Project
+				Project */}
+				Working
+				<br />
+				on it...
 			</span>
 		</div>
 	);
