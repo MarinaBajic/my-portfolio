@@ -1,6 +1,7 @@
 @use '../../styles/abstracts/mixins' as *;
 
 .experiences {
+	max-width: 800px;
 	display: flex;
 	flex-direction: column;
 	gap: 64px;
@@ -46,7 +47,7 @@
 	grid-template-columns: 1fr 3fr;
 
 	body[data-theme='designer'] & {
-		grid-template-columns: 1fr 5fr;
+		grid-template-columns: 1fr 4fr;
 	}
 
 	@include breakpoint('sm', max) {

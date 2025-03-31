@@ -1,5 +1,18 @@
 [
 	{
+		"heading": "Work",
+		"experiences": [
+			{
+				"start": "Oct 2024 -",
+				"end": "present",
+				"title": "Teaching Associate",
+				"company": "University of Novi Sad, Faculty of Sciences",
+				"companyLink": "https://informatika.pmf.uns.ac.rs/",
+				"description": "Information Technology and Systems Chair, Component Based Development (IT401)"
+			}
+		]
+	},
+	{
 		"heading": "Internships",
 		"experiences": [
 			{
@@ -24,6 +37,13 @@
 		"heading": "Education",
 		"experiences": [
 			{
+				"start": "2024 -",
+				"end": "present",
+				"company": "University of Novi Sad, Faculty of Sciences",
+				"companyLink": "https://informatika.pmf.uns.ac.rs/",
+				"description": "Master's degree in Information Technologies"
+			},
+			{
 				"start": "2020 -",
 				"end": "2024",
 				"company": "University of Novi Sad, Faculty of Sciences",
@@ -36,8 +56,8 @@
 		"heading": "Organizations",
 		"experiences": [
 			{
-				"start": "Mar -",
-				"end": "2024",
+				"start": "2024 -",
+				"end": "present",
 				"title": "UI/UX Designer & Web Developer",
 				"company": "BarKod",
 				"companyLink": "https://www.bar-kod.rs/",
