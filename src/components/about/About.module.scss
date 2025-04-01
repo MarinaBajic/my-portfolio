@@ -75,7 +75,7 @@
 
 body[data-theme='designer'] .image {
 	width: 78%;
-	height: 83%;
+	height: 80%;
 	border-radius: 49% / 30%;
 	box-shadow: none;
 
@@ -86,9 +86,16 @@ body[data-theme='designer'] .image {
 	}
 
 	@include breakpoint('md', max) {
+		width: 74%;
+		height: 76%;
+
 		img {
 			object-position: 55% -78px;
 		}
+	}
+
+	@include breakpoint('sm', max) {
+		height: 84%;
 	}
 }
 
