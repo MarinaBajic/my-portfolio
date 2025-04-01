@@ -63,6 +63,11 @@ const Projects = () => {
 const ProjectCard = ({ project, reversed }: CardProps) => {
 	const [position, setPosition] = useState({ x: 0, y: 0 });
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+	const images = import.meta.glob<{ default: string }>('/src/assets/projects*', { eager: true });
+
+	const getImageUrl = (imageName: string) => {
+		return images[`/src/assets/projects/${imageName}`]?.default || "";
+	  };
 
 	useEffect(() => {
 		const handleMouseMove = (e: MouseEvent) => {
@@ -88,7 +93,7 @@ const ProjectCard = ({ project, reversed }: CardProps) => {
 		<div className={`${styles.project} ${reversed ? styles.reversed : ''}`}>
 			<ProjectContent project={project} />
 			<div className={styles.screen}>
-				<div className={styles.image} style={{ backgroundImage: `url(${project.image})` }} />
+				<div className={styles.image} style={{ backgroundImage: `url(${getImageUrl(project.image)})` }} />
 				<div className={styles.overlay} />
 			</div>
 			<span

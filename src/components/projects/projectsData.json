@@ -17,7 +17,7 @@
 				"href": "https://www.bar-kod.rs/"
 			}
 		],
-		"image": "../assets/barKod.png"
+		"image": "barKod.png"
 	},
 	{
 		"subheading": "Full-stack Development",
