@@ -17,7 +17,7 @@
 				"href": "https://www.bar-kod.rs/"
 			}
 		],
-		"image": "../../assets/barKod.png"
+		"image": "../assets/barKod.png"
 	},
 	{
 		"subheading": "Full-stack Development",
@@ -34,7 +34,7 @@
 				"href": "https://github.com/MarinaBajic/RegalEquineOasis"
 			}
 		],
-		"image": "../../assets/reo.png"
+		"image": "reo.png"
 	},
 	{
 		"subheading": "Game Development",
@@ -49,7 +49,7 @@
 				"href": "https://github.com/MarinaBajic/RMA-Sewista"
 			}
 		],
-		"image": "../../assets/midnightDescent.png"
+		"image": "midnightDescent.png"
 	},
 	{
 		"subheading": "UI/UX Design & Development",
@@ -65,7 +65,7 @@
 				"href": "https://github.com/MarinaBajic/portfolio"
 			}
 		],
-		"image": "../../assets/portfolio.png"
+		"image": "portfolio.png"
 	},
 	{
 		"subheading": "Full-stack Development",
@@ -81,7 +81,7 @@
 				"href": "https://github.com/MarinaBajic/WP-DanceVerse"
 			}
 		],
-		"image": "../../assets/danceVerse.png"
+		"image": "danceVerse.png"
 	},
 	{
 		"subheading": "Mobile Development",
@@ -97,7 +97,7 @@
 				"href": "https://github.com/MarinaBajic/RMA-Sewista"
 			}
 		],
-		"image": "../../assets/sewista.png"
+		"image": "sewista.png"
 	},
 	{
 		"subheading": "Front-end Development",
@@ -117,6 +117,6 @@
 				"href": "https://www.figma.com/design/uQppFUqvazR3zdwNTBd7Fs/AIBG-sajt-v3.0?node-id=0-1&t=oTiU3PjFqAvZmmAW-1"
 			}
 		],
-		"image": "../../assets/aibg.png"
+		"image": "aibg.png"
 	}
 ]
