@@ -16,7 +16,8 @@
 				"text": "Live Site",
 				"href": "https://www.bar-kod.rs/"
 			}
-		]
+		],
+		"image": "src/assets/barKod.png"
 	},
 	{
 		"subheading": "Full-stack Development",
@@ -32,7 +33,8 @@
 				"text": "GitHub",
 				"href": "https://github.com/MarinaBajic/RegalEquineOasis"
 			}
-		]
+		],
+		"image": "src/assets/reo.png"
 	},
 	{
 		"subheading": "Game Development",
@@ -46,7 +48,8 @@
 				"text": "GitHub",
 				"href": "https://github.com/MarinaBajic/RMA-Sewista"
 			}
-		]
+		],
+		"image": "src/assets/midnightDescent.png"
 	},
 	{
 		"subheading": "Full-stack Development",
@@ -61,7 +64,8 @@
 				"text": "GitHub",
 				"href": "https://github.com/MarinaBajic/WP-DanceVerse"
 			}
-		]
+		],
+		"image": "src/assets/danceVerse.png"
 	},
 	{
 		"subheading": "Mobile Development",
@@ -76,7 +80,8 @@
 				"text": "GitHub",
 				"href": "https://github.com/MarinaBajic/RMA-Sewista"
 			}
-		]
+		],
+		"image": "src/assets/sewista.png"
 	},
 	{
 		"subheading": "Front-end Development",
@@ -95,6 +100,7 @@
 				"text": "Figma",
 				"href": "https://www.figma.com/design/uQppFUqvazR3zdwNTBd7Fs/AIBG-sajt-v3.0?node-id=0-1&t=oTiU3PjFqAvZmmAW-1"
 			}
-		]
+		],
+		"image": "src/assets/aibg.png"
 	}
 ]

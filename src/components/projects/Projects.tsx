@@ -16,6 +16,7 @@ type TProject = {
 	heading: string;
 	stack: string[];
 	btns: Array<TButton>;
+	image: string;
 };
 
 type CardProps = {
@@ -87,7 +88,7 @@ const ProjectCard = ({ project, reversed }: CardProps) => {
 		<div className={`${styles.project} ${reversed ? styles.reversed : ''}`}>
 			<ProjectContent project={project} />
 			<div className={styles.screen}>
-				<div className={styles.image} />
+				<div className={styles.image} style={{ backgroundImage: `url(${project.image})` }} />
 				<div className={styles.overlay} />
 			</div>
 			<span
