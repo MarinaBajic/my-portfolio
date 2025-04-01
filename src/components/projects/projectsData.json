@@ -52,6 +52,22 @@
 		"image": "src/assets/midnightDescent.png"
 	},
 	{
+		"subheading": "UI/UX Design & Development",
+		"heading": "My Portfolio",
+		"stack": [
+			"Sass",
+			"React",
+			"TypeScript"
+		],
+		"btns": [
+			{
+				"text": "GitHub",
+				"href": "https://github.com/MarinaBajic/portfolio"
+			}
+		],
+		"image": "src/assets/portfolio.png"
+	},
+	{
 		"subheading": "Full-stack Development",
 		"heading": "Dance Verse",
 		"stack": [
