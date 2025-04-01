@@ -22,12 +22,18 @@ type TProject = {
 type CardProps = {
 	project: TProject;
 	reversed: boolean;
+	getImageUrl: (imageName: string) => string;
 };
 
 const Projects = () => {
 	const projects: Array<TProject> = projectsData;
 	const [visibleProjects, setVisibleProjects] = useState(3);
 	const largeScreen = isLargeScreen();
+	const images = import.meta.glob<{ default: string }>('/src/assets/projects/*', { eager: true });
+
+	const getImageUrl = (imageName: string) => {
+		return images[`/src/assets/projects/${imageName}`]?.default || "";
+	};
 
 	const loadMore = () => {
 		setVisibleProjects((prev) => Math.min(prev + 2, projects.length));
@@ -46,6 +52,7 @@ const Projects = () => {
 						key={index}
 						project={project}
 						reversed={largeScreen && index % 2 === 1}
+						getImageUrl={getImageUrl}
 					/>
 				))}
 			</div>
@@ -60,14 +67,9 @@ const Projects = () => {
 	);
 };
 
-const ProjectCard = ({ project, reversed }: CardProps) => {
+const ProjectCard = ({ project, reversed, getImageUrl }: CardProps) => {
 	const [position, setPosition] = useState({ x: 0, y: 0 });
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-	const images = import.meta.glob<{ default: string }>('/src/assets/projects*', { eager: true });
-
-	const getImageUrl = (imageName: string) => {
-		return images[`/src/assets/projects/${imageName}`]?.default || "";
-	  };
 
 	useEffect(() => {
 		const handleMouseMove = (e: MouseEvent) => {
